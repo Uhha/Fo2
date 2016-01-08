@@ -36,10 +36,11 @@ namespace Fo2
 
         public void Draw(SpriteBatch spriteBatch, SpriteFont tempFont)
         {
-            HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.White, 1);
-            if (_actualNum == 17278)
+            //HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.White, 1);
+            if (_actualNum == 17294) //17278
             {  //x39 y86
                 spriteBatch.DrawString(tempFont, _actualNum.ToString(), new Vector2(Position.X + 14, Position.Y + 6), Color.White);
+                HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.Red, 1);
             }
         }
 

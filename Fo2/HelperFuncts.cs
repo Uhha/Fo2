@@ -29,7 +29,7 @@ namespace Fo2
                 TileNumX = 0;
                 TileNumY++;
             }
-            Vector2 ret = new Vector2(MapZeroCoordinate - TileNumX * 48 + TileNumY * 32, 0 + 12 * TileNumX + TileNumY * 24);
+            Vector2 ret = new Vector2((MapZeroCoordinate - 80) - TileNumX * 48 + TileNumY * 32, 0 + 12 * TileNumX + TileNumY * 24);
             TileNumX++;
             return ret;
         }
@@ -47,7 +47,7 @@ namespace Fo2
                 HexNumYfast = 0;
             }
             if (HexNumYfast == 2) { HexAdjX += 16; HexAdjY += 12; HexNumYfast = 0; }
-            Vector2 ret = new Vector2(((MapZeroCoordinate + 80 - 32) - HexNumX * 32 + 16 * HexNumY) + HexAdjX, (0 + HexNumY * 12) + HexAdjY);
+            Vector2 ret = new Vector2(((MapZeroCoordinate - 80 + 16 + 32) - HexNumX * 32 + 16 * HexNumY) + HexAdjX, (0 + HexNumY * 12) + HexAdjY);
             HexNumYfast++;
             HexNumX++;
             return ret;

@@ -20,6 +20,9 @@ namespace Fo2
         private SpriteFont tempFont;
         private Texture2D _scenary;
 
+        private int _scenaryMoveX = -327;
+        private int _scenaryMoveY = 1566;
+
         public static Texture2D BlankTexture { get; private set; }
 
         public FOStart()
@@ -69,8 +72,8 @@ namespace Fo2
             BlankTexture.SetData(new Color[] { Color.White });
             HelperFuncts.blankTexture = BlankTexture;
 
-            byte[] bytes = File.ReadAllBytes(@"C:\!tmp\f2\data\maps\artemple.map");
-            string[] tilesNames = File.ReadAllLines(@"C:\!tmp\f2\data\art\tiles\tiles.lst");
+            byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
+            string[] tilesNames = File.ReadAllLines(@"Content/art/tiles/tiles.lst");
             _texturesList = new Texture2D[tilesNames.Length];
             _sequence = new int[10000];
 
@@ -88,7 +91,7 @@ namespace Fo2
                 if (_texturesList[positionInTheList] == null) {
                     try
                     {
-                        _texturesList[positionInTheList] = Content.Load<Texture2D>("bmp/"+tilesNames[positionInTheList].Substring(0, tilesNames[positionInTheList].Length - 4));
+                        _texturesList[positionInTheList] = Content.Load<Texture2D>("art/tiles/"+tilesNames[positionInTheList].Substring(0, tilesNames[positionInTheList].Length - 4));
                     }
                     catch (System.Exception)
                     {
@@ -99,7 +102,8 @@ namespace Fo2
                 
             }
 
-            _scenary = Content.Load<Texture2D>("scenary/firpit01_000");
+            _scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
+            //_scenary = Content.Load<Texture2D>("unt1");
 
             // TODO: use this.Content to load your game content here
         }
@@ -124,8 +128,20 @@ namespace Fo2
                 Exit();
 
 
+           
+
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             var keyboardState = Keyboard.GetState();
+
+
+            if (keyboardState.IsKeyDown(Keys.H))
+                _scenaryMoveX--;
+            if (keyboardState.IsKeyDown(Keys.K))
+                _scenaryMoveX++;
+            if (keyboardState.IsKeyDown(Keys.U))
+                _scenaryMoveY--;
+            if (keyboardState.IsKeyDown(Keys.J))
+                _scenaryMoveY++;
 
             // rotation
             if (keyboardState.IsKeyDown(Keys.Q))
@@ -133,6 +149,13 @@ namespace Fo2
 
             if (keyboardState.IsKeyDown(Keys.W))
                 _camera.Rotation += deltaTime;
+
+            //zoomation
+            if (keyboardState.IsKeyDown(Keys.A))
+                _camera.ZoomIn(0.3f);
+
+            if (keyboardState.IsKeyDown(Keys.Z))
+                _camera.ZoomOut(0.3f);
 
             // movement
             if (keyboardState.IsKeyDown(Keys.Up))
@@ -174,17 +197,57 @@ namespace Fo2
             }
 
 
-            foreach (var hex in _hexes)
-            {
-                hex.Draw(spriteBatch, tempFont);
-            }
-
-            spriteBatch.Draw(_scenary, new Rectangle((int)(_hexes[17278]._vertexes[0].X) , (int)(_hexes[17278]._vertexes[0].Y), _scenary.Width, _scenary.Height), Color.White);
-
-            spriteBatch.DrawString(tempFont, "X=" + Mouse.GetState().Position.X.ToString(), new Vector2(700, 20), Color.White);
-            spriteBatch.DrawString(tempFont, "Y=" + Mouse.GetState().Position.Y.ToString(), new Vector2(700, 40), Color.White);
+            //spriteBatch.Draw(_scenary, new Rectangle(_scenaryMoveX, _scenaryMoveY, _scenary.Width, _scenary.Height), Color.White);
 
 
+            //foreach (var hex in _hexes)
+            //{
+            //    hex.Draw(spriteBatch, tempFont);
+            //}
+
+            spriteBatch.Draw(_scenary, new Rectangle((int)(_hexes[17294]._vertexes[4].X)-2 , (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height, _scenary.Width, _scenary.Height), Color.White);
+
+
+
+
+
+
+
+
+            spriteBatch.DrawString(tempFont, "screen X=" + Mouse.GetState().Position.X.ToString(), _camera.ScreenToWorld(new Vector2(700, 20)), Color.White);
+            spriteBatch.DrawString(tempFont, "screen Y=" + Mouse.GetState().Position.Y.ToString(), _camera.ScreenToWorld(new Vector2(700, 40)), Color.White);
+
+            spriteBatch.DrawString(tempFont, "world X=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).X, _camera.ScreenToWorld(new Vector2(700, 60)), Color.White);
+            spriteBatch.DrawString(tempFont, "world Y=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).Y, _camera.ScreenToWorld(new Vector2(700, 80)), Color.White);
+
+            
+            
+
+            spriteBatch.DrawString(tempFont, "obj X=" + _scenaryMoveX, _camera.ScreenToWorld(new Vector2(700, 80)), Color.Red);
+            spriteBatch.DrawString(tempFont, "obj Y=" + _scenaryMoveY, _camera.ScreenToWorld(new Vector2(700, 100)), Color.Red);
+
+
+
+
+
+
+            Vector2[] ver1 = new Vector2[4];
+            ver1[0] = new Vector2(520,0);
+            ver1[1] = new Vector2(600, 0);
+            ver1[2] = new Vector2(600, 36);
+            ver1[3] = new Vector2(520, 36);
+
+
+            HelperFuncts.DrawPolygon(spriteBatch, ver1, 4, Color.White, 1);
+
+            Vector2[] ver2 = new Vector2[4];
+            ver2[0] = new Vector2(568, 0);
+            ver2[1] = new Vector2(600, 0);
+            ver2[2] = new Vector2(600, 16);
+            ver2[3] = new Vector2(568, 16);
+
+
+            HelperFuncts.DrawPolygon(spriteBatch, ver2, 4, Color.White, 1);
 
 
             spriteBatch.End();
