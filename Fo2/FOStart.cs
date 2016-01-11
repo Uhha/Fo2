@@ -17,11 +17,12 @@ namespace Fo2
         int[] _sequence;
         private Camera2D _camera;
         private Hex[] _hexes;
+        private KeyboardState previousState;
         private SpriteFont tempFont;
         private Texture2D _scenary;
 
-        private int _scenaryMoveX = -327;
-        private int _scenaryMoveY = 1566;
+        private float _scenaryMoveX = -327;
+        private float _scenaryMoveY = 1566;
 
         public static Texture2D BlankTexture { get; private set; }
 
@@ -53,7 +54,7 @@ namespace Fo2
                 Vector2 position = HelperFuncts.NextHexPos();
                 _hexes[i] = new Hex(position);
             }
-
+            previousState = Keyboard.GetState();
             base.Initialize();
 
         }
@@ -103,6 +104,12 @@ namespace Fo2
             }
 
             _scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
+            //_scenaryMoveX = (int)(_hexes[17294]._vertexes[4].X) - 2;
+            //_scenaryMoveY = (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height;
+
+            //_scenaryMoveX = (_hexes[17294]._vertexes[0].X) - 17.5f;
+            //_scenaryMoveY = (_hexes[17294]._vertexes[0].Y) - 55 + 12; // 27.5f
+
             //_scenary = Content.Load<Texture2D>("unt1");
 
             // TODO: use this.Content to load your game content here
@@ -134,14 +141,14 @@ namespace Fo2
             var keyboardState = Keyboard.GetState();
 
 
-            if (keyboardState.IsKeyDown(Keys.H))
-                _scenaryMoveX--;
-            if (keyboardState.IsKeyDown(Keys.K))
-                _scenaryMoveX++;
-            if (keyboardState.IsKeyDown(Keys.U))
-                _scenaryMoveY--;
-            if (keyboardState.IsKeyDown(Keys.J))
-                _scenaryMoveY++;
+            if (keyboardState.IsKeyDown(Keys.H) && !previousState.IsKeyDown(Keys.H))
+                _scenaryMoveX -= 0.1f;
+            if (keyboardState.IsKeyDown(Keys.K) && !previousState.IsKeyDown(Keys.K))
+                _scenaryMoveX += 0.1f;
+            if (keyboardState.IsKeyDown(Keys.U) && !previousState.IsKeyDown(Keys.U))
+                _scenaryMoveY -= 0.1f;
+            if (keyboardState.IsKeyDown(Keys.J) && !previousState.IsKeyDown(Keys.J))
+                _scenaryMoveY += 0.1f;
 
             // rotation
             if (keyboardState.IsKeyDown(Keys.Q))
@@ -170,7 +177,8 @@ namespace Fo2
             if (keyboardState.IsKeyDown(Keys.Right))
                 _camera.Position += new Vector2(1250, 0) * deltaTime;
 
-            // TODO: Add your update logic here
+
+            previousState = keyboardState;
 
             base.Update(gameTime);
         }
@@ -200,12 +208,13 @@ namespace Fo2
             //spriteBatch.Draw(_scenary, new Rectangle(_scenaryMoveX, _scenaryMoveY, _scenary.Width, _scenary.Height), Color.White);
 
 
-            //foreach (var hex in _hexes)
-            //{
-            //    hex.Draw(spriteBatch, tempFont);
-            //}
+            foreach (var hex in _hexes)
+            {
+                hex.Draw(spriteBatch, tempFont);
+            }
 
-            spriteBatch.Draw(_scenary, new Rectangle((int)(_hexes[17294]._vertexes[4].X)-2 , (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height, _scenary.Width, _scenary.Height), Color.White);
+            //spriteBatch.Draw(_scenary, new Rectangle((int)(_hexes[17294]._vertexes[4].X)-2 , (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height, _scenary.Width, _scenary.Height), Color.White);
+            spriteBatch.Draw(_scenary, new Vector2(_scenaryMoveX, _scenaryMoveY), Color.White);
 
 
 
