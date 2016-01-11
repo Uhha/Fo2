@@ -103,6 +103,18 @@ namespace Fo2
                 
             }
 
+            //Objs
+            int cnt = 0;
+            for (int i = 59832; i < bytes.Length; i++)
+            {
+
+                int Y1 = bytes[i];
+                int Y2 = bytes[++i];
+                int X1 = bytes[++i];
+                int X2 = bytes[++i];
+                cnt++;
+            }
+
             _scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
             //_scenaryMoveX = (int)(_hexes[17294]._vertexes[4].X) - 2;
             //_scenaryMoveY = (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height;
@@ -232,8 +244,8 @@ namespace Fo2
             
             
 
-            spriteBatch.DrawString(tempFont, "obj X=" + _scenaryMoveX, _camera.ScreenToWorld(new Vector2(700, 80)), Color.Red);
-            spriteBatch.DrawString(tempFont, "obj Y=" + _scenaryMoveY, _camera.ScreenToWorld(new Vector2(700, 100)), Color.Red);
+            spriteBatch.DrawString(tempFont, "obj X=" + _scenaryMoveX, _camera.ScreenToWorld(new Vector2(700, 100)), Color.Red);
+            spriteBatch.DrawString(tempFont, "obj Y=" + _scenaryMoveY, _camera.ScreenToWorld(new Vector2(700, 120)), Color.Red);
 
 
 
