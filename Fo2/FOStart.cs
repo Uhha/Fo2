@@ -2,7 +2,9 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Fo2
 {
@@ -19,7 +21,8 @@ namespace Fo2
         private Hex[] _hexes;
         private KeyboardState previousState;
         private SpriteFont tempFont;
-        private Texture2D _scenary;
+        //private Texture2D _scenary;
+        private LinkedList<ScenaryObject> _scentaryObjects;
 
         private float _scenaryMoveX = -327;
         private float _scenaryMoveY = 1566;
@@ -45,7 +48,8 @@ namespace Fo2
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            
+
+            _scentaryObjects = new LinkedList<ScenaryObject>();
             _camera = new Camera2D(GraphicsDevice);
             _camera.Position = new Vector2(-400,1400);
             _hexes = new Hex[40000];
@@ -54,7 +58,29 @@ namespace Fo2
                 Vector2 position = HelperFuncts.NextHexPos();
                 _hexes[i] = new Hex(position);
             }
+
+
+            //for (var i = 0; i < 40000; i++)
+            //{
+            //    var x = 200 - (i % 200);
+            //    var y = i / 200;
+            //    var mod = 0;
+            //    if (x % 2 == 0)
+            //    {
+            //        mod = 1;
+            //    }
+
+            //    var xpos =( (x * 24) + ((mod) * 8) + (y * 16) + 41 ) -4800;
+
+            //    var ypos = ((200 - x) * 6) + ((mod) * 6) + (y * 12) - 9;
+            //    _hexes[i] = new Hex(new Vector2(xpos,ypos));
+            //}
+
+
             previousState = Keyboard.GetState();
+
+
+
             base.Initialize();
 
         }
@@ -73,7 +99,8 @@ namespace Fo2
             BlankTexture.SetData(new Color[] { Color.White });
             HelperFuncts.blankTexture = BlankTexture;
 
-            byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
+            //byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
+            byte[] bytes = File.ReadAllBytes(@"Content/maps/miniart3.map");
             string[] tilesNames = File.ReadAllLines(@"Content/art/tiles/tiles.lst");
             _texturesList = new Texture2D[tilesNames.Length];
             _sequence = new int[10000];
@@ -104,18 +131,29 @@ namespace Fo2
             }
 
             //Objs
+            string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray(); 
             int cnt = 0;
-            for (int i = 59832; i < bytes.Length; i++)
+            for (int i = 42328; i < bytes.Length && cnt < 11; i+=88) // 46408
             {
 
-                int Y1 = bytes[i];
-                int Y2 = bytes[++i];
-                int X1 = bytes[++i];
-                int X2 = bytes[++i];
+                int x1 = bytes[i+6];
+                int x2 = bytes[i+7];
+                int onTheMap = (x1 * 16 * 16 + x2) + 0;
+
+                int y1 = bytes[i + 34];
+                int y2 = bytes[i + 35];
+                int positionInTheList = (y1 * 16 * 16 + y2) + 0;
+                if (bytes[i + 44] == 2)
+                {
+                    _scentaryObjects.AddFirst(ObjectFactory.GetScenaryObject(onTheMap, positionInTheList, objNames, _hexes, Content));
+                }
                 cnt++;
             }
 
-            _scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
+            //_scenaryMoveX = _scentaryObjects.ElementAt<ScenaryObject>(44).Position.X;
+           // _scenaryMoveY = _scentaryObjects.ElementAt<ScenaryObject>(44).Position.Y;
+
+            //_scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
             //_scenaryMoveX = (int)(_hexes[17294]._vertexes[4].X) - 2;
             //_scenaryMoveY = (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height;
 
@@ -154,13 +192,13 @@ namespace Fo2
 
 
             if (keyboardState.IsKeyDown(Keys.H) && !previousState.IsKeyDown(Keys.H))
-                _scenaryMoveX -= 0.1f;
+                _scenaryMoveX -=  1f;
             if (keyboardState.IsKeyDown(Keys.K) && !previousState.IsKeyDown(Keys.K))
-                _scenaryMoveX += 0.1f;
+                _scenaryMoveX +=  1f;
             if (keyboardState.IsKeyDown(Keys.U) && !previousState.IsKeyDown(Keys.U))
-                _scenaryMoveY -= 0.1f;
+                _scenaryMoveY -=  1f;
             if (keyboardState.IsKeyDown(Keys.J) && !previousState.IsKeyDown(Keys.J))
-                _scenaryMoveY += 0.1f;
+                _scenaryMoveY +=  1f;
 
             // rotation
             if (keyboardState.IsKeyDown(Keys.Q))
@@ -171,10 +209,10 @@ namespace Fo2
 
             //zoomation
             if (keyboardState.IsKeyDown(Keys.A))
-                _camera.ZoomIn(0.3f);
+                _camera.ZoomIn(0.8f);
 
             if (keyboardState.IsKeyDown(Keys.Z))
-                _camera.ZoomOut(0.3f);
+                _camera.ZoomOut(0.8f);
 
             // movement
             if (keyboardState.IsKeyDown(Keys.Up))
@@ -189,6 +227,8 @@ namespace Fo2
             if (keyboardState.IsKeyDown(Keys.Right))
                 _camera.Position += new Vector2(1250, 0) * deltaTime;
 
+
+            //_scentaryObjects.ElementAt<ScenaryObject>(44).Position = new Vector2(_scenaryMoveX, _scenaryMoveY);
 
             previousState = keyboardState;
 
@@ -219,6 +259,10 @@ namespace Fo2
 
             //spriteBatch.Draw(_scenary, new Rectangle(_scenaryMoveX, _scenaryMoveY, _scenary.Width, _scenary.Height), Color.White);
 
+            foreach (var so in _scentaryObjects)
+            {
+                so.Draw(spriteBatch, tempFont);
+            }
 
             foreach (var hex in _hexes)
             {
@@ -226,7 +270,7 @@ namespace Fo2
             }
 
             //spriteBatch.Draw(_scenary, new Rectangle((int)(_hexes[17294]._vertexes[4].X)-2 , (int)(_hexes[17294]._vertexes[4].Y) - _scenary.Height, _scenary.Width, _scenary.Height), Color.White);
-            spriteBatch.Draw(_scenary, new Vector2(_scenaryMoveX, _scenaryMoveY), Color.White);
+            //spriteBatch.Draw(_scenary, new Vector2(_scenaryMoveX, _scenaryMoveY), Color.White);
 
 
 
@@ -249,7 +293,7 @@ namespace Fo2
 
 
 
-
+            
 
 
             Vector2[] ver1 = new Vector2[4];

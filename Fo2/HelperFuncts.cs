@@ -19,7 +19,7 @@ namespace Fo2
 
 
         public static Texture2D blankTexture;
-        public const int MapZeroCoordinate = 600;
+        public const int MapZeroCoordinate = 0;
 
 
 
@@ -47,7 +47,7 @@ namespace Fo2
                 HexNumYfast = 0;
             }
             if (HexNumYfast == 2) { HexAdjX += 16; HexAdjY += 12; HexNumYfast = 0; }
-            Vector2 ret = new Vector2(((MapZeroCoordinate - 80 + 16 + 32) - HexNumX * 32 + 16 * HexNumY) + HexAdjX, (0 + HexNumY * 12) + HexAdjY);
+            Vector2 ret = new Vector2(((MapZeroCoordinate - 80 + 16 + 32 ) - HexNumX * 32 + 16 * HexNumY) + HexAdjX, (0 + HexNumY * 12) + HexAdjY);
             HexNumYfast++;
             HexNumX++;
             return ret;

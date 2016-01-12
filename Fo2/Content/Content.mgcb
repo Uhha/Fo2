@@ -61438,3 +61438,15 @@
 /processorParam:TextureFormat=Color
 /build:unt1.bmp
 
+#begin art/scenary/SCENERY.LST
+/copy:art/scenary/SCENERY.LST
+
+#begin maps/miniart.map
+/copy:maps/miniart.map
+
+#begin maps/miniart2.map
+/copy:maps/miniart2.map
+
+#begin maps/miniart3.map
+/copy:maps/miniart3.map
+

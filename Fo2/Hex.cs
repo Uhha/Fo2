@@ -37,7 +37,7 @@ namespace Fo2
         public void Draw(SpriteBatch spriteBatch, SpriteFont tempFont)
         {
             //HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.White, 1);
-            if (_actualNum == 17294) //17278
+            if (_actualNum == 14870 || _actualNum == 14276 || _actualNum == 3826 || _actualNum == 1 || _actualNum == 0 || _actualNum == 2) //17278 //17294
             {  //x39 y86
                 spriteBatch.DrawString(tempFont, _actualNum.ToString(), new Vector2(Position.X + 14, Position.Y + 6), Color.White);
                 HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.Red, 1);
