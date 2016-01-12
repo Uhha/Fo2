@@ -26,6 +26,8 @@ namespace Fo2
 
         private float _scenaryMoveX = -327;
         private float _scenaryMoveY = 1566;
+        private float _scenaryMoveXX = -327;
+        private float _scenaryMoveYY = 1566;
 
         public static Texture2D BlankTexture { get; private set; }
 
@@ -117,15 +119,7 @@ namespace Fo2
                 _sequence[j] = positionInTheList;
                 j++;
                 if (_texturesList[positionInTheList] == null) {
-                    try
-                    {
                         _texturesList[positionInTheList] = Content.Load<Texture2D>("art/tiles/"+tilesNames[positionInTheList].Substring(0, tilesNames[positionInTheList].Length - 4));
-                    }
-                    catch (System.Exception)
-                    {
-                       _texturesList[positionInTheList] = Content.Load<Texture2D>(tilesNames[positionInTheList].Substring(0, tilesNames[positionInTheList].Length - 4).ToUpper());
-
-                    }
                 } 
                 
             }
@@ -150,8 +144,11 @@ namespace Fo2
                 cnt++;
             }
 
-            //_scenaryMoveX = _scentaryObjects.ElementAt<ScenaryObject>(44).Position.X;
-           // _scenaryMoveY = _scentaryObjects.ElementAt<ScenaryObject>(44).Position.Y;
+            _scenaryMoveX = _scentaryObjects.ElementAt<ScenaryObject>(4).Position.X;
+            _scenaryMoveY = _scentaryObjects.ElementAt<ScenaryObject>(4).Position.Y;
+
+            _scenaryMoveXX = _scentaryObjects.ElementAt<ScenaryObject>(6).Position.X;
+            _scenaryMoveYY = _scentaryObjects.ElementAt<ScenaryObject>(6).Position.Y;
 
             //_scenary = Content.Load<Texture2D>("art/scenary/firpit01_000");
             //_scenaryMoveX = (int)(_hexes[17294]._vertexes[4].X) - 2;
@@ -192,27 +189,38 @@ namespace Fo2
 
 
             if (keyboardState.IsKeyDown(Keys.H) && !previousState.IsKeyDown(Keys.H))
-                _scenaryMoveX -=  1f;
+                _scenaryMoveXX -=  1f;
             if (keyboardState.IsKeyDown(Keys.K) && !previousState.IsKeyDown(Keys.K))
-                _scenaryMoveX +=  1f;
+                _scenaryMoveXX +=  1f;
             if (keyboardState.IsKeyDown(Keys.U) && !previousState.IsKeyDown(Keys.U))
-                _scenaryMoveY -=  1f;
+                _scenaryMoveYY -=  1f;
             if (keyboardState.IsKeyDown(Keys.J) && !previousState.IsKeyDown(Keys.J))
-                _scenaryMoveY +=  1f;
+                _scenaryMoveYY +=  1f;
 
-            // rotation
-            if (keyboardState.IsKeyDown(Keys.Q))
-                _camera.Rotation -= deltaTime;
+            if (keyboardState.IsKeyDown(Keys.A) && !previousState.IsKeyDown(Keys.A))
+                _scenaryMoveX -= 1f;
+            if (keyboardState.IsKeyDown(Keys.D) && !previousState.IsKeyDown(Keys.D))
+                _scenaryMoveX += 1f;
+            if (keyboardState.IsKeyDown(Keys.W) && !previousState.IsKeyDown(Keys.W))
+                _scenaryMoveY -= 1f;
+            if (keyboardState.IsKeyDown(Keys.S) && !previousState.IsKeyDown(Keys.S))
+                _scenaryMoveY += 1f;
 
-            if (keyboardState.IsKeyDown(Keys.W))
-                _camera.Rotation += deltaTime;
+
+
+            //// rotation
+            //if (keyboardState.IsKeyDown(Keys.Q))
+            //    _camera.Rotation -= deltaTime;
+
+            //if (keyboardState.IsKeyDown(Keys.W))
+            //    _camera.Rotation += deltaTime;
 
             //zoomation
-            if (keyboardState.IsKeyDown(Keys.A))
-                _camera.ZoomIn(0.8f);
+            if (keyboardState.IsKeyDown(Keys.X))
+                _camera.ZoomIn(0.08f);
 
             if (keyboardState.IsKeyDown(Keys.Z))
-                _camera.ZoomOut(0.8f);
+                _camera.ZoomOut(0.08f);
 
             // movement
             if (keyboardState.IsKeyDown(Keys.Up))
@@ -228,7 +236,8 @@ namespace Fo2
                 _camera.Position += new Vector2(1250, 0) * deltaTime;
 
 
-            //_scentaryObjects.ElementAt<ScenaryObject>(44).Position = new Vector2(_scenaryMoveX, _scenaryMoveY);
+            _scentaryObjects.ElementAt<ScenaryObject>(4).Position = new Vector2(_scenaryMoveX, _scenaryMoveY);
+            _scentaryObjects.ElementAt<ScenaryObject>(6).Position = new Vector2(_scenaryMoveXX, _scenaryMoveYY);
 
             previousState = keyboardState;
 

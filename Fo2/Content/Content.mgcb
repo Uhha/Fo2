@@ -61450,3 +61450,5592 @@
 #begin maps/miniart3.map
 /copy:maps/miniart3.map
 
+#begin art/scenary/inf/ABOMB1.inf
+/copy:art/scenary/inf/ABOMB1.inf
+
+#begin art/scenary/inf/ABOMB2.inf
+/copy:art/scenary/inf/ABOMB2.inf
+
+#begin art/scenary/inf/acavedr1.inf
+/copy:art/scenary/inf/acavedr1.inf
+
+#begin art/scenary/inf/acavedr2.inf
+/copy:art/scenary/inf/acavedr2.inf
+
+#begin art/scenary/inf/acavedr3.inf
+/copy:art/scenary/inf/acavedr3.inf
+
+#begin art/scenary/inf/acavedr4.inf
+/copy:art/scenary/inf/acavedr4.inf
+
+#begin art/scenary/inf/acavedr5.inf
+/copy:art/scenary/inf/acavedr5.inf
+
+#begin art/scenary/inf/ACOMP.inf
+/copy:art/scenary/inf/ACOMP.inf
+
+#begin art/scenary/inf/ALTAR1.inf
+/copy:art/scenary/inf/ALTAR1.inf
+
+#begin art/scenary/inf/ALTAR2.inf
+/copy:art/scenary/inf/ALTAR2.inf
+
+#begin art/scenary/inf/ALTAR3.inf
+/copy:art/scenary/inf/ALTAR3.inf
+
+#begin art/scenary/inf/arbridg1.inf
+/copy:art/scenary/inf/arbridg1.inf
+
+#begin art/scenary/inf/arbridg2.inf
+/copy:art/scenary/inf/arbridg2.inf
+
+#begin art/scenary/inf/arbridg3.inf
+/copy:art/scenary/inf/arbridg3.inf
+
+#begin art/scenary/inf/ARHOLE1.inf
+/copy:art/scenary/inf/ARHOLE1.inf
+
+#begin art/scenary/inf/ARHOLE2.inf
+/copy:art/scenary/inf/ARHOLE2.inf
+
+#begin art/scenary/inf/ARHOLE3.inf
+/copy:art/scenary/inf/ARHOLE3.inf
+
+#begin art/scenary/inf/ARHOLE4.inf
+/copy:art/scenary/inf/ARHOLE4.inf
+
+#begin art/scenary/inf/AROW01.inf
+/copy:art/scenary/inf/AROW01.inf
+
+#begin art/scenary/inf/AROW02.inf
+/copy:art/scenary/inf/AROW02.inf
+
+#begin art/scenary/inf/ARROW1.inf
+/copy:art/scenary/inf/ARROW1.inf
+
+#begin art/scenary/inf/ARROW2.inf
+/copy:art/scenary/inf/ARROW2.inf
+
+#begin art/scenary/inf/ARROW3.inf
+/copy:art/scenary/inf/ARROW3.inf
+
+#begin art/scenary/inf/ARROW4.inf
+/copy:art/scenary/inf/ARROW4.inf
+
+#begin art/scenary/inf/ARROW5.inf
+/copy:art/scenary/inf/ARROW5.inf
+
+#begin art/scenary/inf/arwlsc01.inf
+/copy:art/scenary/inf/arwlsc01.inf
+
+#begin art/scenary/inf/arwlsc02.inf
+/copy:art/scenary/inf/arwlsc02.inf
+
+#begin art/scenary/inf/arwlsc03.inf
+/copy:art/scenary/inf/arwlsc03.inf
+
+#begin art/scenary/inf/arwlsc04.inf
+/copy:art/scenary/inf/arwlsc04.inf
+
+#begin art/scenary/inf/arwlsc05.inf
+/copy:art/scenary/inf/arwlsc05.inf
+
+#begin art/scenary/inf/arwlsc06.inf
+/copy:art/scenary/inf/arwlsc06.inf
+
+#begin art/scenary/inf/arwlsc07.inf
+/copy:art/scenary/inf/arwlsc07.inf
+
+#begin art/scenary/inf/arwlsc08.inf
+/copy:art/scenary/inf/arwlsc08.inf
+
+#begin art/scenary/inf/arwlsc09.inf
+/copy:art/scenary/inf/arwlsc09.inf
+
+#begin art/scenary/inf/arwlsc10.inf
+/copy:art/scenary/inf/arwlsc10.inf
+
+#begin art/scenary/inf/arwlsc11.inf
+/copy:art/scenary/inf/arwlsc11.inf
+
+#begin art/scenary/inf/arwlsc12.inf
+/copy:art/scenary/inf/arwlsc12.inf
+
+#begin art/scenary/inf/arwlsc13.inf
+/copy:art/scenary/inf/arwlsc13.inf
+
+#begin art/scenary/inf/arwlsc14.inf
+/copy:art/scenary/inf/arwlsc14.inf
+
+#begin art/scenary/inf/atorch1.inf
+/copy:art/scenary/inf/atorch1.inf
+
+#begin art/scenary/inf/atorch2.inf
+/copy:art/scenary/inf/atorch2.inf
+
+#begin art/scenary/inf/atorch3.inf
+/copy:art/scenary/inf/atorch3.inf
+
+#begin art/scenary/inf/atorch4.inf
+/copy:art/scenary/inf/atorch4.inf
+
+#begin art/scenary/inf/atorch5.inf
+/copy:art/scenary/inf/atorch5.inf
+
+#begin art/scenary/inf/atorch6.inf
+/copy:art/scenary/inf/atorch6.inf
+
+#begin art/scenary/inf/AWIRE.inf
+/copy:art/scenary/inf/AWIRE.inf
+
+#begin art/scenary/inf/AWPC.inf
+/copy:art/scenary/inf/AWPC.inf
+
+#begin art/scenary/inf/aybed1.inf
+/copy:art/scenary/inf/aybed1.inf
+
+#begin art/scenary/inf/aybed2.inf
+/copy:art/scenary/inf/aybed2.inf
+
+#begin art/scenary/inf/aybridg1.inf
+/copy:art/scenary/inf/aybridg1.inf
+
+#begin art/scenary/inf/aybridg2.inf
+/copy:art/scenary/inf/aybridg2.inf
+
+#begin art/scenary/inf/aybridg3.inf
+/copy:art/scenary/inf/aybridg3.inf
+
+#begin art/scenary/inf/aybridg4.inf
+/copy:art/scenary/inf/aybridg4.inf
+
+#begin art/scenary/inf/aybridg5.inf
+/copy:art/scenary/inf/aybridg5.inf
+
+#begin art/scenary/inf/aybridg6.inf
+/copy:art/scenary/inf/aybridg6.inf
+
+#begin art/scenary/inf/aybridg7.inf
+/copy:art/scenary/inf/aybridg7.inf
+
+#begin art/scenary/inf/aybridg8.inf
+/copy:art/scenary/inf/aybridg8.inf
+
+#begin art/scenary/inf/BANNER01.inf
+/copy:art/scenary/inf/BANNER01.inf
+
+#begin art/scenary/inf/BANNER02.inf
+/copy:art/scenary/inf/BANNER02.inf
+
+#begin art/scenary/inf/BANNER03.inf
+/copy:art/scenary/inf/BANNER03.inf
+
+#begin art/scenary/inf/BANNER04.inf
+/copy:art/scenary/inf/BANNER04.inf
+
+#begin art/scenary/inf/BANNER05.inf
+/copy:art/scenary/inf/BANNER05.inf
+
+#begin art/scenary/inf/BANNER06.inf
+/copy:art/scenary/inf/BANNER06.inf
+
+#begin art/scenary/inf/BANNER07.inf
+/copy:art/scenary/inf/BANNER07.inf
+
+#begin art/scenary/inf/BANNER08.inf
+/copy:art/scenary/inf/BANNER08.inf
+
+#begin art/scenary/inf/BANNER09.inf
+/copy:art/scenary/inf/BANNER09.inf
+
+#begin art/scenary/inf/BANNER10.inf
+/copy:art/scenary/inf/BANNER10.inf
+
+#begin art/scenary/inf/BANNER11.inf
+/copy:art/scenary/inf/BANNER11.inf
+
+#begin art/scenary/inf/BANNER12.inf
+/copy:art/scenary/inf/BANNER12.inf
+
+#begin art/scenary/inf/BANNER13.inf
+/copy:art/scenary/inf/BANNER13.inf
+
+#begin art/scenary/inf/BANNER14.inf
+/copy:art/scenary/inf/BANNER14.inf
+
+#begin art/scenary/inf/BAR01.inf
+/copy:art/scenary/inf/BAR01.inf
+
+#begin art/scenary/inf/BARREL.inf
+/copy:art/scenary/inf/BARREL.inf
+
+#begin art/scenary/inf/BARREL2.inf
+/copy:art/scenary/inf/BARREL2.inf
+
+#begin art/scenary/inf/BARREL3.inf
+/copy:art/scenary/inf/BARREL3.inf
+
+#begin art/scenary/inf/BARREL4.inf
+/copy:art/scenary/inf/BARREL4.inf
+
+#begin art/scenary/inf/BARREL5.inf
+/copy:art/scenary/inf/BARREL5.inf
+
+#begin art/scenary/inf/BARREL6.inf
+/copy:art/scenary/inf/BARREL6.inf
+
+#begin art/scenary/inf/BARREL7.inf
+/copy:art/scenary/inf/BARREL7.inf
+
+#begin art/scenary/inf/BARSIGN.inf
+/copy:art/scenary/inf/BARSIGN.inf
+
+#begin art/scenary/inf/BATH01.inf
+/copy:art/scenary/inf/BATH01.inf
+
+#begin art/scenary/inf/BATH02.inf
+/copy:art/scenary/inf/BATH02.inf
+
+#begin art/scenary/inf/BATH03.inf
+/copy:art/scenary/inf/BATH03.inf
+
+#begin art/scenary/inf/BATH04.inf
+/copy:art/scenary/inf/BATH04.inf
+
+#begin art/scenary/inf/BATH05.inf
+/copy:art/scenary/inf/BATH05.inf
+
+#begin art/scenary/inf/BATH06.inf
+/copy:art/scenary/inf/BATH06.inf
+
+#begin art/scenary/inf/BATH07.inf
+/copy:art/scenary/inf/BATH07.inf
+
+#begin art/scenary/inf/BATH08.inf
+/copy:art/scenary/inf/BATH08.inf
+
+#begin art/scenary/inf/BATH09.inf
+/copy:art/scenary/inf/BATH09.inf
+
+#begin art/scenary/inf/BATH10.inf
+/copy:art/scenary/inf/BATH10.inf
+
+#begin art/scenary/inf/BATH11.inf
+/copy:art/scenary/inf/BATH11.inf
+
+#begin art/scenary/inf/BATH12.inf
+/copy:art/scenary/inf/BATH12.inf
+
+#begin art/scenary/inf/BATH13.inf
+/copy:art/scenary/inf/BATH13.inf
+
+#begin art/scenary/inf/BATH14.inf
+/copy:art/scenary/inf/BATH14.inf
+
+#begin art/scenary/inf/BATH20.inf
+/copy:art/scenary/inf/BATH20.inf
+
+#begin art/scenary/inf/BEAM.inf
+/copy:art/scenary/inf/BEAM.inf
+
+#begin art/scenary/inf/BEAMROPE.inf
+/copy:art/scenary/inf/BEAMROPE.inf
+
+#begin art/scenary/inf/BED1.inf
+/copy:art/scenary/inf/BED1.inf
+
+#begin art/scenary/inf/BED2.inf
+/copy:art/scenary/inf/BED2.inf
+
+#begin art/scenary/inf/BED3.inf
+/copy:art/scenary/inf/BED3.inf
+
+#begin art/scenary/inf/BED4.inf
+/copy:art/scenary/inf/BED4.inf
+
+#begin art/scenary/inf/BED5.inf
+/copy:art/scenary/inf/BED5.inf
+
+#begin art/scenary/inf/BED6.inf
+/copy:art/scenary/inf/BED6.inf
+
+#begin art/scenary/inf/BED7.inf
+/copy:art/scenary/inf/BED7.inf
+
+#begin art/scenary/inf/BED8.inf
+/copy:art/scenary/inf/BED8.inf
+
+#begin art/scenary/inf/BEDCHLD1.inf
+/copy:art/scenary/inf/BEDCHLD1.inf
+
+#begin art/scenary/inf/BEDCHLD2.inf
+/copy:art/scenary/inf/BEDCHLD2.inf
+
+#begin art/scenary/inf/BEDMILT1.inf
+/copy:art/scenary/inf/BEDMILT1.inf
+
+#begin art/scenary/inf/BEDMILT2.inf
+/copy:art/scenary/inf/BEDMILT2.inf
+
+#begin art/scenary/inf/BEDMILT3.inf
+/copy:art/scenary/inf/BEDMILT3.inf
+
+#begin art/scenary/inf/BEDMILT4.inf
+/copy:art/scenary/inf/BEDMILT4.inf
+
+#begin art/scenary/inf/BEDMILT5.inf
+/copy:art/scenary/inf/BEDMILT5.inf
+
+#begin art/scenary/inf/bigcomp1.inf
+/copy:art/scenary/inf/bigcomp1.inf
+
+#begin art/scenary/inf/BIGCOMP2.inf
+/copy:art/scenary/inf/BIGCOMP2.inf
+
+#begin art/scenary/inf/bigcomp3.inf
+/copy:art/scenary/inf/bigcomp3.inf
+
+#begin art/scenary/inf/BIGSHLF1.inf
+/copy:art/scenary/inf/BIGSHLF1.inf
+
+#begin art/scenary/inf/BIGSHLF2.inf
+/copy:art/scenary/inf/BIGSHLF2.inf
+
+#begin art/scenary/inf/BIGSHLF3.inf
+/copy:art/scenary/inf/BIGSHLF3.inf
+
+#begin art/scenary/inf/BIGSHLF4.inf
+/copy:art/scenary/inf/BIGSHLF4.inf
+
+#begin art/scenary/inf/BKSHLF1.inf
+/copy:art/scenary/inf/BKSHLF1.inf
+
+#begin art/scenary/inf/BKSHLF2.inf
+/copy:art/scenary/inf/BKSHLF2.inf
+
+#begin art/scenary/inf/BKSHLF3.inf
+/copy:art/scenary/inf/BKSHLF3.inf
+
+#begin art/scenary/inf/BKSHLF4.inf
+/copy:art/scenary/inf/BKSHLF4.inf
+
+#begin art/scenary/inf/BKSHLF5.inf
+/copy:art/scenary/inf/BKSHLF5.inf
+
+#begin art/scenary/inf/BKSHLF6.inf
+/copy:art/scenary/inf/BKSHLF6.inf
+
+#begin art/scenary/inf/BLADSIGN.inf
+/copy:art/scenary/inf/BLADSIGN.inf
+
+#begin art/scenary/inf/BLKEXIT.inf
+/copy:art/scenary/inf/BLKEXIT.inf
+
+#begin art/scenary/inf/BLOCK.inf
+/copy:art/scenary/inf/BLOCK.inf
+
+#begin art/scenary/inf/BLOCK2.inf
+/copy:art/scenary/inf/BLOCK2.inf
+
+#begin art/scenary/inf/BLOCK3.inf
+/copy:art/scenary/inf/BLOCK3.inf
+
+#begin art/scenary/inf/BLOCK4.inf
+/copy:art/scenary/inf/BLOCK4.inf
+
+#begin art/scenary/inf/BLOCK5.inf
+/copy:art/scenary/inf/BLOCK5.inf
+
+#begin art/scenary/inf/BLOOD01.inf
+/copy:art/scenary/inf/BLOOD01.inf
+
+#begin art/scenary/inf/BLOOD02.inf
+/copy:art/scenary/inf/BLOOD02.inf
+
+#begin art/scenary/inf/BLOOD03.inf
+/copy:art/scenary/inf/BLOOD03.inf
+
+#begin art/scenary/inf/BLOOD04.inf
+/copy:art/scenary/inf/BLOOD04.inf
+
+#begin art/scenary/inf/BLOOD05.inf
+/copy:art/scenary/inf/BLOOD05.inf
+
+#begin art/scenary/inf/BLOOD06.inf
+/copy:art/scenary/inf/BLOOD06.inf
+
+#begin art/scenary/inf/BLOOD07.inf
+/copy:art/scenary/inf/BLOOD07.inf
+
+#begin art/scenary/inf/BLOOD08.inf
+/copy:art/scenary/inf/BLOOD08.inf
+
+#begin art/scenary/inf/BLOOD09.inf
+/copy:art/scenary/inf/BLOOD09.inf
+
+#begin art/scenary/inf/BOKCAS1.inf
+/copy:art/scenary/inf/BOKCAS1.inf
+
+#begin art/scenary/inf/BOKCAS2.inf
+/copy:art/scenary/inf/BOKCAS2.inf
+
+#begin art/scenary/inf/BOKCAS3.inf
+/copy:art/scenary/inf/BOKCAS3.inf
+
+#begin art/scenary/inf/BOKCAS5.inf
+/copy:art/scenary/inf/BOKCAS5.inf
+
+#begin art/scenary/inf/BOKCAS6.inf
+/copy:art/scenary/inf/BOKCAS6.inf
+
+#begin art/scenary/inf/BOKCAS7.inf
+/copy:art/scenary/inf/BOKCAS7.inf
+
+#begin art/scenary/inf/BONE01.inf
+/copy:art/scenary/inf/BONE01.inf
+
+#begin art/scenary/inf/BONE02.inf
+/copy:art/scenary/inf/BONE02.inf
+
+#begin art/scenary/inf/BONE03.inf
+/copy:art/scenary/inf/BONE03.inf
+
+#begin art/scenary/inf/BONE04.inf
+/copy:art/scenary/inf/BONE04.inf
+
+#begin art/scenary/inf/BONE05.inf
+/copy:art/scenary/inf/BONE05.inf
+
+#begin art/scenary/inf/BOSSLEGS.inf
+/copy:art/scenary/inf/BOSSLEGS.inf
+
+#begin art/scenary/inf/BOWL1.inf
+/copy:art/scenary/inf/BOWL1.inf
+
+#begin art/scenary/inf/BOWL2.inf
+/copy:art/scenary/inf/BOWL2.inf
+
+#begin art/scenary/inf/BOX01.inf
+/copy:art/scenary/inf/BOX01.inf
+
+#begin art/scenary/inf/BOX02.inf
+/copy:art/scenary/inf/BOX02.inf
+
+#begin art/scenary/inf/BOX03.inf
+/copy:art/scenary/inf/BOX03.inf
+
+#begin art/scenary/inf/BOX04.inf
+/copy:art/scenary/inf/BOX04.inf
+
+#begin art/scenary/inf/BOX05.inf
+/copy:art/scenary/inf/BOX05.inf
+
+#begin art/scenary/inf/BOX06.inf
+/copy:art/scenary/inf/BOX06.inf
+
+#begin art/scenary/inf/BOX07.inf
+/copy:art/scenary/inf/BOX07.inf
+
+#begin art/scenary/inf/BOX08.inf
+/copy:art/scenary/inf/BOX08.inf
+
+#begin art/scenary/inf/BOXES1.inf
+/copy:art/scenary/inf/BOXES1.inf
+
+#begin art/scenary/inf/BOXES2.inf
+/copy:art/scenary/inf/BOXES2.inf
+
+#begin art/scenary/inf/BOXES3.inf
+/copy:art/scenary/inf/BOXES3.inf
+
+#begin art/scenary/inf/BOXES4.inf
+/copy:art/scenary/inf/BOXES4.inf
+
+#begin art/scenary/inf/BRACE1.inf
+/copy:art/scenary/inf/BRACE1.inf
+
+#begin art/scenary/inf/BRACE2.inf
+/copy:art/scenary/inf/BRACE2.inf
+
+#begin art/scenary/inf/BRACE3.inf
+/copy:art/scenary/inf/BRACE3.inf
+
+#begin art/scenary/inf/BRACE4.inf
+/copy:art/scenary/inf/BRACE4.inf
+
+#begin art/scenary/inf/BRL1000.inf
+/copy:art/scenary/inf/BRL1000.inf
+
+#begin art/scenary/inf/BRL2000.inf
+/copy:art/scenary/inf/BRL2000.inf
+
+#begin art/scenary/inf/BRNDOR01.inf
+/copy:art/scenary/inf/BRNDOR01.inf
+
+#begin art/scenary/inf/BRNDOR02.inf
+/copy:art/scenary/inf/BRNDOR02.inf
+
+#begin art/scenary/inf/BROKHOL1.inf
+/copy:art/scenary/inf/BROKHOL1.inf
+
+#begin art/scenary/inf/BROKHOL2.inf
+/copy:art/scenary/inf/BROKHOL2.inf
+
+#begin art/scenary/inf/BROKHOL3.inf
+/copy:art/scenary/inf/BROKHOL3.inf
+
+#begin art/scenary/inf/BROKHOL4.inf
+/copy:art/scenary/inf/BROKHOL4.inf
+
+#begin art/scenary/inf/BROKPOST.inf
+/copy:art/scenary/inf/BROKPOST.inf
+
+#begin art/scenary/inf/BROTBL01.inf
+/copy:art/scenary/inf/BROTBL01.inf
+
+#begin art/scenary/inf/BROTBL02.inf
+/copy:art/scenary/inf/BROTBL02.inf
+
+#begin art/scenary/inf/BROTBL03.inf
+/copy:art/scenary/inf/BROTBL03.inf
+
+#begin art/scenary/inf/BROTBL04.inf
+/copy:art/scenary/inf/BROTBL04.inf
+
+#begin art/scenary/inf/BROTBL05.inf
+/copy:art/scenary/inf/BROTBL05.inf
+
+#begin art/scenary/inf/BROTBL06.inf
+/copy:art/scenary/inf/BROTBL06.inf
+
+#begin art/scenary/inf/BROWRECK.inf
+/copy:art/scenary/inf/BROWRECK.inf
+
+#begin art/scenary/inf/BSALTAR1.inf
+/copy:art/scenary/inf/BSALTAR1.inf
+
+#begin art/scenary/inf/BSALTAR2.inf
+/copy:art/scenary/inf/BSALTAR2.inf
+
+#begin art/scenary/inf/BSALTAR3.inf
+/copy:art/scenary/inf/BSALTAR3.inf
+
+#begin art/scenary/inf/BSHOWR1.inf
+/copy:art/scenary/inf/BSHOWR1.inf
+
+#begin art/scenary/inf/BSHOWR2.inf
+/copy:art/scenary/inf/BSHOWR2.inf
+
+#begin art/scenary/inf/BSPEW.inf
+/copy:art/scenary/inf/BSPEW.inf
+
+#begin art/scenary/inf/BSPODIUM.inf
+/copy:art/scenary/inf/BSPODIUM.inf
+
+#begin art/scenary/inf/BUCKET1.inf
+/copy:art/scenary/inf/BUCKET1.inf
+
+#begin art/scenary/inf/BUCKSIGN.inf
+/copy:art/scenary/inf/BUCKSIGN.inf
+
+#begin art/scenary/inf/BUSH1.inf
+/copy:art/scenary/inf/BUSH1.inf
+
+#begin art/scenary/inf/BUSH2.inf
+/copy:art/scenary/inf/BUSH2.inf
+
+#begin art/scenary/inf/BUSH3.inf
+/copy:art/scenary/inf/BUSH3.inf
+
+#begin art/scenary/inf/BVS01.inf
+/copy:art/scenary/inf/BVS01.inf
+
+#begin art/scenary/inf/BVS02.inf
+/copy:art/scenary/inf/BVS02.inf
+
+#begin art/scenary/inf/BVS03.inf
+/copy:art/scenary/inf/BVS03.inf
+
+#begin art/scenary/inf/BVS04.inf
+/copy:art/scenary/inf/BVS04.inf
+
+#begin art/scenary/inf/BVS05.inf
+/copy:art/scenary/inf/BVS05.inf
+
+#begin art/scenary/inf/BVS06.inf
+/copy:art/scenary/inf/BVS06.inf
+
+#begin art/scenary/inf/BVS07.inf
+/copy:art/scenary/inf/BVS07.inf
+
+#begin art/scenary/inf/BVS08.inf
+/copy:art/scenary/inf/BVS08.inf
+
+#begin art/scenary/inf/BVS09.inf
+/copy:art/scenary/inf/BVS09.inf
+
+#begin art/scenary/inf/BVS10.inf
+/copy:art/scenary/inf/BVS10.inf
+
+#begin art/scenary/inf/BVS11.inf
+/copy:art/scenary/inf/BVS11.inf
+
+#begin art/scenary/inf/BVS12.inf
+/copy:art/scenary/inf/BVS12.inf
+
+#begin art/scenary/inf/BVS13.inf
+/copy:art/scenary/inf/BVS13.inf
+
+#begin art/scenary/inf/BVS14.inf
+/copy:art/scenary/inf/BVS14.inf
+
+#begin art/scenary/inf/BVS15.inf
+/copy:art/scenary/inf/BVS15.inf
+
+#begin art/scenary/inf/BVS16.inf
+/copy:art/scenary/inf/BVS16.inf
+
+#begin art/scenary/inf/BVS17.inf
+/copy:art/scenary/inf/BVS17.inf
+
+#begin art/scenary/inf/BVS18.inf
+/copy:art/scenary/inf/BVS18.inf
+
+#begin art/scenary/inf/BVS19.inf
+/copy:art/scenary/inf/BVS19.inf
+
+#begin art/scenary/inf/BVS20.inf
+/copy:art/scenary/inf/BVS20.inf
+
+#begin art/scenary/inf/BVS21.inf
+/copy:art/scenary/inf/BVS21.inf
+
+#begin art/scenary/inf/BVS22.inf
+/copy:art/scenary/inf/BVS22.inf
+
+#begin art/scenary/inf/BVS23.inf
+/copy:art/scenary/inf/BVS23.inf
+
+#begin art/scenary/inf/BVS24.inf
+/copy:art/scenary/inf/BVS24.inf
+
+#begin art/scenary/inf/BVS25.inf
+/copy:art/scenary/inf/BVS25.inf
+
+#begin art/scenary/inf/BVS26.inf
+/copy:art/scenary/inf/BVS26.inf
+
+#begin art/scenary/inf/BVS27.inf
+/copy:art/scenary/inf/BVS27.inf
+
+#begin art/scenary/inf/BVS28.inf
+/copy:art/scenary/inf/BVS28.inf
+
+#begin art/scenary/inf/BVS29.inf
+/copy:art/scenary/inf/BVS29.inf
+
+#begin art/scenary/inf/BVS30.inf
+/copy:art/scenary/inf/BVS30.inf
+
+#begin art/scenary/inf/BVS31.inf
+/copy:art/scenary/inf/BVS31.inf
+
+#begin art/scenary/inf/BVS32.inf
+/copy:art/scenary/inf/BVS32.inf
+
+#begin art/scenary/inf/BVS33.inf
+/copy:art/scenary/inf/BVS33.inf
+
+#begin art/scenary/inf/BVS34.inf
+/copy:art/scenary/inf/BVS34.inf
+
+#begin art/scenary/inf/BVS35.inf
+/copy:art/scenary/inf/BVS35.inf
+
+#begin art/scenary/inf/BVS36.inf
+/copy:art/scenary/inf/BVS36.inf
+
+#begin art/scenary/inf/BVS37.inf
+/copy:art/scenary/inf/BVS37.inf
+
+#begin art/scenary/inf/BVS38.inf
+/copy:art/scenary/inf/BVS38.inf
+
+#begin art/scenary/inf/BVS39.inf
+/copy:art/scenary/inf/BVS39.inf
+
+#begin art/scenary/inf/BVS40.inf
+/copy:art/scenary/inf/BVS40.inf
+
+#begin art/scenary/inf/BVS41.inf
+/copy:art/scenary/inf/BVS41.inf
+
+#begin art/scenary/inf/BVS42.inf
+/copy:art/scenary/inf/BVS42.inf
+
+#begin art/scenary/inf/BVS43.inf
+/copy:art/scenary/inf/BVS43.inf
+
+#begin art/scenary/inf/BVS44.inf
+/copy:art/scenary/inf/BVS44.inf
+
+#begin art/scenary/inf/BVS45.inf
+/copy:art/scenary/inf/BVS45.inf
+
+#begin art/scenary/inf/BVS46.inf
+/copy:art/scenary/inf/BVS46.inf
+
+#begin art/scenary/inf/BVS47.inf
+/copy:art/scenary/inf/BVS47.inf
+
+#begin art/scenary/inf/BVS48.inf
+/copy:art/scenary/inf/BVS48.inf
+
+#begin art/scenary/inf/BVS49.inf
+/copy:art/scenary/inf/BVS49.inf
+
+#begin art/scenary/inf/BVS50.inf
+/copy:art/scenary/inf/BVS50.inf
+
+#begin art/scenary/inf/CAB1.inf
+/copy:art/scenary/inf/CAB1.inf
+
+#begin art/scenary/inf/CAB2.inf
+/copy:art/scenary/inf/CAB2.inf
+
+#begin art/scenary/inf/CAC1000.inf
+/copy:art/scenary/inf/CAC1000.inf
+
+#begin art/scenary/inf/CAC2000.inf
+/copy:art/scenary/inf/CAC2000.inf
+
+#begin art/scenary/inf/CAMERA01.inf
+/copy:art/scenary/inf/CAMERA01.inf
+
+#begin art/scenary/inf/CAR1.inf
+/copy:art/scenary/inf/CAR1.inf
+
+#begin art/scenary/inf/CAR2.inf
+/copy:art/scenary/inf/CAR2.inf
+
+#begin art/scenary/inf/CAR3.inf
+/copy:art/scenary/inf/CAR3.inf
+
+#begin art/scenary/inf/CAR4.inf
+/copy:art/scenary/inf/CAR4.inf
+
+#begin art/scenary/inf/CAR5.inf
+/copy:art/scenary/inf/CAR5.inf
+
+#begin art/scenary/inf/CARSPEC1.inf
+/copy:art/scenary/inf/CARSPEC1.inf
+
+#begin art/scenary/inf/CARSPEC2.inf
+/copy:art/scenary/inf/CARSPEC2.inf
+
+#begin art/scenary/inf/CARSPEC3.inf
+/copy:art/scenary/inf/CARSPEC3.inf
+
+#begin art/scenary/inf/CART1.inf
+/copy:art/scenary/inf/CART1.inf
+
+#begin art/scenary/inf/CARVSIGN.inf
+/copy:art/scenary/inf/CARVSIGN.inf
+
+#begin art/scenary/inf/casent01.inf
+/copy:art/scenary/inf/casent01.inf
+
+#begin art/scenary/inf/casent02.inf
+/copy:art/scenary/inf/casent02.inf
+
+#begin art/scenary/inf/casent03.inf
+/copy:art/scenary/inf/casent03.inf
+
+#begin art/scenary/inf/casent04.inf
+/copy:art/scenary/inf/casent04.inf
+
+#begin art/scenary/inf/casent05.inf
+/copy:art/scenary/inf/casent05.inf
+
+#begin art/scenary/inf/casent06.inf
+/copy:art/scenary/inf/casent06.inf
+
+#begin art/scenary/inf/casent07.inf
+/copy:art/scenary/inf/casent07.inf
+
+#begin art/scenary/inf/casent08.inf
+/copy:art/scenary/inf/casent08.inf
+
+#begin art/scenary/inf/casent21.inf
+/copy:art/scenary/inf/casent21.inf
+
+#begin art/scenary/inf/casent22.inf
+/copy:art/scenary/inf/casent22.inf
+
+#begin art/scenary/inf/casent23.inf
+/copy:art/scenary/inf/casent23.inf
+
+#begin art/scenary/inf/casent24.inf
+/copy:art/scenary/inf/casent24.inf
+
+#begin art/scenary/inf/casent25.inf
+/copy:art/scenary/inf/casent25.inf
+
+#begin art/scenary/inf/casent26.inf
+/copy:art/scenary/inf/casent26.inf
+
+#begin art/scenary/inf/casent27.inf
+/copy:art/scenary/inf/casent27.inf
+
+#begin art/scenary/inf/CASENT28.inf
+/copy:art/scenary/inf/CASENT28.inf
+
+#begin art/scenary/inf/casent29.inf
+/copy:art/scenary/inf/casent29.inf
+
+#begin art/scenary/inf/casent30.inf
+/copy:art/scenary/inf/casent30.inf
+
+#begin art/scenary/inf/casent31.inf
+/copy:art/scenary/inf/casent31.inf
+
+#begin art/scenary/inf/CASENT32.inf
+/copy:art/scenary/inf/CASENT32.inf
+
+#begin art/scenary/inf/casino1.inf
+/copy:art/scenary/inf/casino1.inf
+
+#begin art/scenary/inf/casino2.inf
+/copy:art/scenary/inf/casino2.inf
+
+#begin art/scenary/inf/casino3.inf
+/copy:art/scenary/inf/casino3.inf
+
+#begin art/scenary/inf/casino4.inf
+/copy:art/scenary/inf/casino4.inf
+
+#begin art/scenary/inf/casino5.inf
+/copy:art/scenary/inf/casino5.inf
+
+#begin art/scenary/inf/casino6.inf
+/copy:art/scenary/inf/casino6.inf
+
+#begin art/scenary/inf/CATHCMP1.inf
+/copy:art/scenary/inf/CATHCMP1.inf
+
+#begin art/scenary/inf/CATHCMP2.inf
+/copy:art/scenary/inf/CATHCMP2.inf
+
+#begin art/scenary/inf/CATHDOR1.inf
+/copy:art/scenary/inf/CATHDOR1.inf
+
+#begin art/scenary/inf/CATHDOR2.inf
+/copy:art/scenary/inf/CATHDOR2.inf
+
+#begin art/scenary/inf/CATHENT.inf
+/copy:art/scenary/inf/CATHENT.inf
+
+#begin art/scenary/inf/CATHGRD1.inf
+/copy:art/scenary/inf/CATHGRD1.inf
+
+#begin art/scenary/inf/CATHGRD2.inf
+/copy:art/scenary/inf/CATHGRD2.inf
+
+#begin art/scenary/inf/CATHIN1.inf
+/copy:art/scenary/inf/CATHIN1.inf
+
+#begin art/scenary/inf/CATHIN2.inf
+/copy:art/scenary/inf/CATHIN2.inf
+
+#begin art/scenary/inf/CATHIN3.inf
+/copy:art/scenary/inf/CATHIN3.inf
+
+#begin art/scenary/inf/cavbrac1.inf
+/copy:art/scenary/inf/cavbrac1.inf
+
+#begin art/scenary/inf/cavbrac2.inf
+/copy:art/scenary/inf/cavbrac2.inf
+
+#begin art/scenary/inf/cavbrac3.inf
+/copy:art/scenary/inf/cavbrac3.inf
+
+#begin art/scenary/inf/cavbrac4.inf
+/copy:art/scenary/inf/cavbrac4.inf
+
+#begin art/scenary/inf/cavbrac5.inf
+/copy:art/scenary/inf/cavbrac5.inf
+
+#begin art/scenary/inf/cavbrac6.inf
+/copy:art/scenary/inf/cavbrac6.inf
+
+#begin art/scenary/inf/cavbrac7.inf
+/copy:art/scenary/inf/cavbrac7.inf
+
+#begin art/scenary/inf/caveart1.inf
+/copy:art/scenary/inf/caveart1.inf
+
+#begin art/scenary/inf/caveart2.inf
+/copy:art/scenary/inf/caveart2.inf
+
+#begin art/scenary/inf/caveart3.inf
+/copy:art/scenary/inf/caveart3.inf
+
+#begin art/scenary/inf/caveart4.inf
+/copy:art/scenary/inf/caveart4.inf
+
+#begin art/scenary/inf/CAVEHOLE.inf
+/copy:art/scenary/inf/CAVEHOLE.inf
+
+#begin art/scenary/inf/CAVEIN.inf
+/copy:art/scenary/inf/CAVEIN.inf
+
+#begin art/scenary/inf/CAVEROPE.inf
+/copy:art/scenary/inf/CAVEROPE.inf
+
+#begin art/scenary/inf/CAVINHOL.inf
+/copy:art/scenary/inf/CAVINHOL.inf
+
+#begin art/scenary/inf/CAVTRAP1.inf
+/copy:art/scenary/inf/CAVTRAP1.inf
+
+#begin art/scenary/inf/CAVTRAP2.inf
+/copy:art/scenary/inf/CAVTRAP2.inf
+
+#begin art/scenary/inf/CAVTRAP3.inf
+/copy:art/scenary/inf/CAVTRAP3.inf
+
+#begin art/scenary/inf/cavwater.inf
+/copy:art/scenary/inf/cavwater.inf
+
+#begin art/scenary/inf/CCALTAR.inf
+/copy:art/scenary/inf/CCALTAR.inf
+
+#begin art/scenary/inf/CCALTAR2.inf
+/copy:art/scenary/inf/CCALTAR2.inf
+
+#begin art/scenary/inf/CCALTAR3.inf
+/copy:art/scenary/inf/CCALTAR3.inf
+
+#begin art/scenary/inf/CCALTAR4.inf
+/copy:art/scenary/inf/CCALTAR4.inf
+
+#begin art/scenary/inf/CCALTAR5.inf
+/copy:art/scenary/inf/CCALTAR5.inf
+
+#begin art/scenary/inf/CCART01.inf
+/copy:art/scenary/inf/CCART01.inf
+
+#begin art/scenary/inf/CCART02.inf
+/copy:art/scenary/inf/CCART02.inf
+
+#begin art/scenary/inf/CCART03.inf
+/copy:art/scenary/inf/CCART03.inf
+
+#begin art/scenary/inf/CCART04.inf
+/copy:art/scenary/inf/CCART04.inf
+
+#begin art/scenary/inf/CCART05.inf
+/copy:art/scenary/inf/CCART05.inf
+
+#begin art/scenary/inf/CCART06.inf
+/copy:art/scenary/inf/CCART06.inf
+
+#begin art/scenary/inf/CCMNITR1.inf
+/copy:art/scenary/inf/CCMNITR1.inf
+
+#begin art/scenary/inf/CCMNITR2.inf
+/copy:art/scenary/inf/CCMNITR2.inf
+
+#begin art/scenary/inf/CCPODIUM.inf
+/copy:art/scenary/inf/CCPODIUM.inf
+
+#begin art/scenary/inf/CCSLDLDR.inf
+/copy:art/scenary/inf/CCSLDLDR.inf
+
+#begin art/scenary/inf/CHAIR1.inf
+/copy:art/scenary/inf/CHAIR1.inf
+
+#begin art/scenary/inf/CHAIR2.inf
+/copy:art/scenary/inf/CHAIR2.inf
+
+#begin art/scenary/inf/CHAIR3.inf
+/copy:art/scenary/inf/CHAIR3.inf
+
+#begin art/scenary/inf/CHAIR4.inf
+/copy:art/scenary/inf/CHAIR4.inf
+
+#begin art/scenary/inf/CHAIR5.inf
+/copy:art/scenary/inf/CHAIR5.inf
+
+#begin art/scenary/inf/CHAIR6.inf
+/copy:art/scenary/inf/CHAIR6.inf
+
+#begin art/scenary/inf/CHAIR7.inf
+/copy:art/scenary/inf/CHAIR7.inf
+
+#begin art/scenary/inf/CHAIR8.inf
+/copy:art/scenary/inf/CHAIR8.inf
+
+#begin art/scenary/inf/CHAIR9.inf
+/copy:art/scenary/inf/CHAIR9.inf
+
+#begin art/scenary/inf/CHAR01.inf
+/copy:art/scenary/inf/CHAR01.inf
+
+#begin art/scenary/inf/CHAR02.inf
+/copy:art/scenary/inf/CHAR02.inf
+
+#begin art/scenary/inf/CHAR03.inf
+/copy:art/scenary/inf/CHAR03.inf
+
+#begin art/scenary/inf/CHAR04.inf
+/copy:art/scenary/inf/CHAR04.inf
+
+#begin art/scenary/inf/CHAR05.inf
+/copy:art/scenary/inf/CHAR05.inf
+
+#begin art/scenary/inf/CHAR06.inf
+/copy:art/scenary/inf/CHAR06.inf
+
+#begin art/scenary/inf/CHDFLAG1.inf
+/copy:art/scenary/inf/CHDFLAG1.inf
+
+#begin art/scenary/inf/CHDFLAG2.inf
+/copy:art/scenary/inf/CHDFLAG2.inf
+
+#begin art/scenary/inf/CHDFLAG3.inf
+/copy:art/scenary/inf/CHDFLAG3.inf
+
+#begin art/scenary/inf/chinador.inf
+/copy:art/scenary/inf/chinador.inf
+
+#begin art/scenary/inf/CHR1000.inf
+/copy:art/scenary/inf/CHR1000.inf
+
+#begin art/scenary/inf/CHR2000.inf
+/copy:art/scenary/inf/CHR2000.inf
+
+#begin art/scenary/inf/CHR3000.inf
+/copy:art/scenary/inf/CHR3000.inf
+
+#begin art/scenary/inf/CHR4000.inf
+/copy:art/scenary/inf/CHR4000.inf
+
+#begin art/scenary/inf/CHR5000.inf
+/copy:art/scenary/inf/CHR5000.inf
+
+#begin art/scenary/inf/CHR6000.inf
+/copy:art/scenary/inf/CHR6000.inf
+
+#begin art/scenary/inf/CHR7000.inf
+/copy:art/scenary/inf/CHR7000.inf
+
+#begin art/scenary/inf/CHR8000.inf
+/copy:art/scenary/inf/CHR8000.inf
+
+#begin art/scenary/inf/CHR9000.inf
+/copy:art/scenary/inf/CHR9000.inf
+
+#begin art/scenary/inf/CHRA000.inf
+/copy:art/scenary/inf/CHRA000.inf
+
+#begin art/scenary/inf/CHRB000.inf
+/copy:art/scenary/inf/CHRB000.inf
+
+#begin art/scenary/inf/CHRC000.inf
+/copy:art/scenary/inf/CHRC000.inf
+
+#begin art/scenary/inf/chthrone.inf
+/copy:art/scenary/inf/chthrone.inf
+
+#begin art/scenary/inf/COFFIN01.inf
+/copy:art/scenary/inf/COFFIN01.inf
+
+#begin art/scenary/inf/COFFIN02.inf
+/copy:art/scenary/inf/COFFIN02.inf
+
+#begin art/scenary/inf/COFFIN03.inf
+/copy:art/scenary/inf/COFFIN03.inf
+
+#begin art/scenary/inf/COFFIN04.inf
+/copy:art/scenary/inf/COFFIN04.inf
+
+#begin art/scenary/inf/COFFIN05.inf
+/copy:art/scenary/inf/COFFIN05.inf
+
+#begin art/scenary/inf/COFFIN06.inf
+/copy:art/scenary/inf/COFFIN06.inf
+
+#begin art/scenary/inf/coffin07.inf
+/copy:art/scenary/inf/coffin07.inf
+
+#begin art/scenary/inf/COLA.inf
+/copy:art/scenary/inf/COLA.inf
+
+#begin art/scenary/inf/COLSMAL1.inf
+/copy:art/scenary/inf/COLSMAL1.inf
+
+#begin art/scenary/inf/COLSMAL2.inf
+/copy:art/scenary/inf/COLSMAL2.inf
+
+#begin art/scenary/inf/COLSMAL3.inf
+/copy:art/scenary/inf/COLSMAL3.inf
+
+#begin art/scenary/inf/COLSMAL4.inf
+/copy:art/scenary/inf/COLSMAL4.inf
+
+#begin art/scenary/inf/COLUMN1.inf
+/copy:art/scenary/inf/COLUMN1.inf
+
+#begin art/scenary/inf/COLUMN2.inf
+/copy:art/scenary/inf/COLUMN2.inf
+
+#begin art/scenary/inf/COMP1.inf
+/copy:art/scenary/inf/COMP1.inf
+
+#begin art/scenary/inf/COMP2.inf
+/copy:art/scenary/inf/COMP2.inf
+
+#begin art/scenary/inf/COMP3.inf
+/copy:art/scenary/inf/COMP3.inf
+
+#begin art/scenary/inf/COMP4.inf
+/copy:art/scenary/inf/COMP4.inf
+
+#begin art/scenary/inf/COMP5.inf
+/copy:art/scenary/inf/COMP5.inf
+
+#begin art/scenary/inf/COMP6.inf
+/copy:art/scenary/inf/COMP6.inf
+
+#begin art/scenary/inf/COMP7.inf
+/copy:art/scenary/inf/COMP7.inf
+
+#begin art/scenary/inf/comp8.inf
+/copy:art/scenary/inf/comp8.inf
+
+#begin art/scenary/inf/comp9.inf
+/copy:art/scenary/inf/comp9.inf
+
+#begin art/scenary/inf/COMPGLW1.inf
+/copy:art/scenary/inf/COMPGLW1.inf
+
+#begin art/scenary/inf/COMPGLW2.inf
+/copy:art/scenary/inf/COMPGLW2.inf
+
+#begin art/scenary/inf/COMPGLW3.inf
+/copy:art/scenary/inf/COMPGLW3.inf
+
+#begin art/scenary/inf/COMPGLW4.inf
+/copy:art/scenary/inf/COMPGLW4.inf
+
+#begin art/scenary/inf/consign1.inf
+/copy:art/scenary/inf/consign1.inf
+
+#begin art/scenary/inf/consign2.inf
+/copy:art/scenary/inf/consign2.inf
+
+#begin art/scenary/inf/consign3.inf
+/copy:art/scenary/inf/consign3.inf
+
+#begin art/scenary/inf/CONSTRC1.inf
+/copy:art/scenary/inf/CONSTRC1.inf
+
+#begin art/scenary/inf/CONSTRC2.inf
+/copy:art/scenary/inf/CONSTRC2.inf
+
+#begin art/scenary/inf/CORN1.inf
+/copy:art/scenary/inf/CORN1.inf
+
+#begin art/scenary/inf/CORN2.inf
+/copy:art/scenary/inf/CORN2.inf
+
+#begin art/scenary/inf/CORN3.inf
+/copy:art/scenary/inf/CORN3.inf
+
+#begin art/scenary/inf/CORN4.inf
+/copy:art/scenary/inf/CORN4.inf
+
+#begin art/scenary/inf/CORN5.inf
+/copy:art/scenary/inf/CORN5.inf
+
+#begin art/scenary/inf/CORN6.inf
+/copy:art/scenary/inf/CORN6.inf
+
+#begin art/scenary/inf/corn7.inf
+/copy:art/scenary/inf/corn7.inf
+
+#begin art/scenary/inf/corn8.inf
+/copy:art/scenary/inf/corn8.inf
+
+#begin art/scenary/inf/corn9.inf
+/copy:art/scenary/inf/corn9.inf
+
+#begin art/scenary/inf/COVER.inf
+/copy:art/scenary/inf/COVER.inf
+
+#begin art/scenary/inf/crane1.inf
+/copy:art/scenary/inf/crane1.inf
+
+#begin art/scenary/inf/CRANE2.inf
+/copy:art/scenary/inf/CRANE2.inf
+
+#begin art/scenary/inf/CRATE1.inf
+/copy:art/scenary/inf/CRATE1.inf
+
+#begin art/scenary/inf/CRATE2.inf
+/copy:art/scenary/inf/CRATE2.inf
+
+#begin art/scenary/inf/CRATE3.inf
+/copy:art/scenary/inf/CRATE3.inf
+
+#begin art/scenary/inf/CROSS01.inf
+/copy:art/scenary/inf/CROSS01.inf
+
+#begin art/scenary/inf/CROSS02.inf
+/copy:art/scenary/inf/CROSS02.inf
+
+#begin art/scenary/inf/CROSS03.inf
+/copy:art/scenary/inf/CROSS03.inf
+
+#begin art/scenary/inf/CROSS04.inf
+/copy:art/scenary/inf/CROSS04.inf
+
+#begin art/scenary/inf/CROSS05.inf
+/copy:art/scenary/inf/CROSS05.inf
+
+#begin art/scenary/inf/CROSS06.inf
+/copy:art/scenary/inf/CROSS06.inf
+
+#begin art/scenary/inf/CRPTBL01.inf
+/copy:art/scenary/inf/CRPTBL01.inf
+
+#begin art/scenary/inf/CRPTBL02.inf
+/copy:art/scenary/inf/CRPTBL02.inf
+
+#begin art/scenary/inf/CRPTBL03.inf
+/copy:art/scenary/inf/CRPTBL03.inf
+
+#begin art/scenary/inf/CRPTBL04.inf
+/copy:art/scenary/inf/CRPTBL04.inf
+
+#begin art/scenary/inf/CRPTBL05.inf
+/copy:art/scenary/inf/CRPTBL05.inf
+
+#begin art/scenary/inf/CRPTBL06.inf
+/copy:art/scenary/inf/CRPTBL06.inf
+
+#begin art/scenary/inf/CRPTBL07.inf
+/copy:art/scenary/inf/CRPTBL07.inf
+
+#begin art/scenary/inf/CRPTBL08.inf
+/copy:art/scenary/inf/CRPTBL08.inf
+
+#begin art/scenary/inf/CRPTBL09.inf
+/copy:art/scenary/inf/CRPTBL09.inf
+
+#begin art/scenary/inf/CRPTBL10.inf
+/copy:art/scenary/inf/CRPTBL10.inf
+
+#begin art/scenary/inf/CSTALAG1.inf
+/copy:art/scenary/inf/CSTALAG1.inf
+
+#begin art/scenary/inf/CSTALAG2.inf
+/copy:art/scenary/inf/CSTALAG2.inf
+
+#begin art/scenary/inf/CTOWN01.inf
+/copy:art/scenary/inf/CTOWN01.inf
+
+#begin art/scenary/inf/CTOWN02.inf
+/copy:art/scenary/inf/CTOWN02.inf
+
+#begin art/scenary/inf/CTOWN03.inf
+/copy:art/scenary/inf/CTOWN03.inf
+
+#begin art/scenary/inf/CTOWN04.inf
+/copy:art/scenary/inf/CTOWN04.inf
+
+#begin art/scenary/inf/CTOWN05.inf
+/copy:art/scenary/inf/CTOWN05.inf
+
+#begin art/scenary/inf/CTOWN06.inf
+/copy:art/scenary/inf/CTOWN06.inf
+
+#begin art/scenary/inf/CTOWN07.inf
+/copy:art/scenary/inf/CTOWN07.inf
+
+#begin art/scenary/inf/CTOWN08.inf
+/copy:art/scenary/inf/CTOWN08.inf
+
+#begin art/scenary/inf/CTOWN09.inf
+/copy:art/scenary/inf/CTOWN09.inf
+
+#begin art/scenary/inf/CTOWN10.inf
+/copy:art/scenary/inf/CTOWN10.inf
+
+#begin art/scenary/inf/CTOWN11.inf
+/copy:art/scenary/inf/CTOWN11.inf
+
+#begin art/scenary/inf/ctown12.inf
+/copy:art/scenary/inf/ctown12.inf
+
+#begin art/scenary/inf/ctown13.inf
+/copy:art/scenary/inf/ctown13.inf
+
+#begin art/scenary/inf/ctown14.inf
+/copy:art/scenary/inf/ctown14.inf
+
+#begin art/scenary/inf/ctown15.inf
+/copy:art/scenary/inf/ctown15.inf
+
+#begin art/scenary/inf/ctown16.inf
+/copy:art/scenary/inf/ctown16.inf
+
+#begin art/scenary/inf/CURTAIN.inf
+/copy:art/scenary/inf/CURTAIN.inf
+
+#begin art/scenary/inf/CURTAIN2.inf
+/copy:art/scenary/inf/CURTAIN2.inf
+
+#begin art/scenary/inf/CVCOLUM1.inf
+/copy:art/scenary/inf/CVCOLUM1.inf
+
+#begin art/scenary/inf/CVCOLUM2.inf
+/copy:art/scenary/inf/CVCOLUM2.inf
+
+#begin art/scenary/inf/CVWEED01.inf
+/copy:art/scenary/inf/CVWEED01.inf
+
+#begin art/scenary/inf/CVWEED02.inf
+/copy:art/scenary/inf/CVWEED02.inf
+
+#begin art/scenary/inf/CVWEED03.inf
+/copy:art/scenary/inf/CVWEED03.inf
+
+#begin art/scenary/inf/CVWEED04.inf
+/copy:art/scenary/inf/CVWEED04.inf
+
+#begin art/scenary/inf/CVWEED05.inf
+/copy:art/scenary/inf/CVWEED05.inf
+
+#begin art/scenary/inf/CVWEED06.inf
+/copy:art/scenary/inf/CVWEED06.inf
+
+#begin art/scenary/inf/CVWEED07.inf
+/copy:art/scenary/inf/CVWEED07.inf
+
+#begin art/scenary/inf/CVWEED08.inf
+/copy:art/scenary/inf/CVWEED08.inf
+
+#begin art/scenary/inf/CVWEED09.inf
+/copy:art/scenary/inf/CVWEED09.inf
+
+#begin art/scenary/inf/CVWEED10.inf
+/copy:art/scenary/inf/CVWEED10.inf
+
+#begin art/scenary/inf/CVWEED11.inf
+/copy:art/scenary/inf/CVWEED11.inf
+
+#begin art/scenary/inf/CVWEED12.inf
+/copy:art/scenary/inf/CVWEED12.inf
+
+#begin art/scenary/inf/CVWEED13.inf
+/copy:art/scenary/inf/CVWEED13.inf
+
+#begin art/scenary/inf/CVWEED14.inf
+/copy:art/scenary/inf/CVWEED14.inf
+
+#begin art/scenary/inf/CVWEED15.inf
+/copy:art/scenary/inf/CVWEED15.inf
+
+#begin art/scenary/inf/CWALFLR.inf
+/copy:art/scenary/inf/CWALFLR.inf
+
+#begin art/scenary/inf/CWALROOF.inf
+/copy:art/scenary/inf/CWALROOF.inf
+
+#begin art/scenary/inf/CYBERDOG.inf
+/copy:art/scenary/inf/CYBERDOG.inf
+
+#begin art/scenary/inf/DEAD01.inf
+/copy:art/scenary/inf/DEAD01.inf
+
+#begin art/scenary/inf/DEAD02.inf
+/copy:art/scenary/inf/DEAD02.inf
+
+#begin art/scenary/inf/DEAD03.inf
+/copy:art/scenary/inf/DEAD03.inf
+
+#begin art/scenary/inf/DEAD04.inf
+/copy:art/scenary/inf/DEAD04.inf
+
+#begin art/scenary/inf/DEADBOT.inf
+/copy:art/scenary/inf/DEADBOT.inf
+
+#begin art/scenary/inf/DEDBROM1.inf
+/copy:art/scenary/inf/DEDBROM1.inf
+
+#begin art/scenary/inf/DEDBROM2.inf
+/copy:art/scenary/inf/DEDBROM2.inf
+
+#begin art/scenary/inf/DEDBROM3.inf
+/copy:art/scenary/inf/DEDBROM3.inf
+
+#begin art/scenary/inf/DEDBROM4.inf
+/copy:art/scenary/inf/DEDBROM4.inf
+
+#begin art/scenary/inf/DEDBROM5.inf
+/copy:art/scenary/inf/DEDBROM5.inf
+
+#begin art/scenary/inf/DEDBROM6.inf
+/copy:art/scenary/inf/DEDBROM6.inf
+
+#begin art/scenary/inf/DESK1.inf
+/copy:art/scenary/inf/DESK1.inf
+
+#begin art/scenary/inf/DESK2.inf
+/copy:art/scenary/inf/DESK2.inf
+
+#begin art/scenary/inf/dockfm01.inf
+/copy:art/scenary/inf/dockfm01.inf
+
+#begin art/scenary/inf/dockfm02.inf
+/copy:art/scenary/inf/dockfm02.inf
+
+#begin art/scenary/inf/dockfm03.inf
+/copy:art/scenary/inf/dockfm03.inf
+
+#begin art/scenary/inf/dockfm04.inf
+/copy:art/scenary/inf/dockfm04.inf
+
+#begin art/scenary/inf/dockfm05.inf
+/copy:art/scenary/inf/dockfm05.inf
+
+#begin art/scenary/inf/dockfm06.inf
+/copy:art/scenary/inf/dockfm06.inf
+
+#begin art/scenary/inf/dockfm07.inf
+/copy:art/scenary/inf/dockfm07.inf
+
+#begin art/scenary/inf/dockfm08.inf
+/copy:art/scenary/inf/dockfm08.inf
+
+#begin art/scenary/inf/dockfm09.inf
+/copy:art/scenary/inf/dockfm09.inf
+
+#begin art/scenary/inf/dockfm10.inf
+/copy:art/scenary/inf/dockfm10.inf
+
+#begin art/scenary/inf/DOOR01.inf
+/copy:art/scenary/inf/DOOR01.inf
+
+#begin art/scenary/inf/DOOR02.inf
+/copy:art/scenary/inf/DOOR02.inf
+
+#begin art/scenary/inf/DOOR03.inf
+/copy:art/scenary/inf/DOOR03.inf
+
+#begin art/scenary/inf/DOOR04.inf
+/copy:art/scenary/inf/DOOR04.inf
+
+#begin art/scenary/inf/DOOR05.inf
+/copy:art/scenary/inf/DOOR05.inf
+
+#begin art/scenary/inf/door06.inf
+/copy:art/scenary/inf/door06.inf
+
+#begin art/scenary/inf/DOOR1.inf
+/copy:art/scenary/inf/DOOR1.inf
+
+#begin art/scenary/inf/door10.inf
+/copy:art/scenary/inf/door10.inf
+
+#begin art/scenary/inf/door11.inf
+/copy:art/scenary/inf/door11.inf
+
+#begin art/scenary/inf/doorb01.inf
+/copy:art/scenary/inf/doorb01.inf
+
+#begin art/scenary/inf/doorb02.inf
+/copy:art/scenary/inf/doorb02.inf
+
+#begin art/scenary/inf/doorb03.inf
+/copy:art/scenary/inf/doorb03.inf
+
+#begin art/scenary/inf/doorb04.inf
+/copy:art/scenary/inf/doorb04.inf
+
+#begin art/scenary/inf/doorb05.inf
+/copy:art/scenary/inf/doorb05.inf
+
+#begin art/scenary/inf/doorb06.inf
+/copy:art/scenary/inf/doorb06.inf
+
+#begin art/scenary/inf/doorb07.inf
+/copy:art/scenary/inf/doorb07.inf
+
+#begin art/scenary/inf/doorb08.inf
+/copy:art/scenary/inf/doorb08.inf
+
+#begin art/scenary/inf/DOORBAR2.inf
+/copy:art/scenary/inf/DOORBAR2.inf
+
+#begin art/scenary/inf/DOORBARS.inf
+/copy:art/scenary/inf/DOORBARS.inf
+
+#begin art/scenary/inf/DOORCOMP.inf
+/copy:art/scenary/inf/DOORCOMP.inf
+
+#begin art/scenary/inf/DRESR1.inf
+/copy:art/scenary/inf/DRESR1.inf
+
+#begin art/scenary/inf/DRESR2.inf
+/copy:art/scenary/inf/DRESR2.inf
+
+#begin art/scenary/inf/DRESR3.inf
+/copy:art/scenary/inf/DRESR3.inf
+
+#begin art/scenary/inf/DROCK1.inf
+/copy:art/scenary/inf/DROCK1.inf
+
+#begin art/scenary/inf/DROCK2.inf
+/copy:art/scenary/inf/DROCK2.inf
+
+#begin art/scenary/inf/DROCK3.inf
+/copy:art/scenary/inf/DROCK3.inf
+
+#begin art/scenary/inf/DROCK4.inf
+/copy:art/scenary/inf/DROCK4.inf
+
+#begin art/scenary/inf/DROCK5.inf
+/copy:art/scenary/inf/DROCK5.inf
+
+#begin art/scenary/inf/DROCK6.inf
+/copy:art/scenary/inf/DROCK6.inf
+
+#begin art/scenary/inf/DROCK7.inf
+/copy:art/scenary/inf/DROCK7.inf
+
+#begin art/scenary/inf/DROCK8.inf
+/copy:art/scenary/inf/DROCK8.inf
+
+#begin art/scenary/inf/drock9.inf
+/copy:art/scenary/inf/drock9.inf
+
+#begin art/scenary/inf/DUSTYSGN.inf
+/copy:art/scenary/inf/DUSTYSGN.inf
+
+#begin art/scenary/inf/DWSIGN.inf
+/copy:art/scenary/inf/DWSIGN.inf
+
+#begin art/scenary/inf/EGGS1.inf
+/copy:art/scenary/inf/EGGS1.inf
+
+#begin art/scenary/inf/EGGS2.inf
+/copy:art/scenary/inf/EGGS2.inf
+
+#begin art/scenary/inf/EGGS3.inf
+/copy:art/scenary/inf/EGGS3.inf
+
+#begin art/scenary/inf/EGGS4.inf
+/copy:art/scenary/inf/EGGS4.inf
+
+#begin art/scenary/inf/EGGS5.inf
+/copy:art/scenary/inf/EGGS5.inf
+
+#begin art/scenary/inf/EGGS6.inf
+/copy:art/scenary/inf/EGGS6.inf
+
+#begin art/scenary/inf/EGGS7.inf
+/copy:art/scenary/inf/EGGS7.inf
+
+#begin art/scenary/inf/EGGS8.inf
+/copy:art/scenary/inf/EGGS8.inf
+
+#begin art/scenary/inf/elbar.inf
+/copy:art/scenary/inf/elbar.inf
+
+#begin art/scenary/inf/ELECFLR1.inf
+/copy:art/scenary/inf/ELECFLR1.inf
+
+#begin art/scenary/inf/ELEV01.inf
+/copy:art/scenary/inf/ELEV01.inf
+
+#begin art/scenary/inf/ELEV02.inf
+/copy:art/scenary/inf/ELEV02.inf
+
+#begin art/scenary/inf/elev10.inf
+/copy:art/scenary/inf/elev10.inf
+
+#begin art/scenary/inf/ELEV11.inf
+/copy:art/scenary/inf/ELEV11.inf
+
+#begin art/scenary/inf/ELEV12.inf
+/copy:art/scenary/inf/ELEV12.inf
+
+#begin art/scenary/inf/ELEV13.inf
+/copy:art/scenary/inf/ELEV13.inf
+
+#begin art/scenary/inf/ELEVATOR.inf
+/copy:art/scenary/inf/ELEVATOR.inf
+
+#begin art/scenary/inf/elevstub.inf
+/copy:art/scenary/inf/elevstub.inf
+
+#begin art/scenary/inf/ELVE01.inf
+/copy:art/scenary/inf/ELVE01.inf
+
+#begin art/scenary/inf/ENCDOC01.inf
+/copy:art/scenary/inf/ENCDOC01.inf
+
+#begin art/scenary/inf/ENCDOC02.inf
+/copy:art/scenary/inf/ENCDOC02.inf
+
+#begin art/scenary/inf/ENCDOC03.inf
+/copy:art/scenary/inf/ENCDOC03.inf
+
+#begin art/scenary/inf/ENCDOC04.inf
+/copy:art/scenary/inf/ENCDOC04.inf
+
+#begin art/scenary/inf/ENCDOC05.inf
+/copy:art/scenary/inf/ENCDOC05.inf
+
+#begin art/scenary/inf/ENCDOC06.inf
+/copy:art/scenary/inf/ENCDOC06.inf
+
+#begin art/scenary/inf/ENCDOC07.inf
+/copy:art/scenary/inf/ENCDOC07.inf
+
+#begin art/scenary/inf/ENCDOC08.inf
+/copy:art/scenary/inf/ENCDOC08.inf
+
+#begin art/scenary/inf/ENCDOC09.inf
+/copy:art/scenary/inf/ENCDOC09.inf
+
+#begin art/scenary/inf/ENCDOC10.inf
+/copy:art/scenary/inf/ENCDOC10.inf
+
+#begin art/scenary/inf/ENCDOC11.inf
+/copy:art/scenary/inf/ENCDOC11.inf
+
+#begin art/scenary/inf/ENCDOR12.inf
+/copy:art/scenary/inf/ENCDOR12.inf
+
+#begin art/scenary/inf/ENCDOR13.inf
+/copy:art/scenary/inf/ENCDOR13.inf
+
+#begin art/scenary/inf/ENCDOR14.inf
+/copy:art/scenary/inf/ENCDOR14.inf
+
+#begin art/scenary/inf/encdor15.inf
+/copy:art/scenary/inf/encdor15.inf
+
+#begin art/scenary/inf/encdor16.inf
+/copy:art/scenary/inf/encdor16.inf
+
+#begin art/scenary/inf/encdor17.inf
+/copy:art/scenary/inf/encdor17.inf
+
+#begin art/scenary/inf/ENCL01.inf
+/copy:art/scenary/inf/ENCL01.inf
+
+#begin art/scenary/inf/ENCL02.inf
+/copy:art/scenary/inf/ENCL02.inf
+
+#begin art/scenary/inf/ENCL03.inf
+/copy:art/scenary/inf/ENCL03.inf
+
+#begin art/scenary/inf/ENCL04.inf
+/copy:art/scenary/inf/ENCL04.inf
+
+#begin art/scenary/inf/ENCL05.inf
+/copy:art/scenary/inf/ENCL05.inf
+
+#begin art/scenary/inf/ENCL06.inf
+/copy:art/scenary/inf/ENCL06.inf
+
+#begin art/scenary/inf/ENCL07.inf
+/copy:art/scenary/inf/ENCL07.inf
+
+#begin art/scenary/inf/ENCL08.inf
+/copy:art/scenary/inf/ENCL08.inf
+
+#begin art/scenary/inf/ENCL09.inf
+/copy:art/scenary/inf/ENCL09.inf
+
+#begin art/scenary/inf/ENCL10.inf
+/copy:art/scenary/inf/ENCL10.inf
+
+#begin art/scenary/inf/ENCL11.inf
+/copy:art/scenary/inf/ENCL11.inf
+
+#begin art/scenary/inf/ENCL12.inf
+/copy:art/scenary/inf/ENCL12.inf
+
+#begin art/scenary/inf/ENCL13.inf
+/copy:art/scenary/inf/ENCL13.inf
+
+#begin art/scenary/inf/ENCL14.inf
+/copy:art/scenary/inf/ENCL14.inf
+
+#begin art/scenary/inf/ENCL15.inf
+/copy:art/scenary/inf/ENCL15.inf
+
+#begin art/scenary/inf/ENCL16.inf
+/copy:art/scenary/inf/ENCL16.inf
+
+#begin art/scenary/inf/ENCL17.inf
+/copy:art/scenary/inf/ENCL17.inf
+
+#begin art/scenary/inf/ENCL18.inf
+/copy:art/scenary/inf/ENCL18.inf
+
+#begin art/scenary/inf/ENCL19.inf
+/copy:art/scenary/inf/ENCL19.inf
+
+#begin art/scenary/inf/ENCL20.inf
+/copy:art/scenary/inf/ENCL20.inf
+
+#begin art/scenary/inf/ENCL21.inf
+/copy:art/scenary/inf/ENCL21.inf
+
+#begin art/scenary/inf/ENCL22.inf
+/copy:art/scenary/inf/ENCL22.inf
+
+#begin art/scenary/inf/ENCL23.inf
+/copy:art/scenary/inf/ENCL23.inf
+
+#begin art/scenary/inf/ENCL24.inf
+/copy:art/scenary/inf/ENCL24.inf
+
+#begin art/scenary/inf/ENCL25.inf
+/copy:art/scenary/inf/ENCL25.inf
+
+#begin art/scenary/inf/ENCL26.inf
+/copy:art/scenary/inf/ENCL26.inf
+
+#begin art/scenary/inf/ENCL27.inf
+/copy:art/scenary/inf/ENCL27.inf
+
+#begin art/scenary/inf/ENCL28.inf
+/copy:art/scenary/inf/ENCL28.inf
+
+#begin art/scenary/inf/ENCL29.inf
+/copy:art/scenary/inf/ENCL29.inf
+
+#begin art/scenary/inf/ENCL30.inf
+/copy:art/scenary/inf/ENCL30.inf
+
+#begin art/scenary/inf/ENCL31.inf
+/copy:art/scenary/inf/ENCL31.inf
+
+#begin art/scenary/inf/ENCL32.inf
+/copy:art/scenary/inf/ENCL32.inf
+
+#begin art/scenary/inf/ENCL33.inf
+/copy:art/scenary/inf/ENCL33.inf
+
+#begin art/scenary/inf/ENCL34.inf
+/copy:art/scenary/inf/ENCL34.inf
+
+#begin art/scenary/inf/ENCL35.inf
+/copy:art/scenary/inf/ENCL35.inf
+
+#begin art/scenary/inf/ENCL36.inf
+/copy:art/scenary/inf/ENCL36.inf
+
+#begin art/scenary/inf/ENCL37.inf
+/copy:art/scenary/inf/ENCL37.inf
+
+#begin art/scenary/inf/ENCL38.inf
+/copy:art/scenary/inf/ENCL38.inf
+
+#begin art/scenary/inf/ENCL40.inf
+/copy:art/scenary/inf/ENCL40.inf
+
+#begin art/scenary/inf/ENCL41.inf
+/copy:art/scenary/inf/ENCL41.inf
+
+#begin art/scenary/inf/ENCL42.inf
+/copy:art/scenary/inf/ENCL42.inf
+
+#begin art/scenary/inf/ENCL43.inf
+/copy:art/scenary/inf/ENCL43.inf
+
+#begin art/scenary/inf/ENCL44.inf
+/copy:art/scenary/inf/ENCL44.inf
+
+#begin art/scenary/inf/ENCL45.inf
+/copy:art/scenary/inf/ENCL45.inf
+
+#begin art/scenary/inf/ENCL46.inf
+/copy:art/scenary/inf/ENCL46.inf
+
+#begin art/scenary/inf/ENCL47.inf
+/copy:art/scenary/inf/ENCL47.inf
+
+#begin art/scenary/inf/ENCL48.inf
+/copy:art/scenary/inf/ENCL48.inf
+
+#begin art/scenary/inf/ENCL49.inf
+/copy:art/scenary/inf/ENCL49.inf
+
+#begin art/scenary/inf/ENCL50.inf
+/copy:art/scenary/inf/ENCL50.inf
+
+#begin art/scenary/inf/ENCL51.inf
+/copy:art/scenary/inf/ENCL51.inf
+
+#begin art/scenary/inf/ENCL52.inf
+/copy:art/scenary/inf/ENCL52.inf
+
+#begin art/scenary/inf/encl53.inf
+/copy:art/scenary/inf/encl53.inf
+
+#begin art/scenary/inf/encl54.inf
+/copy:art/scenary/inf/encl54.inf
+
+#begin art/scenary/inf/encl55.inf
+/copy:art/scenary/inf/encl55.inf
+
+#begin art/scenary/inf/encldor1.inf
+/copy:art/scenary/inf/encldor1.inf
+
+#begin art/scenary/inf/encldor2.inf
+/copy:art/scenary/inf/encldor2.inf
+
+#begin art/scenary/inf/encldor3.inf
+/copy:art/scenary/inf/encldor3.inf
+
+#begin art/scenary/inf/encldor4.inf
+/copy:art/scenary/inf/encldor4.inf
+
+#begin art/scenary/inf/enstairs.inf
+/copy:art/scenary/inf/enstairs.inf
+
+#begin art/scenary/inf/EXMAT1.inf
+/copy:art/scenary/inf/EXMAT1.inf
+
+#begin art/scenary/inf/EXMAT2.inf
+/copy:art/scenary/inf/EXMAT2.inf
+
+#begin art/scenary/inf/EXMAT3.inf
+/copy:art/scenary/inf/EXMAT3.inf
+
+#begin art/scenary/inf/EXMAT4.inf
+/copy:art/scenary/inf/EXMAT4.inf
+
+#begin art/scenary/inf/EXPNCH.inf
+/copy:art/scenary/inf/EXPNCH.inf
+
+#begin art/scenary/inf/EXSTR1.inf
+/copy:art/scenary/inf/EXSTR1.inf
+
+#begin art/scenary/inf/EXSTR2.inf
+/copy:art/scenary/inf/EXSTR2.inf
+
+#begin art/scenary/inf/EXTRDML1.inf
+/copy:art/scenary/inf/EXTRDML1.inf
+
+#begin art/scenary/inf/EXTRDML2.inf
+/copy:art/scenary/inf/EXTRDML2.inf
+
+#begin art/scenary/inf/EXWTLFT1.inf
+/copy:art/scenary/inf/EXWTLFT1.inf
+
+#begin art/scenary/inf/EXWTLFT2.inf
+/copy:art/scenary/inf/EXWTLFT2.inf
+
+#begin art/scenary/inf/EYECHART.inf
+/copy:art/scenary/inf/EYECHART.inf
+
+#begin art/scenary/inf/fencdor1.inf
+/copy:art/scenary/inf/fencdor1.inf
+
+#begin art/scenary/inf/fencdor2.inf
+/copy:art/scenary/inf/fencdor2.inf
+
+#begin art/scenary/inf/FFIELD01.inf
+/copy:art/scenary/inf/FFIELD01.inf
+
+#begin art/scenary/inf/FFIELD02.inf
+/copy:art/scenary/inf/FFIELD02.inf
+
+#begin art/scenary/inf/FFIELD03.inf
+/copy:art/scenary/inf/FFIELD03.inf
+
+#begin art/scenary/inf/FFIELD04.inf
+/copy:art/scenary/inf/FFIELD04.inf
+
+#begin art/scenary/inf/FIREDOOR.inf
+/copy:art/scenary/inf/FIREDOOR.inf
+
+#begin art/scenary/inf/FIREHY.inf
+/copy:art/scenary/inf/FIREHY.inf
+
+#begin art/scenary/inf/firepit.inf
+/copy:art/scenary/inf/firepit.inf
+
+#begin art/scenary/inf/FIRPIT01.inf
+/copy:art/scenary/inf/FIRPIT01.inf
+
+#begin art/scenary/inf/FIRPIT02.inf
+/copy:art/scenary/inf/FIRPIT02.inf
+
+#begin art/scenary/inf/FLAG.inf
+/copy:art/scenary/inf/FLAG.inf
+
+#begin art/scenary/inf/FLAGPOLE.inf
+/copy:art/scenary/inf/FLAGPOLE.inf
+
+#begin art/scenary/inf/FLAMP1.inf
+/copy:art/scenary/inf/FLAMP1.inf
+
+#begin art/scenary/inf/FLAMP2.inf
+/copy:art/scenary/inf/FLAMP2.inf
+
+#begin art/scenary/inf/FLAMP3.inf
+/copy:art/scenary/inf/FLAMP3.inf
+
+#begin art/scenary/inf/FLAMP4.inf
+/copy:art/scenary/inf/FLAMP4.inf
+
+#begin art/scenary/inf/FLAMP5.inf
+/copy:art/scenary/inf/FLAMP5.inf
+
+#begin art/scenary/inf/FLAMP6.inf
+/copy:art/scenary/inf/FLAMP6.inf
+
+#begin art/scenary/inf/FLAMP7.inf
+/copy:art/scenary/inf/FLAMP7.inf
+
+#begin art/scenary/inf/FLCDOOR.inf
+/copy:art/scenary/inf/FLCDOOR.inf
+
+#begin art/scenary/inf/FLCSIGN.inf
+/copy:art/scenary/inf/FLCSIGN.inf
+
+#begin art/scenary/inf/FLCSIGN1.inf
+/copy:art/scenary/inf/FLCSIGN1.inf
+
+#begin art/scenary/inf/FLCSIGN2.inf
+/copy:art/scenary/inf/FLCSIGN2.inf
+
+#begin art/scenary/inf/FLWRLOGO.inf
+/copy:art/scenary/inf/FLWRLOGO.inf
+
+#begin art/scenary/inf/forcfd01.inf
+/copy:art/scenary/inf/forcfd01.inf
+
+#begin art/scenary/inf/forcfd02.inf
+/copy:art/scenary/inf/forcfd02.inf
+
+#begin art/scenary/inf/FORCFD03.inf
+/copy:art/scenary/inf/FORCFD03.inf
+
+#begin art/scenary/inf/FORCFD04.inf
+/copy:art/scenary/inf/FORCFD04.inf
+
+#begin art/scenary/inf/FORCFD05.inf
+/copy:art/scenary/inf/FORCFD05.inf
+
+#begin art/scenary/inf/FORCFD06.inf
+/copy:art/scenary/inf/FORCFD06.inf
+
+#begin art/scenary/inf/FORCONT1.inf
+/copy:art/scenary/inf/FORCONT1.inf
+
+#begin art/scenary/inf/FORCONT2.inf
+/copy:art/scenary/inf/FORCONT2.inf
+
+#begin art/scenary/inf/FORK1.inf
+/copy:art/scenary/inf/FORK1.inf
+
+#begin art/scenary/inf/FORK2.inf
+/copy:art/scenary/inf/FORK2.inf
+
+#begin art/scenary/inf/FRIDGE.inf
+/copy:art/scenary/inf/FRIDGE.inf
+
+#begin art/scenary/inf/FRIDGE2.inf
+/copy:art/scenary/inf/FRIDGE2.inf
+
+#begin art/scenary/inf/FRIDGE3.inf
+/copy:art/scenary/inf/FRIDGE3.inf
+
+#begin art/scenary/inf/FSDOME.inf
+/copy:art/scenary/inf/FSDOME.inf
+
+#begin art/scenary/inf/GARPIPE1.inf
+/copy:art/scenary/inf/GARPIPE1.inf
+
+#begin art/scenary/inf/GARPIPE2.inf
+/copy:art/scenary/inf/GARPIPE2.inf
+
+#begin art/scenary/inf/GARPIPE3.inf
+/copy:art/scenary/inf/GARPIPE3.inf
+
+#begin art/scenary/inf/GASPUMP1.inf
+/copy:art/scenary/inf/GASPUMP1.inf
+
+#begin art/scenary/inf/GASPUMP2.inf
+/copy:art/scenary/inf/GASPUMP2.inf
+
+#begin art/scenary/inf/GASPUMP3.inf
+/copy:art/scenary/inf/GASPUMP3.inf
+
+#begin art/scenary/inf/GASPUMP4.inf
+/copy:art/scenary/inf/GASPUMP4.inf
+
+#begin art/scenary/inf/GASPUMP5.inf
+/copy:art/scenary/inf/GASPUMP5.inf
+
+#begin art/scenary/inf/GASPUMP6.inf
+/copy:art/scenary/inf/GASPUMP6.inf
+
+#begin art/scenary/inf/GASSIGN1.inf
+/copy:art/scenary/inf/GASSIGN1.inf
+
+#begin art/scenary/inf/GASSIGN2.inf
+/copy:art/scenary/inf/GASSIGN2.inf
+
+#begin art/scenary/inf/GASSIGN3.inf
+/copy:art/scenary/inf/GASSIGN3.inf
+
+#begin art/scenary/inf/GATE.inf
+/copy:art/scenary/inf/GATE.inf
+
+#begin art/scenary/inf/GATE001.inf
+/copy:art/scenary/inf/GATE001.inf
+
+#begin art/scenary/inf/gate2.inf
+/copy:art/scenary/inf/gate2.inf
+
+#begin art/scenary/inf/gate3.inf
+/copy:art/scenary/inf/gate3.inf
+
+#begin art/scenary/inf/gate4.inf
+/copy:art/scenary/inf/gate4.inf
+
+#begin art/scenary/inf/GBRIDGE1.inf
+/copy:art/scenary/inf/GBRIDGE1.inf
+
+#begin art/scenary/inf/GBRIDGE2.inf
+/copy:art/scenary/inf/GBRIDGE2.inf
+
+#begin art/scenary/inf/geckflr1.inf
+/copy:art/scenary/inf/geckflr1.inf
+
+#begin art/scenary/inf/GECKM01.inf
+/copy:art/scenary/inf/GECKM01.inf
+
+#begin art/scenary/inf/GECKM02.inf
+/copy:art/scenary/inf/GECKM02.inf
+
+#begin art/scenary/inf/GECKM03.inf
+/copy:art/scenary/inf/GECKM03.inf
+
+#begin art/scenary/inf/GECKM04.inf
+/copy:art/scenary/inf/GECKM04.inf
+
+#begin art/scenary/inf/GECKM05.inf
+/copy:art/scenary/inf/GECKM05.inf
+
+#begin art/scenary/inf/GECKM06.inf
+/copy:art/scenary/inf/GECKM06.inf
+
+#begin art/scenary/inf/geckm07.inf
+/copy:art/scenary/inf/geckm07.inf
+
+#begin art/scenary/inf/geckm08.inf
+/copy:art/scenary/inf/geckm08.inf
+
+#begin art/scenary/inf/geckm09.inf
+/copy:art/scenary/inf/geckm09.inf
+
+#begin art/scenary/inf/gekfire.inf
+/copy:art/scenary/inf/gekfire.inf
+
+#begin art/scenary/inf/gekodor1.inf
+/copy:art/scenary/inf/gekodor1.inf
+
+#begin art/scenary/inf/gekodor2.inf
+/copy:art/scenary/inf/gekodor2.inf
+
+#begin art/scenary/inf/gekodor3.inf
+/copy:art/scenary/inf/gekodor3.inf
+
+#begin art/scenary/inf/gekodor4.inf
+/copy:art/scenary/inf/gekodor4.inf
+
+#begin art/scenary/inf/gekodor5.inf
+/copy:art/scenary/inf/gekodor5.inf
+
+#begin art/scenary/inf/gekodor6.inf
+/copy:art/scenary/inf/gekodor6.inf
+
+#begin art/scenary/inf/gekodor7.inf
+/copy:art/scenary/inf/gekodor7.inf
+
+#begin art/scenary/inf/GEKODOR8.inf
+/copy:art/scenary/inf/GEKODOR8.inf
+
+#begin art/scenary/inf/gekpipe1.inf
+/copy:art/scenary/inf/gekpipe1.inf
+
+#begin art/scenary/inf/gektank1.inf
+/copy:art/scenary/inf/gektank1.inf
+
+#begin art/scenary/inf/gektank2.inf
+/copy:art/scenary/inf/gektank2.inf
+
+#begin art/scenary/inf/gektank3.inf
+/copy:art/scenary/inf/gektank3.inf
+
+#begin art/scenary/inf/gektank4.inf
+/copy:art/scenary/inf/gektank4.inf
+
+#begin art/scenary/inf/gektank5.inf
+/copy:art/scenary/inf/gektank5.inf
+
+#begin art/scenary/inf/gekvent1.inf
+/copy:art/scenary/inf/gekvent1.inf
+
+#begin art/scenary/inf/gekvent2.inf
+/copy:art/scenary/inf/gekvent2.inf
+
+#begin art/scenary/inf/GIZBASE.inf
+/copy:art/scenary/inf/GIZBASE.inf
+
+#begin art/scenary/inf/GIZSIGN.inf
+/copy:art/scenary/inf/GIZSIGN.inf
+
+#begin art/scenary/inf/GLCOMP01.inf
+/copy:art/scenary/inf/GLCOMP01.inf
+
+#begin art/scenary/inf/GLCOMP02.inf
+/copy:art/scenary/inf/GLCOMP02.inf
+
+#begin art/scenary/inf/GLOWSLID.inf
+/copy:art/scenary/inf/GLOWSLID.inf
+
+#begin art/scenary/inf/GOLDGLBS.inf
+/copy:art/scenary/inf/GOLDGLBS.inf
+
+#begin art/scenary/inf/goop01.inf
+/copy:art/scenary/inf/goop01.inf
+
+#begin art/scenary/inf/goop02.inf
+/copy:art/scenary/inf/goop02.inf
+
+#begin art/scenary/inf/GOOP03.inf
+/copy:art/scenary/inf/GOOP03.inf
+
+#begin art/scenary/inf/GOOP04.inf
+/copy:art/scenary/inf/GOOP04.inf
+
+#begin art/scenary/inf/GRAF01.inf
+/copy:art/scenary/inf/GRAF01.inf
+
+#begin art/scenary/inf/GRAF02.inf
+/copy:art/scenary/inf/GRAF02.inf
+
+#begin art/scenary/inf/GRAF03.inf
+/copy:art/scenary/inf/GRAF03.inf
+
+#begin art/scenary/inf/GRAF04.inf
+/copy:art/scenary/inf/GRAF04.inf
+
+#begin art/scenary/inf/GRAF05.inf
+/copy:art/scenary/inf/GRAF05.inf
+
+#begin art/scenary/inf/GRAF06.inf
+/copy:art/scenary/inf/GRAF06.inf
+
+#begin art/scenary/inf/GRAF07.inf
+/copy:art/scenary/inf/GRAF07.inf
+
+#begin art/scenary/inf/GRAF08.inf
+/copy:art/scenary/inf/GRAF08.inf
+
+#begin art/scenary/inf/GRAF09.inf
+/copy:art/scenary/inf/GRAF09.inf
+
+#begin art/scenary/inf/GRAF10.inf
+/copy:art/scenary/inf/GRAF10.inf
+
+#begin art/scenary/inf/GRAF11.inf
+/copy:art/scenary/inf/GRAF11.inf
+
+#begin art/scenary/inf/GRAF12.inf
+/copy:art/scenary/inf/GRAF12.inf
+
+#begin art/scenary/inf/GRAF13.inf
+/copy:art/scenary/inf/GRAF13.inf
+
+#begin art/scenary/inf/GRAF14.inf
+/copy:art/scenary/inf/GRAF14.inf
+
+#begin art/scenary/inf/GRAVE01.inf
+/copy:art/scenary/inf/GRAVE01.inf
+
+#begin art/scenary/inf/GRAVSTN1.inf
+/copy:art/scenary/inf/GRAVSTN1.inf
+
+#begin art/scenary/inf/GRAVSTN2.inf
+/copy:art/scenary/inf/GRAVSTN2.inf
+
+#begin art/scenary/inf/GRAVSTN3.inf
+/copy:art/scenary/inf/GRAVSTN3.inf
+
+#begin art/scenary/inf/GRAVSTN4.inf
+/copy:art/scenary/inf/GRAVSTN4.inf
+
+#begin art/scenary/inf/GRUINS.inf
+/copy:art/scenary/inf/GRUINS.inf
+
+#begin art/scenary/inf/GTANK01.inf
+/copy:art/scenary/inf/GTANK01.inf
+
+#begin art/scenary/inf/GTANK02.inf
+/copy:art/scenary/inf/GTANK02.inf
+
+#begin art/scenary/inf/GUARDIAN.inf
+/copy:art/scenary/inf/GUARDIAN.inf
+
+#begin art/scenary/inf/GX001.inf
+/copy:art/scenary/inf/GX001.inf
+
+#begin art/scenary/inf/GX002.inf
+/copy:art/scenary/inf/GX002.inf
+
+#begin art/scenary/inf/GX003.inf
+/copy:art/scenary/inf/GX003.inf
+
+#begin art/scenary/inf/GX004.inf
+/copy:art/scenary/inf/GX004.inf
+
+#begin art/scenary/inf/GX005.inf
+/copy:art/scenary/inf/GX005.inf
+
+#begin art/scenary/inf/GX006.inf
+/copy:art/scenary/inf/GX006.inf
+
+#begin art/scenary/inf/GX007.inf
+/copy:art/scenary/inf/GX007.inf
+
+#begin art/scenary/inf/GX008.inf
+/copy:art/scenary/inf/GX008.inf
+
+#begin art/scenary/inf/GX009.inf
+/copy:art/scenary/inf/GX009.inf
+
+#begin art/scenary/inf/GX010.inf
+/copy:art/scenary/inf/GX010.inf
+
+#begin art/scenary/inf/GX011.inf
+/copy:art/scenary/inf/GX011.inf
+
+#begin art/scenary/inf/GX012.inf
+/copy:art/scenary/inf/GX012.inf
+
+#begin art/scenary/inf/GX013.inf
+/copy:art/scenary/inf/GX013.inf
+
+#begin art/scenary/inf/GX014.inf
+/copy:art/scenary/inf/GX014.inf
+
+#begin art/scenary/inf/GX015.inf
+/copy:art/scenary/inf/GX015.inf
+
+#begin art/scenary/inf/GX016.inf
+/copy:art/scenary/inf/GX016.inf
+
+#begin art/scenary/inf/GX017.inf
+/copy:art/scenary/inf/GX017.inf
+
+#begin art/scenary/inf/GX018.inf
+/copy:art/scenary/inf/GX018.inf
+
+#begin art/scenary/inf/GX019.inf
+/copy:art/scenary/inf/GX019.inf
+
+#begin art/scenary/inf/GX020.inf
+/copy:art/scenary/inf/GX020.inf
+
+#begin art/scenary/inf/GX021.inf
+/copy:art/scenary/inf/GX021.inf
+
+#begin art/scenary/inf/GX022.inf
+/copy:art/scenary/inf/GX022.inf
+
+#begin art/scenary/inf/GX023.inf
+/copy:art/scenary/inf/GX023.inf
+
+#begin art/scenary/inf/GX024.inf
+/copy:art/scenary/inf/GX024.inf
+
+#begin art/scenary/inf/GX025.inf
+/copy:art/scenary/inf/GX025.inf
+
+#begin art/scenary/inf/GX026.inf
+/copy:art/scenary/inf/GX026.inf
+
+#begin art/scenary/inf/GX027.inf
+/copy:art/scenary/inf/GX027.inf
+
+#begin art/scenary/inf/GX028.inf
+/copy:art/scenary/inf/GX028.inf
+
+#begin art/scenary/inf/GX029.inf
+/copy:art/scenary/inf/GX029.inf
+
+#begin art/scenary/inf/GX030.inf
+/copy:art/scenary/inf/GX030.inf
+
+#begin art/scenary/inf/GX031.inf
+/copy:art/scenary/inf/GX031.inf
+
+#begin art/scenary/inf/GX032.inf
+/copy:art/scenary/inf/GX032.inf
+
+#begin art/scenary/inf/GY000.inf
+/copy:art/scenary/inf/GY000.inf
+
+#begin art/scenary/inf/GY001.inf
+/copy:art/scenary/inf/GY001.inf
+
+#begin art/scenary/inf/GY002.inf
+/copy:art/scenary/inf/GY002.inf
+
+#begin art/scenary/inf/GY003.inf
+/copy:art/scenary/inf/GY003.inf
+
+#begin art/scenary/inf/GY004.inf
+/copy:art/scenary/inf/GY004.inf
+
+#begin art/scenary/inf/gy005.inf
+/copy:art/scenary/inf/gy005.inf
+
+#begin art/scenary/inf/gy006.inf
+/copy:art/scenary/inf/gy006.inf
+
+#begin art/scenary/inf/gy007.inf
+/copy:art/scenary/inf/gy007.inf
+
+#begin art/scenary/inf/gy008.inf
+/copy:art/scenary/inf/gy008.inf
+
+#begin art/scenary/inf/gy009.inf
+/copy:art/scenary/inf/gy009.inf
+
+#begin art/scenary/inf/gy010.inf
+/copy:art/scenary/inf/gy010.inf
+
+#begin art/scenary/inf/gy011.inf
+/copy:art/scenary/inf/gy011.inf
+
+#begin art/scenary/inf/gy012.inf
+/copy:art/scenary/inf/gy012.inf
+
+#begin art/scenary/inf/gy013.inf
+/copy:art/scenary/inf/gy013.inf
+
+#begin art/scenary/inf/gy014.inf
+/copy:art/scenary/inf/gy014.inf
+
+#begin art/scenary/inf/gy015.inf
+/copy:art/scenary/inf/gy015.inf
+
+#begin art/scenary/inf/gy016.inf
+/copy:art/scenary/inf/gy016.inf
+
+#begin art/scenary/inf/gy017.inf
+/copy:art/scenary/inf/gy017.inf
+
+#begin art/scenary/inf/gy018.inf
+/copy:art/scenary/inf/gy018.inf
+
+#begin art/scenary/inf/gy019.inf
+/copy:art/scenary/inf/gy019.inf
+
+#begin art/scenary/inf/gy020.inf
+/copy:art/scenary/inf/gy020.inf
+
+#begin art/scenary/inf/gy021.inf
+/copy:art/scenary/inf/gy021.inf
+
+#begin art/scenary/inf/gy022.inf
+/copy:art/scenary/inf/gy022.inf
+
+#begin art/scenary/inf/gy023.inf
+/copy:art/scenary/inf/gy023.inf
+
+#begin art/scenary/inf/gy024.inf
+/copy:art/scenary/inf/gy024.inf
+
+#begin art/scenary/inf/gy025.inf
+/copy:art/scenary/inf/gy025.inf
+
+#begin art/scenary/inf/gy026.inf
+/copy:art/scenary/inf/gy026.inf
+
+#begin art/scenary/inf/gy027.inf
+/copy:art/scenary/inf/gy027.inf
+
+#begin art/scenary/inf/gy028.inf
+/copy:art/scenary/inf/gy028.inf
+
+#begin art/scenary/inf/gy029.inf
+/copy:art/scenary/inf/gy029.inf
+
+#begin art/scenary/inf/gy030.inf
+/copy:art/scenary/inf/gy030.inf
+
+#begin art/scenary/inf/gy031.inf
+/copy:art/scenary/inf/gy031.inf
+
+#begin art/scenary/inf/gy032.inf
+/copy:art/scenary/inf/gy032.inf
+
+#begin art/scenary/inf/gy033.inf
+/copy:art/scenary/inf/gy033.inf
+
+#begin art/scenary/inf/gy034.inf
+/copy:art/scenary/inf/gy034.inf
+
+#begin art/scenary/inf/gy035.inf
+/copy:art/scenary/inf/gy035.inf
+
+#begin art/scenary/inf/gy036.inf
+/copy:art/scenary/inf/gy036.inf
+
+#begin art/scenary/inf/gy037.inf
+/copy:art/scenary/inf/gy037.inf
+
+#begin art/scenary/inf/gy038.inf
+/copy:art/scenary/inf/gy038.inf
+
+#begin art/scenary/inf/gy039.inf
+/copy:art/scenary/inf/gy039.inf
+
+#begin art/scenary/inf/gy040.inf
+/copy:art/scenary/inf/gy040.inf
+
+#begin art/scenary/inf/gy041.inf
+/copy:art/scenary/inf/gy041.inf
+
+#begin art/scenary/inf/gy042.inf
+/copy:art/scenary/inf/gy042.inf
+
+#begin art/scenary/inf/gy043.inf
+/copy:art/scenary/inf/gy043.inf
+
+#begin art/scenary/inf/gy044.inf
+/copy:art/scenary/inf/gy044.inf
+
+#begin art/scenary/inf/gy045.inf
+/copy:art/scenary/inf/gy045.inf
+
+#begin art/scenary/inf/gy046.inf
+/copy:art/scenary/inf/gy046.inf
+
+#begin art/scenary/inf/gy047.inf
+/copy:art/scenary/inf/gy047.inf
+
+#begin art/scenary/inf/gy048.inf
+/copy:art/scenary/inf/gy048.inf
+
+#begin art/scenary/inf/gy049.inf
+/copy:art/scenary/inf/gy049.inf
+
+#begin art/scenary/inf/gy050.inf
+/copy:art/scenary/inf/gy050.inf
+
+#begin art/scenary/inf/gy051.inf
+/copy:art/scenary/inf/gy051.inf
+
+#begin art/scenary/inf/gy052.inf
+/copy:art/scenary/inf/gy052.inf
+
+#begin art/scenary/inf/gy053.inf
+/copy:art/scenary/inf/gy053.inf
+
+#begin art/scenary/inf/gy054.inf
+/copy:art/scenary/inf/gy054.inf
+
+#begin art/scenary/inf/gy055.inf
+/copy:art/scenary/inf/gy055.inf
+
+#begin art/scenary/inf/gy056.inf
+/copy:art/scenary/inf/gy056.inf
+
+#begin art/scenary/inf/harpsign.inf
+/copy:art/scenary/inf/harpsign.inf
+
+#begin art/scenary/inf/HAYBED01.inf
+/copy:art/scenary/inf/HAYBED01.inf
+
+#begin art/scenary/inf/HAYBED02.inf
+/copy:art/scenary/inf/HAYBED02.inf
+
+#begin art/scenary/inf/HAYBED03.inf
+/copy:art/scenary/inf/HAYBED03.inf
+
+#begin art/scenary/inf/HAYBED04.inf
+/copy:art/scenary/inf/HAYBED04.inf
+
+#begin art/scenary/inf/HAYBED05.inf
+/copy:art/scenary/inf/HAYBED05.inf
+
+#begin art/scenary/inf/HAYBED06.inf
+/copy:art/scenary/inf/HAYBED06.inf
+
+#begin art/scenary/inf/head1.inf
+/copy:art/scenary/inf/head1.inf
+
+#begin art/scenary/inf/head2.inf
+/copy:art/scenary/inf/head2.inf
+
+#begin art/scenary/inf/head3.inf
+/copy:art/scenary/inf/head3.inf
+
+#begin art/scenary/inf/HOLDOR01.inf
+/copy:art/scenary/inf/HOLDOR01.inf
+
+#begin art/scenary/inf/HOLDOR02.inf
+/copy:art/scenary/inf/HOLDOR02.inf
+
+#begin art/scenary/inf/HOLE1.inf
+/copy:art/scenary/inf/HOLE1.inf
+
+#begin art/scenary/inf/HOLE2.inf
+/copy:art/scenary/inf/HOLE2.inf
+
+#begin art/scenary/inf/HOLO.inf
+/copy:art/scenary/inf/HOLO.inf
+
+#begin art/scenary/inf/HOLO02.inf
+/copy:art/scenary/inf/HOLO02.inf
+
+#begin art/scenary/inf/HORSE1.inf
+/copy:art/scenary/inf/HORSE1.inf
+
+#begin art/scenary/inf/HORSE2.inf
+/copy:art/scenary/inf/HORSE2.inf
+
+#begin art/scenary/inf/HORSE3.inf
+/copy:art/scenary/inf/HORSE3.inf
+
+#begin art/scenary/inf/HOWITZER.inf
+/copy:art/scenary/inf/HOWITZER.inf
+
+#begin art/scenary/inf/HOWITZR2.inf
+/copy:art/scenary/inf/HOWITZR2.inf
+
+#begin art/scenary/inf/ICECHE.inf
+/copy:art/scenary/inf/ICECHE.inf
+
+#begin art/scenary/inf/ICECHES.inf
+/copy:art/scenary/inf/ICECHES.inf
+
+#begin art/scenary/inf/IGUANA1.inf
+/copy:art/scenary/inf/IGUANA1.inf
+
+#begin art/scenary/inf/IGUANA2.inf
+/copy:art/scenary/inf/IGUANA2.inf
+
+#begin art/scenary/inf/IGUANA3.inf
+/copy:art/scenary/inf/IGUANA3.inf
+
+#begin art/scenary/inf/iguana4.inf
+/copy:art/scenary/inf/iguana4.inf
+
+#begin art/scenary/inf/INSIDE01.inf
+/copy:art/scenary/inf/INSIDE01.inf
+
+#begin art/scenary/inf/INSIDE02.inf
+/copy:art/scenary/inf/INSIDE02.inf
+
+#begin art/scenary/inf/JAIL.inf
+/copy:art/scenary/inf/JAIL.inf
+
+#begin art/scenary/inf/JUNK1.inf
+/copy:art/scenary/inf/JUNK1.inf
+
+#begin art/scenary/inf/JUNK11.inf
+/copy:art/scenary/inf/JUNK11.inf
+
+#begin art/scenary/inf/JUNK12.inf
+/copy:art/scenary/inf/JUNK12.inf
+
+#begin art/scenary/inf/JUNK13.inf
+/copy:art/scenary/inf/JUNK13.inf
+
+#begin art/scenary/inf/JUNK14.inf
+/copy:art/scenary/inf/JUNK14.inf
+
+#begin art/scenary/inf/JUNK15.inf
+/copy:art/scenary/inf/JUNK15.inf
+
+#begin art/scenary/inf/JUNK16.inf
+/copy:art/scenary/inf/JUNK16.inf
+
+#begin art/scenary/inf/JUNK17.inf
+/copy:art/scenary/inf/JUNK17.inf
+
+#begin art/scenary/inf/JUNK18.inf
+/copy:art/scenary/inf/JUNK18.inf
+
+#begin art/scenary/inf/JUNK2.inf
+/copy:art/scenary/inf/JUNK2.inf
+
+#begin art/scenary/inf/JUNK3.inf
+/copy:art/scenary/inf/JUNK3.inf
+
+#begin art/scenary/inf/JUNK4.inf
+/copy:art/scenary/inf/JUNK4.inf
+
+#begin art/scenary/inf/JUNK5.inf
+/copy:art/scenary/inf/JUNK5.inf
+
+#begin art/scenary/inf/JUNKLIT1.inf
+/copy:art/scenary/inf/JUNKLIT1.inf
+
+#begin art/scenary/inf/KEYBRD01.inf
+/copy:art/scenary/inf/KEYBRD01.inf
+
+#begin art/scenary/inf/KEYBRD02.inf
+/copy:art/scenary/inf/KEYBRD02.inf
+
+#begin art/scenary/inf/KLASIGN1.inf
+/copy:art/scenary/inf/KLASIGN1.inf
+
+#begin art/scenary/inf/KLASIGN2.inf
+/copy:art/scenary/inf/KLASIGN2.inf
+
+#begin art/scenary/inf/KLASIGN3.inf
+/copy:art/scenary/inf/KLASIGN3.inf
+
+#begin art/scenary/inf/LADDER.inf
+/copy:art/scenary/inf/LADDER.inf
+
+#begin art/scenary/inf/LADRDWN.inf
+/copy:art/scenary/inf/LADRDWN.inf
+
+#begin art/scenary/inf/LOGO01.inf
+/copy:art/scenary/inf/LOGO01.inf
+
+#begin art/scenary/inf/LOGO02.inf
+/copy:art/scenary/inf/LOGO02.inf
+
+#begin art/scenary/inf/LSRWIR01.inf
+/copy:art/scenary/inf/LSRWIR01.inf
+
+#begin art/scenary/inf/LSRWIR02.inf
+/copy:art/scenary/inf/LSRWIR02.inf
+
+#begin art/scenary/inf/LTABLE1.inf
+/copy:art/scenary/inf/LTABLE1.inf
+
+#begin art/scenary/inf/LTABLE2.inf
+/copy:art/scenary/inf/LTABLE2.inf
+
+#begin art/scenary/inf/LTABLE3.inf
+/copy:art/scenary/inf/LTABLE3.inf
+
+#begin art/scenary/inf/LTABLE4.inf
+/copy:art/scenary/inf/LTABLE4.inf
+
+#begin art/scenary/inf/LTABLE5.inf
+/copy:art/scenary/inf/LTABLE5.inf
+
+#begin art/scenary/inf/LTABLE6.inf
+/copy:art/scenary/inf/LTABLE6.inf
+
+#begin art/scenary/inf/LUVERS1.inf
+/copy:art/scenary/inf/LUVERS1.inf
+
+#begin art/scenary/inf/LUVERS2.inf
+/copy:art/scenary/inf/LUVERS2.inf
+
+#begin art/scenary/inf/MACH01.inf
+/copy:art/scenary/inf/MACH01.inf
+
+#begin art/scenary/inf/MACH02.inf
+/copy:art/scenary/inf/MACH02.inf
+
+#begin art/scenary/inf/MACH03.inf
+/copy:art/scenary/inf/MACH03.inf
+
+#begin art/scenary/inf/MACH04.inf
+/copy:art/scenary/inf/MACH04.inf
+
+#begin art/scenary/inf/MACH05.inf
+/copy:art/scenary/inf/MACH05.inf
+
+#begin art/scenary/inf/MACH06.inf
+/copy:art/scenary/inf/MACH06.inf
+
+#begin art/scenary/inf/machsign.inf
+/copy:art/scenary/inf/machsign.inf
+
+#begin art/scenary/inf/MAILBX.inf
+/copy:art/scenary/inf/MAILBX.inf
+
+#begin art/scenary/inf/mangsign.inf
+/copy:art/scenary/inf/mangsign.inf
+
+#begin art/scenary/inf/MAP01.inf
+/copy:art/scenary/inf/MAP01.inf
+
+#begin art/scenary/inf/MAP02.inf
+/copy:art/scenary/inf/MAP02.inf
+
+#begin art/scenary/inf/MARYJ01.inf
+/copy:art/scenary/inf/MARYJ01.inf
+
+#begin art/scenary/inf/MARYJ02.inf
+/copy:art/scenary/inf/MARYJ02.inf
+
+#begin art/scenary/inf/MBBACK1.inf
+/copy:art/scenary/inf/MBBACK1.inf
+
+#begin art/scenary/inf/MBENTDOR.inf
+/copy:art/scenary/inf/MBENTDOR.inf
+
+#begin art/scenary/inf/MBLIGHT1.inf
+/copy:art/scenary/inf/MBLIGHT1.inf
+
+#begin art/scenary/inf/MBLIGHT2.inf
+/copy:art/scenary/inf/MBLIGHT2.inf
+
+#begin art/scenary/inf/MBLIGHT3.inf
+/copy:art/scenary/inf/MBLIGHT3.inf
+
+#begin art/scenary/inf/MBLIGHT4.inf
+/copy:art/scenary/inf/MBLIGHT4.inf
+
+#begin art/scenary/inf/MBPIPE1.inf
+/copy:art/scenary/inf/MBPIPE1.inf
+
+#begin art/scenary/inf/MBPIPE2.inf
+/copy:art/scenary/inf/MBPIPE2.inf
+
+#begin art/scenary/inf/MBROCKS1.inf
+/copy:art/scenary/inf/MBROCKS1.inf
+
+#begin art/scenary/inf/MBROCKS2.inf
+/copy:art/scenary/inf/MBROCKS2.inf
+
+#begin art/scenary/inf/MBSECUR.inf
+/copy:art/scenary/inf/MBSECUR.inf
+
+#begin art/scenary/inf/MDESK1.inf
+/copy:art/scenary/inf/MDESK1.inf
+
+#begin art/scenary/inf/MDESK2.inf
+/copy:art/scenary/inf/MDESK2.inf
+
+#begin art/scenary/inf/MEDTBL01.inf
+/copy:art/scenary/inf/MEDTBL01.inf
+
+#begin art/scenary/inf/MEDTBL02.inf
+/copy:art/scenary/inf/MEDTBL02.inf
+
+#begin art/scenary/inf/MEDTBL03.inf
+/copy:art/scenary/inf/MEDTBL03.inf
+
+#begin art/scenary/inf/MEDTBL04.inf
+/copy:art/scenary/inf/MEDTBL04.inf
+
+#begin art/scenary/inf/MEDTBL05.inf
+/copy:art/scenary/inf/MEDTBL05.inf
+
+#begin art/scenary/inf/MEDTBL08.inf
+/copy:art/scenary/inf/MEDTBL08.inf
+
+#begin art/scenary/inf/MEDTBL09.inf
+/copy:art/scenary/inf/MEDTBL09.inf
+
+#begin art/scenary/inf/MEDTBL10.inf
+/copy:art/scenary/inf/MEDTBL10.inf
+
+#begin art/scenary/inf/MFSIGN.inf
+/copy:art/scenary/inf/MFSIGN.inf
+
+#begin art/scenary/inf/MILGATE.inf
+/copy:art/scenary/inf/MILGATE.inf
+
+#begin art/scenary/inf/MINECRT1.inf
+/copy:art/scenary/inf/MINECRT1.inf
+
+#begin art/scenary/inf/MINECRT2.inf
+/copy:art/scenary/inf/MINECRT2.inf
+
+#begin art/scenary/inf/MINECRT3.inf
+/copy:art/scenary/inf/MINECRT3.inf
+
+#begin art/scenary/inf/minect10.inf
+/copy:art/scenary/inf/minect10.inf
+
+#begin art/scenary/inf/minect11.inf
+/copy:art/scenary/inf/minect11.inf
+
+#begin art/scenary/inf/minect12.inf
+/copy:art/scenary/inf/minect12.inf
+
+#begin art/scenary/inf/minect13.inf
+/copy:art/scenary/inf/minect13.inf
+
+#begin art/scenary/inf/minect14.inf
+/copy:art/scenary/inf/minect14.inf
+
+#begin art/scenary/inf/MINESIGN.inf
+/copy:art/scenary/inf/MINESIGN.inf
+
+#begin art/scenary/inf/modhole1.inf
+/copy:art/scenary/inf/modhole1.inf
+
+#begin art/scenary/inf/modrock1.inf
+/copy:art/scenary/inf/modrock1.inf
+
+#begin art/scenary/inf/MODWELL1.inf
+/copy:art/scenary/inf/MODWELL1.inf
+
+#begin art/scenary/inf/MODWELL2.inf
+/copy:art/scenary/inf/MODWELL2.inf
+
+#begin art/scenary/inf/MONITR1.inf
+/copy:art/scenary/inf/MONITR1.inf
+
+#begin art/scenary/inf/MONITR2.inf
+/copy:art/scenary/inf/MONITR2.inf
+
+#begin art/scenary/inf/MONITR3.inf
+/copy:art/scenary/inf/MONITR3.inf
+
+#begin art/scenary/inf/MONITR4.inf
+/copy:art/scenary/inf/MONITR4.inf
+
+#begin art/scenary/inf/MONITR5.inf
+/copy:art/scenary/inf/MONITR5.inf
+
+#begin art/scenary/inf/MONITR6.inf
+/copy:art/scenary/inf/MONITR6.inf
+
+#begin art/scenary/inf/MONITR7.inf
+/copy:art/scenary/inf/MONITR7.inf
+
+#begin art/scenary/inf/MONITR8.inf
+/copy:art/scenary/inf/MONITR8.inf
+
+#begin art/scenary/inf/MOUNT01.inf
+/copy:art/scenary/inf/MOUNT01.inf
+
+#begin art/scenary/inf/MOUNT02.inf
+/copy:art/scenary/inf/MOUNT02.inf
+
+#begin art/scenary/inf/MOUNT03.inf
+/copy:art/scenary/inf/MOUNT03.inf
+
+#begin art/scenary/inf/MOUNT04.inf
+/copy:art/scenary/inf/MOUNT04.inf
+
+#begin art/scenary/inf/MOUNT05.inf
+/copy:art/scenary/inf/MOUNT05.inf
+
+#begin art/scenary/inf/MOUNT06.inf
+/copy:art/scenary/inf/MOUNT06.inf
+
+#begin art/scenary/inf/mount07.inf
+/copy:art/scenary/inf/mount07.inf
+
+#begin art/scenary/inf/MOUNT08.inf
+/copy:art/scenary/inf/MOUNT08.inf
+
+#begin art/scenary/inf/MSTR01.inf
+/copy:art/scenary/inf/MSTR01.inf
+
+#begin art/scenary/inf/MSTR02.inf
+/copy:art/scenary/inf/MSTR02.inf
+
+#begin art/scenary/inf/MSTR03.inf
+/copy:art/scenary/inf/MSTR03.inf
+
+#begin art/scenary/inf/MSTR04.inf
+/copy:art/scenary/inf/MSTR04.inf
+
+#begin art/scenary/inf/MSTR05.inf
+/copy:art/scenary/inf/MSTR05.inf
+
+#begin art/scenary/inf/MSTR06.inf
+/copy:art/scenary/inf/MSTR06.inf
+
+#begin art/scenary/inf/MSTR07.inf
+/copy:art/scenary/inf/MSTR07.inf
+
+#begin art/scenary/inf/MSTR08.inf
+/copy:art/scenary/inf/MSTR08.inf
+
+#begin art/scenary/inf/MSTR09.inf
+/copy:art/scenary/inf/MSTR09.inf
+
+#begin art/scenary/inf/MSTR10.inf
+/copy:art/scenary/inf/MSTR10.inf
+
+#begin art/scenary/inf/MSTR11.inf
+/copy:art/scenary/inf/MSTR11.inf
+
+#begin art/scenary/inf/MSTR12.inf
+/copy:art/scenary/inf/MSTR12.inf
+
+#begin art/scenary/inf/MSTR13.inf
+/copy:art/scenary/inf/MSTR13.inf
+
+#begin art/scenary/inf/MSTR14.inf
+/copy:art/scenary/inf/MSTR14.inf
+
+#begin art/scenary/inf/MSTR15.inf
+/copy:art/scenary/inf/MSTR15.inf
+
+#begin art/scenary/inf/MSTR16.inf
+/copy:art/scenary/inf/MSTR16.inf
+
+#begin art/scenary/inf/MSTR17.inf
+/copy:art/scenary/inf/MSTR17.inf
+
+#begin art/scenary/inf/MSTR18.inf
+/copy:art/scenary/inf/MSTR18.inf
+
+#begin art/scenary/inf/MSTR19.inf
+/copy:art/scenary/inf/MSTR19.inf
+
+#begin art/scenary/inf/MSTR20.inf
+/copy:art/scenary/inf/MSTR20.inf
+
+#begin art/scenary/inf/MSTR21.inf
+/copy:art/scenary/inf/MSTR21.inf
+
+#begin art/scenary/inf/MSTR22.inf
+/copy:art/scenary/inf/MSTR22.inf
+
+#begin art/scenary/inf/MSTR23.inf
+/copy:art/scenary/inf/MSTR23.inf
+
+#begin art/scenary/inf/MSTR24.inf
+/copy:art/scenary/inf/MSTR24.inf
+
+#begin art/scenary/inf/MSTR25.inf
+/copy:art/scenary/inf/MSTR25.inf
+
+#begin art/scenary/inf/MSTR26.inf
+/copy:art/scenary/inf/MSTR26.inf
+
+#begin art/scenary/inf/MSTR27.inf
+/copy:art/scenary/inf/MSTR27.inf
+
+#begin art/scenary/inf/MSTR28.inf
+/copy:art/scenary/inf/MSTR28.inf
+
+#begin art/scenary/inf/MSTR29.inf
+/copy:art/scenary/inf/MSTR29.inf
+
+#begin art/scenary/inf/MSTR30.inf
+/copy:art/scenary/inf/MSTR30.inf
+
+#begin art/scenary/inf/MSTR31.inf
+/copy:art/scenary/inf/MSTR31.inf
+
+#begin art/scenary/inf/MSTR32.inf
+/copy:art/scenary/inf/MSTR32.inf
+
+#begin art/scenary/inf/MSTR33.inf
+/copy:art/scenary/inf/MSTR33.inf
+
+#begin art/scenary/inf/MSTR34.inf
+/copy:art/scenary/inf/MSTR34.inf
+
+#begin art/scenary/inf/MSTR35.inf
+/copy:art/scenary/inf/MSTR35.inf
+
+#begin art/scenary/inf/MSTR36.inf
+/copy:art/scenary/inf/MSTR36.inf
+
+#begin art/scenary/inf/MSTR37.inf
+/copy:art/scenary/inf/MSTR37.inf
+
+#begin art/scenary/inf/MSTR38.inf
+/copy:art/scenary/inf/MSTR38.inf
+
+#begin art/scenary/inf/MSTR39.inf
+/copy:art/scenary/inf/MSTR39.inf
+
+#begin art/scenary/inf/MSTR40.inf
+/copy:art/scenary/inf/MSTR40.inf
+
+#begin art/scenary/inf/MSTR41.inf
+/copy:art/scenary/inf/MSTR41.inf
+
+#begin art/scenary/inf/MSTR42.inf
+/copy:art/scenary/inf/MSTR42.inf
+
+#begin art/scenary/inf/MSTR43.inf
+/copy:art/scenary/inf/MSTR43.inf
+
+#begin art/scenary/inf/MSTR44.inf
+/copy:art/scenary/inf/MSTR44.inf
+
+#begin art/scenary/inf/MSTR45.inf
+/copy:art/scenary/inf/MSTR45.inf
+
+#begin art/scenary/inf/MSTR46.inf
+/copy:art/scenary/inf/MSTR46.inf
+
+#begin art/scenary/inf/MSTR47.inf
+/copy:art/scenary/inf/MSTR47.inf
+
+#begin art/scenary/inf/MSTR48.inf
+/copy:art/scenary/inf/MSTR48.inf
+
+#begin art/scenary/inf/MSTR49.inf
+/copy:art/scenary/inf/MSTR49.inf
+
+#begin art/scenary/inf/MSTR50.inf
+/copy:art/scenary/inf/MSTR50.inf
+
+#begin art/scenary/inf/MSTR51.inf
+/copy:art/scenary/inf/MSTR51.inf
+
+#begin art/scenary/inf/MSTR52.inf
+/copy:art/scenary/inf/MSTR52.inf
+
+#begin art/scenary/inf/MSTR53.inf
+/copy:art/scenary/inf/MSTR53.inf
+
+#begin art/scenary/inf/MSTR54.inf
+/copy:art/scenary/inf/MSTR54.inf
+
+#begin art/scenary/inf/MSTR55.inf
+/copy:art/scenary/inf/MSTR55.inf
+
+#begin art/scenary/inf/MSTR56.inf
+/copy:art/scenary/inf/MSTR56.inf
+
+#begin art/scenary/inf/MSTR57.inf
+/copy:art/scenary/inf/MSTR57.inf
+
+#begin art/scenary/inf/MSTR58.inf
+/copy:art/scenary/inf/MSTR58.inf
+
+#begin art/scenary/inf/MSTR59.inf
+/copy:art/scenary/inf/MSTR59.inf
+
+#begin art/scenary/inf/MSTR60.inf
+/copy:art/scenary/inf/MSTR60.inf
+
+#begin art/scenary/inf/MSTR61.inf
+/copy:art/scenary/inf/MSTR61.inf
+
+#begin art/scenary/inf/MSTR62.inf
+/copy:art/scenary/inf/MSTR62.inf
+
+#begin art/scenary/inf/MSTR63.inf
+/copy:art/scenary/inf/MSTR63.inf
+
+#begin art/scenary/inf/MSTR64.inf
+/copy:art/scenary/inf/MSTR64.inf
+
+#begin art/scenary/inf/MSTR65.inf
+/copy:art/scenary/inf/MSTR65.inf
+
+#begin art/scenary/inf/MSTR66.inf
+/copy:art/scenary/inf/MSTR66.inf
+
+#begin art/scenary/inf/MSTR67.inf
+/copy:art/scenary/inf/MSTR67.inf
+
+#begin art/scenary/inf/MSTR68.inf
+/copy:art/scenary/inf/MSTR68.inf
+
+#begin art/scenary/inf/MSTR69.inf
+/copy:art/scenary/inf/MSTR69.inf
+
+#begin art/scenary/inf/MSTR70.inf
+/copy:art/scenary/inf/MSTR70.inf
+
+#begin art/scenary/inf/MUSHRM1.inf
+/copy:art/scenary/inf/MUSHRM1.inf
+
+#begin art/scenary/inf/MUSHRM2.inf
+/copy:art/scenary/inf/MUSHRM2.inf
+
+#begin art/scenary/inf/NCRBILL.inf
+/copy:art/scenary/inf/NCRBILL.inf
+
+#begin art/scenary/inf/ncrdoor1.inf
+/copy:art/scenary/inf/ncrdoor1.inf
+
+#begin art/scenary/inf/ncrdoor2.inf
+/copy:art/scenary/inf/ncrdoor2.inf
+
+#begin art/scenary/inf/ncrdoor3.inf
+/copy:art/scenary/inf/ncrdoor3.inf
+
+#begin art/scenary/inf/ncrdoor4.inf
+/copy:art/scenary/inf/ncrdoor4.inf
+
+#begin art/scenary/inf/ncrdoor5.inf
+/copy:art/scenary/inf/ncrdoor5.inf
+
+#begin art/scenary/inf/ncrdoor6.inf
+/copy:art/scenary/inf/ncrdoor6.inf
+
+#begin art/scenary/inf/NCRSIGN1.inf
+/copy:art/scenary/inf/NCRSIGN1.inf
+
+#begin art/scenary/inf/NCRSIGN2.inf
+/copy:art/scenary/inf/NCRSIGN2.inf
+
+#begin art/scenary/inf/NCRSIGN3.inf
+/copy:art/scenary/inf/NCRSIGN3.inf
+
+#begin art/scenary/inf/NCRSIGN4.inf
+/copy:art/scenary/inf/NCRSIGN4.inf
+
+#begin art/scenary/inf/NCRSIGN5.inf
+/copy:art/scenary/inf/NCRSIGN5.inf
+
+#begin art/scenary/inf/NCRSIGN6.inf
+/copy:art/scenary/inf/NCRSIGN6.inf
+
+#begin art/scenary/inf/NECDOOR1.inf
+/copy:art/scenary/inf/NECDOOR1.inf
+
+#begin art/scenary/inf/NECDOOR2.inf
+/copy:art/scenary/inf/NECDOOR2.inf
+
+#begin art/scenary/inf/NECDOOR3.inf
+/copy:art/scenary/inf/NECDOOR3.inf
+
+#begin art/scenary/inf/NECDOOR4.inf
+/copy:art/scenary/inf/NECDOOR4.inf
+
+#begin art/scenary/inf/NECPEW1.inf
+/copy:art/scenary/inf/NECPEW1.inf
+
+#begin art/scenary/inf/NECPEW2.inf
+/copy:art/scenary/inf/NECPEW2.inf
+
+#begin art/scenary/inf/NECPEW3.inf
+/copy:art/scenary/inf/NECPEW3.inf
+
+#begin art/scenary/inf/NEWSP1.inf
+/copy:art/scenary/inf/NEWSP1.inf
+
+#begin art/scenary/inf/NEWSP2.inf
+/copy:art/scenary/inf/NEWSP2.inf
+
+#begin art/scenary/inf/NEWSP3.inf
+/copy:art/scenary/inf/NEWSP3.inf
+
+#begin art/scenary/inf/NEWSP4.inf
+/copy:art/scenary/inf/NEWSP4.inf
+
+#begin art/scenary/inf/NEWSP5.inf
+/copy:art/scenary/inf/NEWSP5.inf
+
+#begin art/scenary/inf/NEWSP6.inf
+/copy:art/scenary/inf/NEWSP6.inf
+
+#begin art/scenary/inf/NJUNK1.inf
+/copy:art/scenary/inf/NJUNK1.inf
+
+#begin art/scenary/inf/NJUNK2.inf
+/copy:art/scenary/inf/NJUNK2.inf
+
+#begin art/scenary/inf/NJUNK3.inf
+/copy:art/scenary/inf/NJUNK3.inf
+
+#begin art/scenary/inf/NJUNK4.inf
+/copy:art/scenary/inf/NJUNK4.inf
+
+#begin art/scenary/inf/NJUNK5.inf
+/copy:art/scenary/inf/NJUNK5.inf
+
+#begin art/scenary/inf/NJUNK6.inf
+/copy:art/scenary/inf/NJUNK6.inf
+
+#begin art/scenary/inf/NJUNK7.inf
+/copy:art/scenary/inf/NJUNK7.inf
+
+#begin art/scenary/inf/NUM01.inf
+/copy:art/scenary/inf/NUM01.inf
+
+#begin art/scenary/inf/NUM02.inf
+/copy:art/scenary/inf/NUM02.inf
+
+#begin art/scenary/inf/NUM03.inf
+/copy:art/scenary/inf/NUM03.inf
+
+#begin art/scenary/inf/NUM04.inf
+/copy:art/scenary/inf/NUM04.inf
+
+#begin art/scenary/inf/oildoor1.inf
+/copy:art/scenary/inf/oildoor1.inf
+
+#begin art/scenary/inf/OILTOP1.inf
+/copy:art/scenary/inf/OILTOP1.inf
+
+#begin art/scenary/inf/OUTBUS01.inf
+/copy:art/scenary/inf/OUTBUS01.inf
+
+#begin art/scenary/inf/OUTBUS02.inf
+/copy:art/scenary/inf/OUTBUS02.inf
+
+#begin art/scenary/inf/outhouse.inf
+/copy:art/scenary/inf/outhouse.inf
+
+#begin art/scenary/inf/PILLAR.inf
+/copy:art/scenary/inf/PILLAR.inf
+
+#begin art/scenary/inf/PIPES1.inf
+/copy:art/scenary/inf/PIPES1.inf
+
+#begin art/scenary/inf/PIPES2.inf
+/copy:art/scenary/inf/PIPES2.inf
+
+#begin art/scenary/inf/PLOW01.inf
+/copy:art/scenary/inf/PLOW01.inf
+
+#begin art/scenary/inf/plow02.inf
+/copy:art/scenary/inf/plow02.inf
+
+#begin art/scenary/inf/POLEWATR.inf
+/copy:art/scenary/inf/POLEWATR.inf
+
+#begin art/scenary/inf/POOLLADR.inf
+/copy:art/scenary/inf/POOLLADR.inf
+
+#begin art/scenary/inf/POOLTBL1.inf
+/copy:art/scenary/inf/POOLTBL1.inf
+
+#begin art/scenary/inf/POOLTBL2.inf
+/copy:art/scenary/inf/POOLTBL2.inf
+
+#begin art/scenary/inf/POOLTBL3.inf
+/copy:art/scenary/inf/POOLTBL3.inf
+
+#begin art/scenary/inf/POOLTBL4.inf
+/copy:art/scenary/inf/POOLTBL4.inf
+
+#begin art/scenary/inf/POOLTBL5.inf
+/copy:art/scenary/inf/POOLTBL5.inf
+
+#begin art/scenary/inf/POOLTBL6.inf
+/copy:art/scenary/inf/POOLTBL6.inf
+
+#begin art/scenary/inf/POSTS.inf
+/copy:art/scenary/inf/POSTS.inf
+
+#begin art/scenary/inf/POT1.inf
+/copy:art/scenary/inf/POT1.inf
+
+#begin art/scenary/inf/POWER1.inf
+/copy:art/scenary/inf/POWER1.inf
+
+#begin art/scenary/inf/power2.inf
+/copy:art/scenary/inf/power2.inf
+
+#begin art/scenary/inf/PRESCHAR.inf
+/copy:art/scenary/inf/PRESCHAR.inf
+
+#begin art/scenary/inf/PRESDOOR.inf
+/copy:art/scenary/inf/PRESDOOR.inf
+
+#begin art/scenary/inf/PRESTAB2.inf
+/copy:art/scenary/inf/PRESTAB2.inf
+
+#begin art/scenary/inf/PRESTABL.inf
+/copy:art/scenary/inf/PRESTABL.inf
+
+#begin art/scenary/inf/PSWITCH.inf
+/copy:art/scenary/inf/PSWITCH.inf
+
+#begin art/scenary/inf/PUE01.inf
+/copy:art/scenary/inf/PUE01.inf
+
+#begin art/scenary/inf/PUMPNEC.inf
+/copy:art/scenary/inf/PUMPNEC.inf
+
+#begin art/scenary/inf/PWRARMOR.inf
+/copy:art/scenary/inf/PWRARMOR.inf
+
+#begin art/scenary/inf/RADAR01.inf
+/copy:art/scenary/inf/RADAR01.inf
+
+#begin art/scenary/inf/RADAR02.inf
+/copy:art/scenary/inf/RADAR02.inf
+
+#begin art/scenary/inf/radar03.inf
+/copy:art/scenary/inf/radar03.inf
+
+#begin art/scenary/inf/radsign1.inf
+/copy:art/scenary/inf/radsign1.inf
+
+#begin art/scenary/inf/RAIDPIT.inf
+/copy:art/scenary/inf/RAIDPIT.inf
+
+#begin art/scenary/inf/RAKE1.inf
+/copy:art/scenary/inf/RAKE1.inf
+
+#begin art/scenary/inf/RAKE2.inf
+/copy:art/scenary/inf/RAKE2.inf
+
+#begin art/scenary/inf/RAKE3.inf
+/copy:art/scenary/inf/RAKE3.inf
+
+#begin art/scenary/inf/RAWHIDE.inf
+/copy:art/scenary/inf/RAWHIDE.inf
+
+#begin art/scenary/inf/REACTOR5.inf
+/copy:art/scenary/inf/REACTOR5.inf
+
+#begin art/scenary/inf/REDSGN01.inf
+/copy:art/scenary/inf/REDSGN01.inf
+
+#begin art/scenary/inf/REDSGN02.inf
+/copy:art/scenary/inf/REDSGN02.inf
+
+#begin art/scenary/inf/REDSGN03.inf
+/copy:art/scenary/inf/REDSGN03.inf
+
+#begin art/scenary/inf/REDSGN04.inf
+/copy:art/scenary/inf/REDSGN04.inf
+
+#begin art/scenary/inf/REDSGN05.inf
+/copy:art/scenary/inf/REDSGN05.inf
+
+#begin art/scenary/inf/REDSGN06.inf
+/copy:art/scenary/inf/REDSGN06.inf
+
+#begin art/scenary/inf/REDSGN07.inf
+/copy:art/scenary/inf/REDSGN07.inf
+
+#begin art/scenary/inf/REDSGN08.inf
+/copy:art/scenary/inf/REDSGN08.inf
+
+#begin art/scenary/inf/REDSGN09.inf
+/copy:art/scenary/inf/REDSGN09.inf
+
+#begin art/scenary/inf/REDSGN10.inf
+/copy:art/scenary/inf/REDSGN10.inf
+
+#begin art/scenary/inf/REDSGN11.inf
+/copy:art/scenary/inf/REDSGN11.inf
+
+#begin art/scenary/inf/REDSGN12.inf
+/copy:art/scenary/inf/REDSGN12.inf
+
+#begin art/scenary/inf/REDSGN15.inf
+/copy:art/scenary/inf/REDSGN15.inf
+
+#begin art/scenary/inf/REDSGN16.inf
+/copy:art/scenary/inf/REDSGN16.inf
+
+#begin art/scenary/inf/RENOS10.inf
+/copy:art/scenary/inf/RENOS10.inf
+
+#begin art/scenary/inf/RENOS11.inf
+/copy:art/scenary/inf/RENOS11.inf
+
+#begin art/scenary/inf/RENOS12.inf
+/copy:art/scenary/inf/RENOS12.inf
+
+#begin art/scenary/inf/RENOS13.inf
+/copy:art/scenary/inf/RENOS13.inf
+
+#begin art/scenary/inf/RENOS14.inf
+/copy:art/scenary/inf/RENOS14.inf
+
+#begin art/scenary/inf/RENOS15.inf
+/copy:art/scenary/inf/RENOS15.inf
+
+#begin art/scenary/inf/RENOS16.inf
+/copy:art/scenary/inf/RENOS16.inf
+
+#begin art/scenary/inf/RENOS17.inf
+/copy:art/scenary/inf/RENOS17.inf
+
+#begin art/scenary/inf/RENOS18.inf
+/copy:art/scenary/inf/RENOS18.inf
+
+#begin art/scenary/inf/renosgn1.inf
+/copy:art/scenary/inf/renosgn1.inf
+
+#begin art/scenary/inf/renosgn2.inf
+/copy:art/scenary/inf/renosgn2.inf
+
+#begin art/scenary/inf/renosgn3.inf
+/copy:art/scenary/inf/renosgn3.inf
+
+#begin art/scenary/inf/renosgn4.inf
+/copy:art/scenary/inf/renosgn4.inf
+
+#begin art/scenary/inf/renosgn5.inf
+/copy:art/scenary/inf/renosgn5.inf
+
+#begin art/scenary/inf/renosgn6.inf
+/copy:art/scenary/inf/renosgn6.inf
+
+#begin art/scenary/inf/renosgn7.inf
+/copy:art/scenary/inf/renosgn7.inf
+
+#begin art/scenary/inf/renosgn8.inf
+/copy:art/scenary/inf/renosgn8.inf
+
+#begin art/scenary/inf/renosgn9.inf
+/copy:art/scenary/inf/renosgn9.inf
+
+#begin art/scenary/inf/RESERVED.inf
+/copy:art/scenary/inf/RESERVED.inf
+
+#begin art/scenary/inf/RETSCAN1.inf
+/copy:art/scenary/inf/RETSCAN1.inf
+
+#begin art/scenary/inf/RIPSIGN1.inf
+/copy:art/scenary/inf/RIPSIGN1.inf
+
+#begin art/scenary/inf/RIPSIGN2.inf
+/copy:art/scenary/inf/RIPSIGN2.inf
+
+#begin art/scenary/inf/ROBCOMP1.inf
+/copy:art/scenary/inf/ROBCOMP1.inf
+
+#begin art/scenary/inf/ROBCOMP2.inf
+/copy:art/scenary/inf/ROBCOMP2.inf
+
+#begin art/scenary/inf/ROBCOMP3.inf
+/copy:art/scenary/inf/ROBCOMP3.inf
+
+#begin art/scenary/inf/ROBCOMP4.inf
+/copy:art/scenary/inf/ROBCOMP4.inf
+
+#begin art/scenary/inf/ROBCOMP5.inf
+/copy:art/scenary/inf/ROBCOMP5.inf
+
+#begin art/scenary/inf/ROCK01.inf
+/copy:art/scenary/inf/ROCK01.inf
+
+#begin art/scenary/inf/ROCK02.inf
+/copy:art/scenary/inf/ROCK02.inf
+
+#begin art/scenary/inf/ROCK03.inf
+/copy:art/scenary/inf/ROCK03.inf
+
+#begin art/scenary/inf/ROCK04.inf
+/copy:art/scenary/inf/ROCK04.inf
+
+#begin art/scenary/inf/ROCK05.inf
+/copy:art/scenary/inf/ROCK05.inf
+
+#begin art/scenary/inf/ROCK06.inf
+/copy:art/scenary/inf/ROCK06.inf
+
+#begin art/scenary/inf/ROCK07.inf
+/copy:art/scenary/inf/ROCK07.inf
+
+#begin art/scenary/inf/ROCK08.inf
+/copy:art/scenary/inf/ROCK08.inf
+
+#begin art/scenary/inf/ROCK09.inf
+/copy:art/scenary/inf/ROCK09.inf
+
+#begin art/scenary/inf/ROCK10.inf
+/copy:art/scenary/inf/ROCK10.inf
+
+#begin art/scenary/inf/ROCK20.inf
+/copy:art/scenary/inf/ROCK20.inf
+
+#begin art/scenary/inf/ROCK21.inf
+/copy:art/scenary/inf/ROCK21.inf
+
+#begin art/scenary/inf/ROCK22.inf
+/copy:art/scenary/inf/ROCK22.inf
+
+#begin art/scenary/inf/ROCK23.inf
+/copy:art/scenary/inf/ROCK23.inf
+
+#begin art/scenary/inf/ROCK24.inf
+/copy:art/scenary/inf/ROCK24.inf
+
+#begin art/scenary/inf/ROCK25.inf
+/copy:art/scenary/inf/ROCK25.inf
+
+#begin art/scenary/inf/ROCK26.inf
+/copy:art/scenary/inf/ROCK26.inf
+
+#begin art/scenary/inf/ROCK27.inf
+/copy:art/scenary/inf/ROCK27.inf
+
+#begin art/scenary/inf/ROCK28.inf
+/copy:art/scenary/inf/ROCK28.inf
+
+#begin art/scenary/inf/ROCK29.inf
+/copy:art/scenary/inf/ROCK29.inf
+
+#begin art/scenary/inf/ROCK30.inf
+/copy:art/scenary/inf/ROCK30.inf
+
+#begin art/scenary/inf/ROCKMB01.inf
+/copy:art/scenary/inf/ROCKMB01.inf
+
+#begin art/scenary/inf/ROCKMB02.inf
+/copy:art/scenary/inf/ROCKMB02.inf
+
+#begin art/scenary/inf/ROCKMB03.inf
+/copy:art/scenary/inf/ROCKMB03.inf
+
+#begin art/scenary/inf/ROCKMB04.inf
+/copy:art/scenary/inf/ROCKMB04.inf
+
+#begin art/scenary/inf/ROKS.inf
+/copy:art/scenary/inf/ROKS.inf
+
+#begin art/scenary/inf/ROKS2.inf
+/copy:art/scenary/inf/ROKS2.inf
+
+#begin art/scenary/inf/ROKS3.inf
+/copy:art/scenary/inf/ROKS3.inf
+
+#begin art/scenary/inf/ROLTBL01.inf
+/copy:art/scenary/inf/ROLTBL01.inf
+
+#begin art/scenary/inf/ROLTBL02.inf
+/copy:art/scenary/inf/ROLTBL02.inf
+
+#begin art/scenary/inf/ROLTBL03.inf
+/copy:art/scenary/inf/ROLTBL03.inf
+
+#begin art/scenary/inf/ROLTBL04.inf
+/copy:art/scenary/inf/ROLTBL04.inf
+
+#begin art/scenary/inf/ROLTBL05.inf
+/copy:art/scenary/inf/ROLTBL05.inf
+
+#begin art/scenary/inf/ROPE01.inf
+/copy:art/scenary/inf/ROPE01.inf
+
+#begin art/scenary/inf/RUBBLE1.inf
+/copy:art/scenary/inf/RUBBLE1.inf
+
+#begin art/scenary/inf/RUG1.inf
+/copy:art/scenary/inf/RUG1.inf
+
+#begin art/scenary/inf/RUG2.inf
+/copy:art/scenary/inf/RUG2.inf
+
+#begin art/scenary/inf/RUG3.inf
+/copy:art/scenary/inf/RUG3.inf
+
+#begin art/scenary/inf/SADDOOR1.inf
+/copy:art/scenary/inf/SADDOOR1.inf
+
+#begin art/scenary/inf/SADDOOR2.inf
+/copy:art/scenary/inf/SADDOOR2.inf
+
+#begin art/scenary/inf/SADDOOR3.inf
+/copy:art/scenary/inf/SADDOOR3.inf
+
+#begin art/scenary/inf/SADSIGN1.inf
+/copy:art/scenary/inf/SADSIGN1.inf
+
+#begin art/scenary/inf/sadsign2.inf
+/copy:art/scenary/inf/sadsign2.inf
+
+#begin art/scenary/inf/sadsign3.inf
+/copy:art/scenary/inf/sadsign3.inf
+
+#begin art/scenary/inf/sadsign4.inf
+/copy:art/scenary/inf/sadsign4.inf
+
+#begin art/scenary/inf/SADTOP01.inf
+/copy:art/scenary/inf/SADTOP01.inf
+
+#begin art/scenary/inf/SADTOP02.inf
+/copy:art/scenary/inf/SADTOP02.inf
+
+#begin art/scenary/inf/SADTOP03.inf
+/copy:art/scenary/inf/SADTOP03.inf
+
+#begin art/scenary/inf/SADTOP04.inf
+/copy:art/scenary/inf/SADTOP04.inf
+
+#begin art/scenary/inf/SADTOP05.inf
+/copy:art/scenary/inf/SADTOP05.inf
+
+#begin art/scenary/inf/SADTOP06.inf
+/copy:art/scenary/inf/SADTOP06.inf
+
+#begin art/scenary/inf/SADTOP07.inf
+/copy:art/scenary/inf/SADTOP07.inf
+
+#begin art/scenary/inf/SADTOP08.inf
+/copy:art/scenary/inf/SADTOP08.inf
+
+#begin art/scenary/inf/SCOMP1.inf
+/copy:art/scenary/inf/SCOMP1.inf
+
+#begin art/scenary/inf/SCOMP2.inf
+/copy:art/scenary/inf/SCOMP2.inf
+
+#begin art/scenary/inf/SCORPART.inf
+/copy:art/scenary/inf/SCORPART.inf
+
+#begin art/scenary/inf/SCREENS1.inf
+/copy:art/scenary/inf/SCREENS1.inf
+
+#begin art/scenary/inf/SCREENS2.inf
+/copy:art/scenary/inf/SCREENS2.inf
+
+#begin art/scenary/inf/SCREENS3.inf
+/copy:art/scenary/inf/SCREENS3.inf
+
+#begin art/scenary/inf/SCREENS4.inf
+/copy:art/scenary/inf/SCREENS4.inf
+
+#begin art/scenary/inf/SCRPBLUD.inf
+/copy:art/scenary/inf/SCRPBLUD.inf
+
+#begin art/scenary/inf/secdoor1.inf
+/copy:art/scenary/inf/secdoor1.inf
+
+#begin art/scenary/inf/SECDOOR2.inf
+/copy:art/scenary/inf/SECDOOR2.inf
+
+#begin art/scenary/inf/SECRET.inf
+/copy:art/scenary/inf/SECRET.inf
+
+#begin art/scenary/inf/SECRET2.inf
+/copy:art/scenary/inf/SECRET2.inf
+
+#begin art/scenary/inf/SEWER01.inf
+/copy:art/scenary/inf/SEWER01.inf
+
+#begin art/scenary/inf/SEWER02.inf
+/copy:art/scenary/inf/SEWER02.inf
+
+#begin art/scenary/inf/SEWER03.inf
+/copy:art/scenary/inf/SEWER03.inf
+
+#begin art/scenary/inf/SEWER04.inf
+/copy:art/scenary/inf/SEWER04.inf
+
+#begin art/scenary/inf/SEWER05.inf
+/copy:art/scenary/inf/SEWER05.inf
+
+#begin art/scenary/inf/SEWER06.inf
+/copy:art/scenary/inf/SEWER06.inf
+
+#begin art/scenary/inf/SEWER07.inf
+/copy:art/scenary/inf/SEWER07.inf
+
+#begin art/scenary/inf/SEWER08.inf
+/copy:art/scenary/inf/SEWER08.inf
+
+#begin art/scenary/inf/SEWER09.inf
+/copy:art/scenary/inf/SEWER09.inf
+
+#begin art/scenary/inf/SEWER10.inf
+/copy:art/scenary/inf/SEWER10.inf
+
+#begin art/scenary/inf/SEWER11.inf
+/copy:art/scenary/inf/SEWER11.inf
+
+#begin art/scenary/inf/SFROAD01.inf
+/copy:art/scenary/inf/SFROAD01.inf
+
+#begin art/scenary/inf/SFROAD02.inf
+/copy:art/scenary/inf/SFROAD02.inf
+
+#begin art/scenary/inf/SFROAD03.inf
+/copy:art/scenary/inf/SFROAD03.inf
+
+#begin art/scenary/inf/SFROAD04.inf
+/copy:art/scenary/inf/SFROAD04.inf
+
+#begin art/scenary/inf/SFROAD05.inf
+/copy:art/scenary/inf/SFROAD05.inf
+
+#begin art/scenary/inf/SFROAD06.inf
+/copy:art/scenary/inf/SFROAD06.inf
+
+#begin art/scenary/inf/SFROAD07.inf
+/copy:art/scenary/inf/SFROAD07.inf
+
+#begin art/scenary/inf/sfroad08.inf
+/copy:art/scenary/inf/sfroad08.inf
+
+#begin art/scenary/inf/sfroad09.inf
+/copy:art/scenary/inf/sfroad09.inf
+
+#begin art/scenary/inf/sfroad10.inf
+/copy:art/scenary/inf/sfroad10.inf
+
+#begin art/scenary/inf/SFROAD11.inf
+/copy:art/scenary/inf/SFROAD11.inf
+
+#begin art/scenary/inf/SFROAD12.inf
+/copy:art/scenary/inf/SFROAD12.inf
+
+#begin art/scenary/inf/SFROAD13.inf
+/copy:art/scenary/inf/SFROAD13.inf
+
+#begin art/scenary/inf/SHACK.inf
+/copy:art/scenary/inf/SHACK.inf
+
+#begin art/scenary/inf/shipdor1.inf
+/copy:art/scenary/inf/shipdor1.inf
+
+#begin art/scenary/inf/shipdor2.inf
+/copy:art/scenary/inf/shipdor2.inf
+
+#begin art/scenary/inf/SHIPSC01.inf
+/copy:art/scenary/inf/SHIPSC01.inf
+
+#begin art/scenary/inf/SHIPSC02.inf
+/copy:art/scenary/inf/SHIPSC02.inf
+
+#begin art/scenary/inf/SHIPSC03.inf
+/copy:art/scenary/inf/SHIPSC03.inf
+
+#begin art/scenary/inf/SHIPSC04.inf
+/copy:art/scenary/inf/SHIPSC04.inf
+
+#begin art/scenary/inf/SHIPSC05.inf
+/copy:art/scenary/inf/SHIPSC05.inf
+
+#begin art/scenary/inf/SHIPSC06.inf
+/copy:art/scenary/inf/SHIPSC06.inf
+
+#begin art/scenary/inf/SHIPSC07.inf
+/copy:art/scenary/inf/SHIPSC07.inf
+
+#begin art/scenary/inf/SHIPSC08.inf
+/copy:art/scenary/inf/SHIPSC08.inf
+
+#begin art/scenary/inf/SHIPSC09.inf
+/copy:art/scenary/inf/SHIPSC09.inf
+
+#begin art/scenary/inf/SHIPSC10.inf
+/copy:art/scenary/inf/SHIPSC10.inf
+
+#begin art/scenary/inf/SHIPSC20.inf
+/copy:art/scenary/inf/SHIPSC20.inf
+
+#begin art/scenary/inf/SHIPSC21.inf
+/copy:art/scenary/inf/SHIPSC21.inf
+
+#begin art/scenary/inf/SHIPSC22.inf
+/copy:art/scenary/inf/SHIPSC22.inf
+
+#begin art/scenary/inf/SHIPSC23.inf
+/copy:art/scenary/inf/SHIPSC23.inf
+
+#begin art/scenary/inf/SHIPSC24.inf
+/copy:art/scenary/inf/SHIPSC24.inf
+
+#begin art/scenary/inf/SHIPWTR1.inf
+/copy:art/scenary/inf/SHIPWTR1.inf
+
+#begin art/scenary/inf/SHIPWTR2.inf
+/copy:art/scenary/inf/SHIPWTR2.inf
+
+#begin art/scenary/inf/SHIPWTR3.inf
+/copy:art/scenary/inf/SHIPWTR3.inf
+
+#begin art/scenary/inf/SHIPWTR4.inf
+/copy:art/scenary/inf/SHIPWTR4.inf
+
+#begin art/scenary/inf/SHIPWTR5.inf
+/copy:art/scenary/inf/SHIPWTR5.inf
+
+#begin art/scenary/inf/SHORCAR1.inf
+/copy:art/scenary/inf/SHORCAR1.inf
+
+#begin art/scenary/inf/SHORCAR2.inf
+/copy:art/scenary/inf/SHORCAR2.inf
+
+#begin art/scenary/inf/SHORCAR3.inf
+/copy:art/scenary/inf/SHORCAR3.inf
+
+#begin art/scenary/inf/SHORJNK1.inf
+/copy:art/scenary/inf/SHORJNK1.inf
+
+#begin art/scenary/inf/SHORJNK2.inf
+/copy:art/scenary/inf/SHORJNK2.inf
+
+#begin art/scenary/inf/SHORJNK3.inf
+/copy:art/scenary/inf/SHORJNK3.inf
+
+#begin art/scenary/inf/SHOVEL1.inf
+/copy:art/scenary/inf/SHOVEL1.inf
+
+#begin art/scenary/inf/SHOVEL2.inf
+/copy:art/scenary/inf/SHOVEL2.inf
+
+#begin art/scenary/inf/SHOVEL3.inf
+/copy:art/scenary/inf/SHOVEL3.inf
+
+#begin art/scenary/inf/SHPLANK.inf
+/copy:art/scenary/inf/SHPLANK.inf
+
+#begin art/scenary/inf/shuttl01.inf
+/copy:art/scenary/inf/shuttl01.inf
+
+#begin art/scenary/inf/shuttl02.inf
+/copy:art/scenary/inf/shuttl02.inf
+
+#begin art/scenary/inf/shuttl03.inf
+/copy:art/scenary/inf/shuttl03.inf
+
+#begin art/scenary/inf/shuttl04.inf
+/copy:art/scenary/inf/shuttl04.inf
+
+#begin art/scenary/inf/shuttl05.inf
+/copy:art/scenary/inf/shuttl05.inf
+
+#begin art/scenary/inf/shuttl06.inf
+/copy:art/scenary/inf/shuttl06.inf
+
+#begin art/scenary/inf/shuttl07.inf
+/copy:art/scenary/inf/shuttl07.inf
+
+#begin art/scenary/inf/shuttl08.inf
+/copy:art/scenary/inf/shuttl08.inf
+
+#begin art/scenary/inf/shuttl09.inf
+/copy:art/scenary/inf/shuttl09.inf
+
+#begin art/scenary/inf/shuttl10.inf
+/copy:art/scenary/inf/shuttl10.inf
+
+#begin art/scenary/inf/shuttl20.inf
+/copy:art/scenary/inf/shuttl20.inf
+
+#begin art/scenary/inf/shuttl21.inf
+/copy:art/scenary/inf/shuttl21.inf
+
+#begin art/scenary/inf/shuttl22.inf
+/copy:art/scenary/inf/shuttl22.inf
+
+#begin art/scenary/inf/shuttl23.inf
+/copy:art/scenary/inf/shuttl23.inf
+
+#begin art/scenary/inf/shuttl24.inf
+/copy:art/scenary/inf/shuttl24.inf
+
+#begin art/scenary/inf/shuttl25.inf
+/copy:art/scenary/inf/shuttl25.inf
+
+#begin art/scenary/inf/shuttl26.inf
+/copy:art/scenary/inf/shuttl26.inf
+
+#begin art/scenary/inf/shuttl27.inf
+/copy:art/scenary/inf/shuttl27.inf
+
+#begin art/scenary/inf/shuttl28.inf
+/copy:art/scenary/inf/shuttl28.inf
+
+#begin art/scenary/inf/shuttl29.inf
+/copy:art/scenary/inf/shuttl29.inf
+
+#begin art/scenary/inf/shuttl30.inf
+/copy:art/scenary/inf/shuttl30.inf
+
+#begin art/scenary/inf/shuttl31.inf
+/copy:art/scenary/inf/shuttl31.inf
+
+#begin art/scenary/inf/shuttl32.inf
+/copy:art/scenary/inf/shuttl32.inf
+
+#begin art/scenary/inf/shuttl33.inf
+/copy:art/scenary/inf/shuttl33.inf
+
+#begin art/scenary/inf/shuttl34.inf
+/copy:art/scenary/inf/shuttl34.inf
+
+#begin art/scenary/inf/shuttl35.inf
+/copy:art/scenary/inf/shuttl35.inf
+
+#begin art/scenary/inf/shuttl36.inf
+/copy:art/scenary/inf/shuttl36.inf
+
+#begin art/scenary/inf/shuttl37.inf
+/copy:art/scenary/inf/shuttl37.inf
+
+#begin art/scenary/inf/shuttl38.inf
+/copy:art/scenary/inf/shuttl38.inf
+
+#begin art/scenary/inf/shuttl39.inf
+/copy:art/scenary/inf/shuttl39.inf
+
+#begin art/scenary/inf/shuttl40.inf
+/copy:art/scenary/inf/shuttl40.inf
+
+#begin art/scenary/inf/sidebrah.inf
+/copy:art/scenary/inf/sidebrah.inf
+
+#begin art/scenary/inf/SIGN01.inf
+/copy:art/scenary/inf/SIGN01.inf
+
+#begin art/scenary/inf/SIGN02.inf
+/copy:art/scenary/inf/SIGN02.inf
+
+#begin art/scenary/inf/SIGN03.inf
+/copy:art/scenary/inf/SIGN03.inf
+
+#begin art/scenary/inf/SIGN04.inf
+/copy:art/scenary/inf/SIGN04.inf
+
+#begin art/scenary/inf/SIGN05.inf
+/copy:art/scenary/inf/SIGN05.inf
+
+#begin art/scenary/inf/SIGN06.inf
+/copy:art/scenary/inf/SIGN06.inf
+
+#begin art/scenary/inf/SIGN07.inf
+/copy:art/scenary/inf/SIGN07.inf
+
+#begin art/scenary/inf/SIGN08.inf
+/copy:art/scenary/inf/SIGN08.inf
+
+#begin art/scenary/inf/SIGN09.inf
+/copy:art/scenary/inf/SIGN09.inf
+
+#begin art/scenary/inf/SIGN10.inf
+/copy:art/scenary/inf/SIGN10.inf
+
+#begin art/scenary/inf/SIGN11.inf
+/copy:art/scenary/inf/SIGN11.inf
+
+#begin art/scenary/inf/SIGN12.inf
+/copy:art/scenary/inf/SIGN12.inf
+
+#begin art/scenary/inf/SIGN13.inf
+/copy:art/scenary/inf/SIGN13.inf
+
+#begin art/scenary/inf/SIGN20.inf
+/copy:art/scenary/inf/SIGN20.inf
+
+#begin art/scenary/inf/SIGN21.inf
+/copy:art/scenary/inf/SIGN21.inf
+
+#begin art/scenary/inf/SIGN22.inf
+/copy:art/scenary/inf/SIGN22.inf
+
+#begin art/scenary/inf/SIGN22B.inf
+/copy:art/scenary/inf/SIGN22B.inf
+
+#begin art/scenary/inf/SIGN23.inf
+/copy:art/scenary/inf/SIGN23.inf
+
+#begin art/scenary/inf/SIGN24.inf
+/copy:art/scenary/inf/SIGN24.inf
+
+#begin art/scenary/inf/SIGN25.inf
+/copy:art/scenary/inf/SIGN25.inf
+
+#begin art/scenary/inf/SIGN26.inf
+/copy:art/scenary/inf/SIGN26.inf
+
+#begin art/scenary/inf/SIGN26B.inf
+/copy:art/scenary/inf/SIGN26B.inf
+
+#begin art/scenary/inf/SIGN27.inf
+/copy:art/scenary/inf/SIGN27.inf
+
+#begin art/scenary/inf/SIGN28.inf
+/copy:art/scenary/inf/SIGN28.inf
+
+#begin art/scenary/inf/SIGN28B.inf
+/copy:art/scenary/inf/SIGN28B.inf
+
+#begin art/scenary/inf/SIGN29.inf
+/copy:art/scenary/inf/SIGN29.inf
+
+#begin art/scenary/inf/SIGN30.inf
+/copy:art/scenary/inf/SIGN30.inf
+
+#begin art/scenary/inf/SIGN31.inf
+/copy:art/scenary/inf/SIGN31.inf
+
+#begin art/scenary/inf/SIGN32.inf
+/copy:art/scenary/inf/SIGN32.inf
+
+#begin art/scenary/inf/SIGN33.inf
+/copy:art/scenary/inf/SIGN33.inf
+
+#begin art/scenary/inf/SIGN34.inf
+/copy:art/scenary/inf/SIGN34.inf
+
+#begin art/scenary/inf/SIGN35.inf
+/copy:art/scenary/inf/SIGN35.inf
+
+#begin art/scenary/inf/SIGN36.inf
+/copy:art/scenary/inf/SIGN36.inf
+
+#begin art/scenary/inf/SIGN37.inf
+/copy:art/scenary/inf/SIGN37.inf
+
+#begin art/scenary/inf/SIGN38.inf
+/copy:art/scenary/inf/SIGN38.inf
+
+#begin art/scenary/inf/SIGN39.inf
+/copy:art/scenary/inf/SIGN39.inf
+
+#begin art/scenary/inf/SIGN40.inf
+/copy:art/scenary/inf/SIGN40.inf
+
+#begin art/scenary/inf/SIGN41.inf
+/copy:art/scenary/inf/SIGN41.inf
+
+#begin art/scenary/inf/SIGN42.inf
+/copy:art/scenary/inf/SIGN42.inf
+
+#begin art/scenary/inf/SIGN43.inf
+/copy:art/scenary/inf/SIGN43.inf
+
+#begin art/scenary/inf/SIGN44.inf
+/copy:art/scenary/inf/SIGN44.inf
+
+#begin art/scenary/inf/SIGN45.inf
+/copy:art/scenary/inf/SIGN45.inf
+
+#begin art/scenary/inf/SIGN46.inf
+/copy:art/scenary/inf/SIGN46.inf
+
+#begin art/scenary/inf/SIGN47.inf
+/copy:art/scenary/inf/SIGN47.inf
+
+#begin art/scenary/inf/SIGN50.inf
+/copy:art/scenary/inf/SIGN50.inf
+
+#begin art/scenary/inf/SIGN51.inf
+/copy:art/scenary/inf/SIGN51.inf
+
+#begin art/scenary/inf/SIGN52.inf
+/copy:art/scenary/inf/SIGN52.inf
+
+#begin art/scenary/inf/SIGN52B.inf
+/copy:art/scenary/inf/SIGN52B.inf
+
+#begin art/scenary/inf/SIGN53.inf
+/copy:art/scenary/inf/SIGN53.inf
+
+#begin art/scenary/inf/SIGN54.inf
+/copy:art/scenary/inf/SIGN54.inf
+
+#begin art/scenary/inf/SIGN55.inf
+/copy:art/scenary/inf/SIGN55.inf
+
+#begin art/scenary/inf/SIGN56.inf
+/copy:art/scenary/inf/SIGN56.inf
+
+#begin art/scenary/inf/SINK1.inf
+/copy:art/scenary/inf/SINK1.inf
+
+#begin art/scenary/inf/SINK2.inf
+/copy:art/scenary/inf/SINK2.inf
+
+#begin art/scenary/inf/SINK3.inf
+/copy:art/scenary/inf/SINK3.inf
+
+#begin art/scenary/inf/SINK4.inf
+/copy:art/scenary/inf/SINK4.inf
+
+#begin art/scenary/inf/sklpole1.inf
+/copy:art/scenary/inf/sklpole1.inf
+
+#begin art/scenary/inf/SKLPOLE2.inf
+/copy:art/scenary/inf/SKLPOLE2.inf
+
+#begin art/scenary/inf/SKLPOLE3.inf
+/copy:art/scenary/inf/SKLPOLE3.inf
+
+#begin art/scenary/inf/SKUM.inf
+/copy:art/scenary/inf/SKUM.inf
+
+#begin art/scenary/inf/SLIMEIS1.inf
+/copy:art/scenary/inf/SLIMEIS1.inf
+
+#begin art/scenary/inf/SLIMEIS2.inf
+/copy:art/scenary/inf/SLIMEIS2.inf
+
+#begin art/scenary/inf/SLIMEIS3.inf
+/copy:art/scenary/inf/SLIMEIS3.inf
+
+#begin art/scenary/inf/SLIMEIS4.inf
+/copy:art/scenary/inf/SLIMEIS4.inf
+
+#begin art/scenary/inf/SLIMPOL1.inf
+/copy:art/scenary/inf/SLIMPOL1.inf
+
+#begin art/scenary/inf/SLIMPOL2.inf
+/copy:art/scenary/inf/SLIMPOL2.inf
+
+#begin art/scenary/inf/SLIMPOL3.inf
+/copy:art/scenary/inf/SLIMPOL3.inf
+
+#begin art/scenary/inf/SLMACH1.inf
+/copy:art/scenary/inf/SLMACH1.inf
+
+#begin art/scenary/inf/SLMACH2.inf
+/copy:art/scenary/inf/SLMACH2.inf
+
+#begin art/scenary/inf/SPEARHOL.inf
+/copy:art/scenary/inf/SPEARHOL.inf
+
+#begin art/scenary/inf/SS101.inf
+/copy:art/scenary/inf/SS101.inf
+
+#begin art/scenary/inf/SS102.inf
+/copy:art/scenary/inf/SS102.inf
+
+#begin art/scenary/inf/SS103.inf
+/copy:art/scenary/inf/SS103.inf
+
+#begin art/scenary/inf/SS104.inf
+/copy:art/scenary/inf/SS104.inf
+
+#begin art/scenary/inf/SS105.inf
+/copy:art/scenary/inf/SS105.inf
+
+#begin art/scenary/inf/SS106.inf
+/copy:art/scenary/inf/SS106.inf
+
+#begin art/scenary/inf/SS107.inf
+/copy:art/scenary/inf/SS107.inf
+
+#begin art/scenary/inf/SS108.inf
+/copy:art/scenary/inf/SS108.inf
+
+#begin art/scenary/inf/SS109.inf
+/copy:art/scenary/inf/SS109.inf
+
+#begin art/scenary/inf/SS110.inf
+/copy:art/scenary/inf/SS110.inf
+
+#begin art/scenary/inf/SS111.inf
+/copy:art/scenary/inf/SS111.inf
+
+#begin art/scenary/inf/SS112.inf
+/copy:art/scenary/inf/SS112.inf
+
+#begin art/scenary/inf/SS113.inf
+/copy:art/scenary/inf/SS113.inf
+
+#begin art/scenary/inf/SS114.inf
+/copy:art/scenary/inf/SS114.inf
+
+#begin art/scenary/inf/SS115.inf
+/copy:art/scenary/inf/SS115.inf
+
+#begin art/scenary/inf/SS116.inf
+/copy:art/scenary/inf/SS116.inf
+
+#begin art/scenary/inf/SS117.inf
+/copy:art/scenary/inf/SS117.inf
+
+#begin art/scenary/inf/SS118.inf
+/copy:art/scenary/inf/SS118.inf
+
+#begin art/scenary/inf/SS119.inf
+/copy:art/scenary/inf/SS119.inf
+
+#begin art/scenary/inf/SS120.inf
+/copy:art/scenary/inf/SS120.inf
+
+#begin art/scenary/inf/SS121.inf
+/copy:art/scenary/inf/SS121.inf
+
+#begin art/scenary/inf/SS122.inf
+/copy:art/scenary/inf/SS122.inf
+
+#begin art/scenary/inf/SS123.inf
+/copy:art/scenary/inf/SS123.inf
+
+#begin art/scenary/inf/SSTOVE1.inf
+/copy:art/scenary/inf/SSTOVE1.inf
+
+#begin art/scenary/inf/SSTOVE2.inf
+/copy:art/scenary/inf/SSTOVE2.inf
+
+#begin art/scenary/inf/SSTOVE3.inf
+/copy:art/scenary/inf/SSTOVE3.inf
+
+#begin art/scenary/inf/SSTOVE4.inf
+/copy:art/scenary/inf/SSTOVE4.inf
+
+#begin art/scenary/inf/STAFF.inf
+/copy:art/scenary/inf/STAFF.inf
+
+#begin art/scenary/inf/STAIR00.inf
+/copy:art/scenary/inf/STAIR00.inf
+
+#begin art/scenary/inf/STAIR01.inf
+/copy:art/scenary/inf/STAIR01.inf
+
+#begin art/scenary/inf/STAIR02.inf
+/copy:art/scenary/inf/STAIR02.inf
+
+#begin art/scenary/inf/STAIR03.inf
+/copy:art/scenary/inf/STAIR03.inf
+
+#begin art/scenary/inf/STAIR04.inf
+/copy:art/scenary/inf/STAIR04.inf
+
+#begin art/scenary/inf/STAIR05.inf
+/copy:art/scenary/inf/STAIR05.inf
+
+#begin art/scenary/inf/STAIR06.inf
+/copy:art/scenary/inf/STAIR06.inf
+
+#begin art/scenary/inf/STAIR07.inf
+/copy:art/scenary/inf/STAIR07.inf
+
+#begin art/scenary/inf/stair10.inf
+/copy:art/scenary/inf/stair10.inf
+
+#begin art/scenary/inf/STAKE01.inf
+/copy:art/scenary/inf/STAKE01.inf
+
+#begin art/scenary/inf/STAKE02.inf
+/copy:art/scenary/inf/STAKE02.inf
+
+#begin art/scenary/inf/STAKE03.inf
+/copy:art/scenary/inf/STAKE03.inf
+
+#begin art/scenary/inf/STAKE04.inf
+/copy:art/scenary/inf/STAKE04.inf
+
+#begin art/scenary/inf/STAKE05.inf
+/copy:art/scenary/inf/STAKE05.inf
+
+#begin art/scenary/inf/STAKE06.inf
+/copy:art/scenary/inf/STAKE06.inf
+
+#begin art/scenary/inf/STAKE07.inf
+/copy:art/scenary/inf/STAKE07.inf
+
+#begin art/scenary/inf/STAKE08.inf
+/copy:art/scenary/inf/STAKE08.inf
+
+#begin art/scenary/inf/STAKE09.inf
+/copy:art/scenary/inf/STAKE09.inf
+
+#begin art/scenary/inf/STAKE10.inf
+/copy:art/scenary/inf/STAKE10.inf
+
+#begin art/scenary/inf/STAKE11.inf
+/copy:art/scenary/inf/STAKE11.inf
+
+#begin art/scenary/inf/STAKE12.inf
+/copy:art/scenary/inf/STAKE12.inf
+
+#begin art/scenary/inf/STARTRK.inf
+/copy:art/scenary/inf/STARTRK.inf
+
+#begin art/scenary/inf/STATUE.inf
+/copy:art/scenary/inf/STATUE.inf
+
+#begin art/scenary/inf/STATUE2.inf
+/copy:art/scenary/inf/STATUE2.inf
+
+#begin art/scenary/inf/STBED01.inf
+/copy:art/scenary/inf/STBED01.inf
+
+#begin art/scenary/inf/STBED02.inf
+/copy:art/scenary/inf/STBED02.inf
+
+#begin art/scenary/inf/STBED03.inf
+/copy:art/scenary/inf/STBED03.inf
+
+#begin art/scenary/inf/STBED04.inf
+/copy:art/scenary/inf/STBED04.inf
+
+#begin art/scenary/inf/STBED05.inf
+/copy:art/scenary/inf/STBED05.inf
+
+#begin art/scenary/inf/STBED06.inf
+/copy:art/scenary/inf/STBED06.inf
+
+#begin art/scenary/inf/STCOMP01.inf
+/copy:art/scenary/inf/STCOMP01.inf
+
+#begin art/scenary/inf/STCOMP02.inf
+/copy:art/scenary/inf/STCOMP02.inf
+
+#begin art/scenary/inf/STCOMP03.inf
+/copy:art/scenary/inf/STCOMP03.inf
+
+#begin art/scenary/inf/STCOMP04.inf
+/copy:art/scenary/inf/STCOMP04.inf
+
+#begin art/scenary/inf/STCOMP05.inf
+/copy:art/scenary/inf/STCOMP05.inf
+
+#begin art/scenary/inf/STCOMP06.inf
+/copy:art/scenary/inf/STCOMP06.inf
+
+#begin art/scenary/inf/STCOMP07.inf
+/copy:art/scenary/inf/STCOMP07.inf
+
+#begin art/scenary/inf/STCOMP08.inf
+/copy:art/scenary/inf/STCOMP08.inf
+
+#begin art/scenary/inf/steam01.inf
+/copy:art/scenary/inf/steam01.inf
+
+#begin art/scenary/inf/steam02.inf
+/copy:art/scenary/inf/steam02.inf
+
+#begin art/scenary/inf/steam03.inf
+/copy:art/scenary/inf/steam03.inf
+
+#begin art/scenary/inf/STELBAR1.inf
+/copy:art/scenary/inf/STELBAR1.inf
+
+#begin art/scenary/inf/STELBAR2.inf
+/copy:art/scenary/inf/STELBAR2.inf
+
+#begin art/scenary/inf/STELBAR3.inf
+/copy:art/scenary/inf/STELBAR3.inf
+
+#begin art/scenary/inf/STELBAR4.inf
+/copy:art/scenary/inf/STELBAR4.inf
+
+#begin art/scenary/inf/STILL.inf
+/copy:art/scenary/inf/STILL.inf
+
+#begin art/scenary/inf/STLTRAP1.inf
+/copy:art/scenary/inf/STLTRAP1.inf
+
+#begin art/scenary/inf/STLTRAP2.inf
+/copy:art/scenary/inf/STLTRAP2.inf
+
+#begin art/scenary/inf/STLTRAP3.inf
+/copy:art/scenary/inf/STLTRAP3.inf
+
+#begin art/scenary/inf/STMAIN01.inf
+/copy:art/scenary/inf/STMAIN01.inf
+
+#begin art/scenary/inf/STMAIN02.inf
+/copy:art/scenary/inf/STMAIN02.inf
+
+#begin art/scenary/inf/STOP1.inf
+/copy:art/scenary/inf/STOP1.inf
+
+#begin art/scenary/inf/STOP2.inf
+/copy:art/scenary/inf/STOP2.inf
+
+#begin art/scenary/inf/STOVEB1.inf
+/copy:art/scenary/inf/STOVEB1.inf
+
+#begin art/scenary/inf/STOVEB2.inf
+/copy:art/scenary/inf/STOVEB2.inf
+
+#begin art/scenary/inf/STOVEB3.inf
+/copy:art/scenary/inf/STOVEB3.inf
+
+#begin art/scenary/inf/STOVEB4.inf
+/copy:art/scenary/inf/STOVEB4.inf
+
+#begin art/scenary/inf/STPLIT1.inf
+/copy:art/scenary/inf/STPLIT1.inf
+
+#begin art/scenary/inf/STPLIT2.inf
+/copy:art/scenary/inf/STPLIT2.inf
+
+#begin art/scenary/inf/STPLIT3.inf
+/copy:art/scenary/inf/STPLIT3.inf
+
+#begin art/scenary/inf/STR1000.inf
+/copy:art/scenary/inf/STR1000.inf
+
+#begin art/scenary/inf/STR1001.inf
+/copy:art/scenary/inf/STR1001.inf
+
+#begin art/scenary/inf/STR1002.inf
+/copy:art/scenary/inf/STR1002.inf
+
+#begin art/scenary/inf/STR1003.inf
+/copy:art/scenary/inf/STR1003.inf
+
+#begin art/scenary/inf/STR1004.inf
+/copy:art/scenary/inf/STR1004.inf
+
+#begin art/scenary/inf/STR1005.inf
+/copy:art/scenary/inf/STR1005.inf
+
+#begin art/scenary/inf/STR1006.inf
+/copy:art/scenary/inf/STR1006.inf
+
+#begin art/scenary/inf/STRLIT1.inf
+/copy:art/scenary/inf/STRLIT1.inf
+
+#begin art/scenary/inf/STRLIT2.inf
+/copy:art/scenary/inf/STRLIT2.inf
+
+#begin art/scenary/inf/STRLIT3.inf
+/copy:art/scenary/inf/STRLIT3.inf
+
+#begin art/scenary/inf/STRLIT4.inf
+/copy:art/scenary/inf/STRLIT4.inf
+
+#begin art/scenary/inf/STRLIT5.inf
+/copy:art/scenary/inf/STRLIT5.inf
+
+#begin art/scenary/inf/STRLIT6.inf
+/copy:art/scenary/inf/STRLIT6.inf
+
+#begin art/scenary/inf/STRLIT7.inf
+/copy:art/scenary/inf/STRLIT7.inf
+
+#begin art/scenary/inf/STRP01.inf
+/copy:art/scenary/inf/STRP01.inf
+
+#begin art/scenary/inf/STRP02.inf
+/copy:art/scenary/inf/STRP02.inf
+
+#begin art/scenary/inf/STRP03.inf
+/copy:art/scenary/inf/STRP03.inf
+
+#begin art/scenary/inf/STRP04.inf
+/copy:art/scenary/inf/STRP04.inf
+
+#begin art/scenary/inf/STRP05.inf
+/copy:art/scenary/inf/STRP05.inf
+
+#begin art/scenary/inf/STRP06.inf
+/copy:art/scenary/inf/STRP06.inf
+
+#begin art/scenary/inf/STRP07.inf
+/copy:art/scenary/inf/STRP07.inf
+
+#begin art/scenary/inf/STRP08.inf
+/copy:art/scenary/inf/STRP08.inf
+
+#begin art/scenary/inf/STRP09.inf
+/copy:art/scenary/inf/STRP09.inf
+
+#begin art/scenary/inf/STRP10.inf
+/copy:art/scenary/inf/STRP10.inf
+
+#begin art/scenary/inf/STRP11.inf
+/copy:art/scenary/inf/STRP11.inf
+
+#begin art/scenary/inf/STRSIGN1.inf
+/copy:art/scenary/inf/STRSIGN1.inf
+
+#begin art/scenary/inf/STRSIGN2.inf
+/copy:art/scenary/inf/STRSIGN2.inf
+
+#begin art/scenary/inf/STTABLE.inf
+/copy:art/scenary/inf/STTABLE.inf
+
+#begin art/scenary/inf/STTOOLS.inf
+/copy:art/scenary/inf/STTOOLS.inf
+
+#begin art/scenary/inf/STWAY.inf
+/copy:art/scenary/inf/STWAY.inf
+
+#begin art/scenary/inf/suplsign.inf
+/copy:art/scenary/inf/suplsign.inf
+
+#begin art/scenary/inf/TABLE1.inf
+/copy:art/scenary/inf/TABLE1.inf
+
+#begin art/scenary/inf/TABLE2.inf
+/copy:art/scenary/inf/TABLE2.inf
+
+#begin art/scenary/inf/TABLE3.inf
+/copy:art/scenary/inf/TABLE3.inf
+
+#begin art/scenary/inf/TABLE4.inf
+/copy:art/scenary/inf/TABLE4.inf
+
+#begin art/scenary/inf/TABLE5.inf
+/copy:art/scenary/inf/TABLE5.inf
+
+#begin art/scenary/inf/TABLE6.inf
+/copy:art/scenary/inf/TABLE6.inf
+
+#begin art/scenary/inf/TABLE7.inf
+/copy:art/scenary/inf/TABLE7.inf
+
+#begin art/scenary/inf/TANKER01.inf
+/copy:art/scenary/inf/TANKER01.inf
+
+#begin art/scenary/inf/TANKER02.inf
+/copy:art/scenary/inf/TANKER02.inf
+
+#begin art/scenary/inf/TANKER03.inf
+/copy:art/scenary/inf/TANKER03.inf
+
+#begin art/scenary/inf/TANKER04.inf
+/copy:art/scenary/inf/TANKER04.inf
+
+#begin art/scenary/inf/TANKER05.inf
+/copy:art/scenary/inf/TANKER05.inf
+
+#begin art/scenary/inf/TANKER06.inf
+/copy:art/scenary/inf/TANKER06.inf
+
+#begin art/scenary/inf/TANKER07.inf
+/copy:art/scenary/inf/TANKER07.inf
+
+#begin art/scenary/inf/TANKER08.inf
+/copy:art/scenary/inf/TANKER08.inf
+
+#begin art/scenary/inf/TANKER09.inf
+/copy:art/scenary/inf/TANKER09.inf
+
+#begin art/scenary/inf/TANKER10.inf
+/copy:art/scenary/inf/TANKER10.inf
+
+#begin art/scenary/inf/TANKER11.inf
+/copy:art/scenary/inf/TANKER11.inf
+
+#begin art/scenary/inf/TANKER12.inf
+/copy:art/scenary/inf/TANKER12.inf
+
+#begin art/scenary/inf/TANKER13.inf
+/copy:art/scenary/inf/TANKER13.inf
+
+#begin art/scenary/inf/TANKER14.inf
+/copy:art/scenary/inf/TANKER14.inf
+
+#begin art/scenary/inf/TANKER15.inf
+/copy:art/scenary/inf/TANKER15.inf
+
+#begin art/scenary/inf/TANKTOP.inf
+/copy:art/scenary/inf/TANKTOP.inf
+
+#begin art/scenary/inf/TARDIS.inf
+/copy:art/scenary/inf/TARDIS.inf
+
+#begin art/scenary/inf/TBL1000.inf
+/copy:art/scenary/inf/TBL1000.inf
+
+#begin art/scenary/inf/TBL2000.inf
+/copy:art/scenary/inf/TBL2000.inf
+
+#begin art/scenary/inf/TBL3000.inf
+/copy:art/scenary/inf/TBL3000.inf
+
+#begin art/scenary/inf/TBL4000.inf
+/copy:art/scenary/inf/TBL4000.inf
+
+#begin art/scenary/inf/TBLMETL1.inf
+/copy:art/scenary/inf/TBLMETL1.inf
+
+#begin art/scenary/inf/TBLMETL2.inf
+/copy:art/scenary/inf/TBLMETL2.inf
+
+#begin art/scenary/inf/TBLMETL3.inf
+/copy:art/scenary/inf/TBLMETL3.inf
+
+#begin art/scenary/inf/TBLMETL4.inf
+/copy:art/scenary/inf/TBLMETL4.inf
+
+#begin art/scenary/inf/TBLRUST1.inf
+/copy:art/scenary/inf/TBLRUST1.inf
+
+#begin art/scenary/inf/TBLRUST2.inf
+/copy:art/scenary/inf/TBLRUST2.inf
+
+#begin art/scenary/inf/TBLRUST3.inf
+/copy:art/scenary/inf/TBLRUST3.inf
+
+#begin art/scenary/inf/TBLRUST4.inf
+/copy:art/scenary/inf/TBLRUST4.inf
+
+#begin art/scenary/inf/tblsad.inf
+/copy:art/scenary/inf/tblsad.inf
+
+#begin art/scenary/inf/TEMPLE01.inf
+/copy:art/scenary/inf/TEMPLE01.inf
+
+#begin art/scenary/inf/TEMPLE02.inf
+/copy:art/scenary/inf/TEMPLE02.inf
+
+#begin art/scenary/inf/TEMPLE03.inf
+/copy:art/scenary/inf/TEMPLE03.inf
+
+#begin art/scenary/inf/TEMPLE04.inf
+/copy:art/scenary/inf/TEMPLE04.inf
+
+#begin art/scenary/inf/TEMPLE05.inf
+/copy:art/scenary/inf/TEMPLE05.inf
+
+#begin art/scenary/inf/TEMPLE06.inf
+/copy:art/scenary/inf/TEMPLE06.inf
+
+#begin art/scenary/inf/TEMPLE07.inf
+/copy:art/scenary/inf/TEMPLE07.inf
+
+#begin art/scenary/inf/TEMPLE08.inf
+/copy:art/scenary/inf/TEMPLE08.inf
+
+#begin art/scenary/inf/TEMPSF01.inf
+/copy:art/scenary/inf/TEMPSF01.inf
+
+#begin art/scenary/inf/TEMPSF02.inf
+/copy:art/scenary/inf/TEMPSF02.inf
+
+#begin art/scenary/inf/TEMPSF03.inf
+/copy:art/scenary/inf/TEMPSF03.inf
+
+#begin art/scenary/inf/TEMPSF04.inf
+/copy:art/scenary/inf/TEMPSF04.inf
+
+#begin art/scenary/inf/TEMPSF05.inf
+/copy:art/scenary/inf/TEMPSF05.inf
+
+#begin art/scenary/inf/TEMPSF06.inf
+/copy:art/scenary/inf/TEMPSF06.inf
+
+#begin art/scenary/inf/TIRS000.inf
+/copy:art/scenary/inf/TIRS000.inf
+
+#begin art/scenary/inf/TIRS002.inf
+/copy:art/scenary/inf/TIRS002.inf
+
+#begin art/scenary/inf/TOILET1.inf
+/copy:art/scenary/inf/TOILET1.inf
+
+#begin art/scenary/inf/TOILET2.inf
+/copy:art/scenary/inf/TOILET2.inf
+
+#begin art/scenary/inf/TOILET3.inf
+/copy:art/scenary/inf/TOILET3.inf
+
+#begin art/scenary/inf/TOILET4.inf
+/copy:art/scenary/inf/TOILET4.inf
+
+#begin art/scenary/inf/TOILET5.inf
+/copy:art/scenary/inf/TOILET5.inf
+
+#begin art/scenary/inf/TOWER1.inf
+/copy:art/scenary/inf/TOWER1.inf
+
+#begin art/scenary/inf/TOWER2.inf
+/copy:art/scenary/inf/TOWER2.inf
+
+#begin art/scenary/inf/TOWER3.inf
+/copy:art/scenary/inf/TOWER3.inf
+
+#begin art/scenary/inf/TOWER4.inf
+/copy:art/scenary/inf/TOWER4.inf
+
+#begin art/scenary/inf/TRACK01.inf
+/copy:art/scenary/inf/TRACK01.inf
+
+#begin art/scenary/inf/TRACK02.inf
+/copy:art/scenary/inf/TRACK02.inf
+
+#begin art/scenary/inf/TRACK03.inf
+/copy:art/scenary/inf/TRACK03.inf
+
+#begin art/scenary/inf/TRAPDR.inf
+/copy:art/scenary/inf/TRAPDR.inf
+
+#begin art/scenary/inf/TRAPFLR1.inf
+/copy:art/scenary/inf/TRAPFLR1.inf
+
+#begin art/scenary/inf/TRAPHOL.inf
+/copy:art/scenary/inf/TRAPHOL.inf
+
+#begin art/scenary/inf/TRASH1.inf
+/copy:art/scenary/inf/TRASH1.inf
+
+#begin art/scenary/inf/TRASH2.inf
+/copy:art/scenary/inf/TRASH2.inf
+
+#begin art/scenary/inf/TRASH3.inf
+/copy:art/scenary/inf/TRASH3.inf
+
+#begin art/scenary/inf/TRASH4.inf
+/copy:art/scenary/inf/TRASH4.inf
+
+#begin art/scenary/inf/TRASHCN.inf
+/copy:art/scenary/inf/TRASHCN.inf
+
+#begin art/scenary/inf/TRE1000.inf
+/copy:art/scenary/inf/TRE1000.inf
+
+#begin art/scenary/inf/TREE1.inf
+/copy:art/scenary/inf/TREE1.inf
+
+#begin art/scenary/inf/TREE10.inf
+/copy:art/scenary/inf/TREE10.inf
+
+#begin art/scenary/inf/TREE11.inf
+/copy:art/scenary/inf/TREE11.inf
+
+#begin art/scenary/inf/TREE2.inf
+/copy:art/scenary/inf/TREE2.inf
+
+#begin art/scenary/inf/TREE3.inf
+/copy:art/scenary/inf/TREE3.inf
+
+#begin art/scenary/inf/TREE4.inf
+/copy:art/scenary/inf/TREE4.inf
+
+#begin art/scenary/inf/TREE5.inf
+/copy:art/scenary/inf/TREE5.inf
+
+#begin art/scenary/inf/TREE6.inf
+/copy:art/scenary/inf/TREE6.inf
+
+#begin art/scenary/inf/TREE7.inf
+/copy:art/scenary/inf/TREE7.inf
+
+#begin art/scenary/inf/TREE8.inf
+/copy:art/scenary/inf/TREE8.inf
+
+#begin art/scenary/inf/TREE9.inf
+/copy:art/scenary/inf/TREE9.inf
+
+#begin art/scenary/inf/TROPHYB.inf
+/copy:art/scenary/inf/TROPHYB.inf
+
+#begin art/scenary/inf/TRUCK1.inf
+/copy:art/scenary/inf/TRUCK1.inf
+
+#begin art/scenary/inf/TRUCK2.inf
+/copy:art/scenary/inf/TRUCK2.inf
+
+#begin art/scenary/inf/TRUCK3.inf
+/copy:art/scenary/inf/TRUCK3.inf
+
+#begin art/scenary/inf/TUB1.inf
+/copy:art/scenary/inf/TUB1.inf
+
+#begin art/scenary/inf/TUB2.inf
+/copy:art/scenary/inf/TUB2.inf
+
+#begin art/scenary/inf/TUM1000.inf
+/copy:art/scenary/inf/TUM1000.inf
+
+#begin art/scenary/inf/UNIT000.inf
+/copy:art/scenary/inf/UNIT000.inf
+
+#begin art/scenary/inf/URINAL1.inf
+/copy:art/scenary/inf/URINAL1.inf
+
+#begin art/scenary/inf/URINAL2.inf
+/copy:art/scenary/inf/URINAL2.inf
+
+#begin art/scenary/inf/URINAL3.inf
+/copy:art/scenary/inf/URINAL3.inf
+
+#begin art/scenary/inf/URINAL4.inf
+/copy:art/scenary/inf/URINAL4.inf
+
+#begin art/scenary/inf/V13BONES.inf
+/copy:art/scenary/inf/V13BONES.inf
+
+#begin art/scenary/inf/v13comm.inf
+/copy:art/scenary/inf/v13comm.inf
+
+#begin art/scenary/inf/V13DOORF.inf
+/copy:art/scenary/inf/V13DOORF.inf
+
+#begin art/scenary/inf/V13DOORS.inf
+/copy:art/scenary/inf/V13DOORS.inf
+
+#begin art/scenary/inf/V13SECR2.inf
+/copy:art/scenary/inf/V13SECR2.inf
+
+#begin art/scenary/inf/V13SECR3.inf
+/copy:art/scenary/inf/V13SECR3.inf
+
+#begin art/scenary/inf/V13SECR4.inf
+/copy:art/scenary/inf/V13SECR4.inf
+
+#begin art/scenary/inf/V13SECR5.inf
+/copy:art/scenary/inf/V13SECR5.inf
+
+#begin art/scenary/inf/V13SECR6.inf
+/copy:art/scenary/inf/V13SECR6.inf
+
+#begin art/scenary/inf/V13SECR7.inf
+/copy:art/scenary/inf/V13SECR7.inf
+
+#begin art/scenary/inf/V13SECR8.inf
+/copy:art/scenary/inf/V13SECR8.inf
+
+#begin art/scenary/inf/V13SECUR.inf
+/copy:art/scenary/inf/V13SECUR.inf
+
+#begin art/scenary/inf/VALTGAT2.inf
+/copy:art/scenary/inf/VALTGAT2.inf
+
+#begin art/scenary/inf/valtgate.inf
+/copy:art/scenary/inf/valtgate.inf
+
+#begin art/scenary/inf/VASE1.inf
+/copy:art/scenary/inf/VASE1.inf
+
+#begin art/scenary/inf/VATS1.inf
+/copy:art/scenary/inf/VATS1.inf
+
+#begin art/scenary/inf/VATS2.inf
+/copy:art/scenary/inf/VATS2.inf
+
+#begin art/scenary/inf/VATS3.inf
+/copy:art/scenary/inf/VATS3.inf
+
+#begin art/scenary/inf/VATS4.inf
+/copy:art/scenary/inf/VATS4.inf
+
+#begin art/scenary/inf/VATS5.inf
+/copy:art/scenary/inf/VATS5.inf
+
+#begin art/scenary/inf/VATS6.inf
+/copy:art/scenary/inf/VATS6.inf
+
+#begin art/scenary/inf/VATS7.inf
+/copy:art/scenary/inf/VATS7.inf
+
+#begin art/scenary/inf/VATS8.inf
+/copy:art/scenary/inf/VATS8.inf
+
+#begin art/scenary/inf/VBED-180.inf
+/copy:art/scenary/inf/VBED-180.inf
+
+#begin art/scenary/inf/VBED-270.inf
+/copy:art/scenary/inf/VBED-270.inf
+
+#begin art/scenary/inf/VBED-90.inf
+/copy:art/scenary/inf/VBED-90.inf
+
+#begin art/scenary/inf/VBED.inf
+/copy:art/scenary/inf/VBED.inf
+
+#begin art/scenary/inf/vccorn01.inf
+/copy:art/scenary/inf/vccorn01.inf
+
+#begin art/scenary/inf/vccorn02.inf
+/copy:art/scenary/inf/vccorn02.inf
+
+#begin art/scenary/inf/vccorn03.inf
+/copy:art/scenary/inf/vccorn03.inf
+
+#begin art/scenary/inf/vccorn04.inf
+/copy:art/scenary/inf/vccorn04.inf
+
+#begin art/scenary/inf/vccorn05.inf
+/copy:art/scenary/inf/vccorn05.inf
+
+#begin art/scenary/inf/vccorn06.inf
+/copy:art/scenary/inf/vccorn06.inf
+
+#begin art/scenary/inf/vcdoor01.inf
+/copy:art/scenary/inf/vcdoor01.inf
+
+#begin art/scenary/inf/vcdoor02.inf
+/copy:art/scenary/inf/vcdoor02.inf
+
+#begin art/scenary/inf/vcdoor03.inf
+/copy:art/scenary/inf/vcdoor03.inf
+
+#begin art/scenary/inf/vcdoor04.inf
+/copy:art/scenary/inf/vcdoor04.inf
+
+#begin art/scenary/inf/VCDOOR05.inf
+/copy:art/scenary/inf/VCDOOR05.inf
+
+#begin art/scenary/inf/vcdoor06.inf
+/copy:art/scenary/inf/vcdoor06.inf
+
+#begin art/scenary/inf/vcdoor07.inf
+/copy:art/scenary/inf/vcdoor07.inf
+
+#begin art/scenary/inf/vcdoor08.inf
+/copy:art/scenary/inf/vcdoor08.inf
+
+#begin art/scenary/inf/vclight1.inf
+/copy:art/scenary/inf/vclight1.inf
+
+#begin art/scenary/inf/VCTURET1.inf
+/copy:art/scenary/inf/VCTURET1.inf
+
+#begin art/scenary/inf/VCTURET2.inf
+/copy:art/scenary/inf/VCTURET2.inf
+
+#begin art/scenary/inf/VCWIND01.inf
+/copy:art/scenary/inf/VCWIND01.inf
+
+#begin art/scenary/inf/VCWIND02.inf
+/copy:art/scenary/inf/VCWIND02.inf
+
+#begin art/scenary/inf/VCWIND03.inf
+/copy:art/scenary/inf/VCWIND03.inf
+
+#begin art/scenary/inf/VCWIND04.inf
+/copy:art/scenary/inf/VCWIND04.inf
+
+#begin art/scenary/inf/VCWIND05.inf
+/copy:art/scenary/inf/VCWIND05.inf
+
+#begin art/scenary/inf/VCWIND06.inf
+/copy:art/scenary/inf/VCWIND06.inf
+
+#begin art/scenary/inf/VCWIND07.inf
+/copy:art/scenary/inf/VCWIND07.inf
+
+#begin art/scenary/inf/VCWIND08.inf
+/copy:art/scenary/inf/VCWIND08.inf
+
+#begin art/scenary/inf/VCWIND09.inf
+/copy:art/scenary/inf/VCWIND09.inf
+
+#begin art/scenary/inf/VCWIND10.inf
+/copy:art/scenary/inf/VCWIND10.inf
+
+#begin art/scenary/inf/VCWIND11.inf
+/copy:art/scenary/inf/VCWIND11.inf
+
+#begin art/scenary/inf/VCWIND12.inf
+/copy:art/scenary/inf/VCWIND12.inf
+
+#begin art/scenary/inf/VDOORF.inf
+/copy:art/scenary/inf/VDOORF.inf
+
+#begin art/scenary/inf/VDOORS.inf
+/copy:art/scenary/inf/VDOORS.inf
+
+#begin art/scenary/inf/VELEV01.inf
+/copy:art/scenary/inf/VELEV01.inf
+
+#begin art/scenary/inf/VELEV02.inf
+/copy:art/scenary/inf/VELEV02.inf
+
+#begin art/scenary/inf/VELEV03.inf
+/copy:art/scenary/inf/VELEV03.inf
+
+#begin art/scenary/inf/VELEV04.inf
+/copy:art/scenary/inf/VELEV04.inf
+
+#begin art/scenary/inf/VELEV05.inf
+/copy:art/scenary/inf/VELEV05.inf
+
+#begin art/scenary/inf/VELEV06.inf
+/copy:art/scenary/inf/VELEV06.inf
+
+#begin art/scenary/inf/VELEV07.inf
+/copy:art/scenary/inf/VELEV07.inf
+
+#begin art/scenary/inf/VELEV08.inf
+/copy:art/scenary/inf/VELEV08.inf
+
+#begin art/scenary/inf/VELEV09.inf
+/copy:art/scenary/inf/VELEV09.inf
+
+#begin art/scenary/inf/VELEV10.inf
+/copy:art/scenary/inf/VELEV10.inf
+
+#begin art/scenary/inf/VENT1.inf
+/copy:art/scenary/inf/VENT1.inf
+
+#begin art/scenary/inf/VENT2.inf
+/copy:art/scenary/inf/VENT2.inf
+
+#begin art/scenary/inf/VENT3.inf
+/copy:art/scenary/inf/VENT3.inf
+
+#begin art/scenary/inf/VENT4.inf
+/copy:art/scenary/inf/VENT4.inf
+
+#begin art/scenary/inf/verti01.inf
+/copy:art/scenary/inf/verti01.inf
+
+#begin art/scenary/inf/verti02.inf
+/copy:art/scenary/inf/verti02.inf
+
+#begin art/scenary/inf/verti03.inf
+/copy:art/scenary/inf/verti03.inf
+
+#begin art/scenary/inf/verti04.inf
+/copy:art/scenary/inf/verti04.inf
+
+#begin art/scenary/inf/verti05.inf
+/copy:art/scenary/inf/verti05.inf
+
+#begin art/scenary/inf/verti06.inf
+/copy:art/scenary/inf/verti06.inf
+
+#begin art/scenary/inf/verti07.inf
+/copy:art/scenary/inf/verti07.inf
+
+#begin art/scenary/inf/verti08.inf
+/copy:art/scenary/inf/verti08.inf
+
+#begin art/scenary/inf/verti09.inf
+/copy:art/scenary/inf/verti09.inf
+
+#begin art/scenary/inf/VERTI10.inf
+/copy:art/scenary/inf/VERTI10.inf
+
+#begin art/scenary/inf/VERTI11.inf
+/copy:art/scenary/inf/VERTI11.inf
+
+#begin art/scenary/inf/VERTI12.inf
+/copy:art/scenary/inf/VERTI12.inf
+
+#begin art/scenary/inf/VERTI13.inf
+/copy:art/scenary/inf/VERTI13.inf
+
+#begin art/scenary/inf/VERTI14.inf
+/copy:art/scenary/inf/VERTI14.inf
+
+#begin art/scenary/inf/VERTI15.inf
+/copy:art/scenary/inf/VERTI15.inf
+
+#begin art/scenary/inf/VERTI16.inf
+/copy:art/scenary/inf/VERTI16.inf
+
+#begin art/scenary/inf/VERTI17.inf
+/copy:art/scenary/inf/VERTI17.inf
+
+#begin art/scenary/inf/VERTI18.inf
+/copy:art/scenary/inf/VERTI18.inf
+
+#begin art/scenary/inf/vertibrd.inf
+/copy:art/scenary/inf/vertibrd.inf
+
+#begin art/scenary/inf/VICSIGN.inf
+/copy:art/scenary/inf/VICSIGN.inf
+
+#begin art/scenary/inf/VOSB000.inf
+/copy:art/scenary/inf/VOSB000.inf
+
+#begin art/scenary/inf/VOSB001.inf
+/copy:art/scenary/inf/VOSB001.inf
+
+#begin art/scenary/inf/VOSB002.inf
+/copy:art/scenary/inf/VOSB002.inf
+
+#begin art/scenary/inf/VOSFLOOR.inf
+/copy:art/scenary/inf/VOSFLOOR.inf
+
+#begin art/scenary/inf/VOSP000.inf
+/copy:art/scenary/inf/VOSP000.inf
+
+#begin art/scenary/inf/VOSV000.inf
+/copy:art/scenary/inf/VOSV000.inf
+
+#begin art/scenary/inf/VSTAIR.inf
+/copy:art/scenary/inf/VSTAIR.inf
+
+#begin art/scenary/inf/VSTAIR2.inf
+/copy:art/scenary/inf/VSTAIR2.inf
+
+#begin art/scenary/inf/VTOP01.inf
+/copy:art/scenary/inf/VTOP01.inf
+
+#begin art/scenary/inf/VTOP02.inf
+/copy:art/scenary/inf/VTOP02.inf
+
+#begin art/scenary/inf/VTOP03.inf
+/copy:art/scenary/inf/VTOP03.inf
+
+#begin art/scenary/inf/VTOP04.inf
+/copy:art/scenary/inf/VTOP04.inf
+
+#begin art/scenary/inf/VTOP05.inf
+/copy:art/scenary/inf/VTOP05.inf
+
+#begin art/scenary/inf/VTOP06.inf
+/copy:art/scenary/inf/VTOP06.inf
+
+#begin art/scenary/inf/VTOP07.inf
+/copy:art/scenary/inf/VTOP07.inf
+
+#begin art/scenary/inf/VTOP08.inf
+/copy:art/scenary/inf/VTOP08.inf
+
+#begin art/scenary/inf/VWIN01.inf
+/copy:art/scenary/inf/VWIN01.inf
+
+#begin art/scenary/inf/VWIN02.inf
+/copy:art/scenary/inf/VWIN02.inf
+
+#begin art/scenary/inf/VWIN03.inf
+/copy:art/scenary/inf/VWIN03.inf
+
+#begin art/scenary/inf/VWIN04.inf
+/copy:art/scenary/inf/VWIN04.inf
+
+#begin art/scenary/inf/VWIN05.inf
+/copy:art/scenary/inf/VWIN05.inf
+
+#begin art/scenary/inf/VWIN06.inf
+/copy:art/scenary/inf/VWIN06.inf
+
+#begin art/scenary/inf/VWIN07.inf
+/copy:art/scenary/inf/VWIN07.inf
+
+#begin art/scenary/inf/wantsign.inf
+/copy:art/scenary/inf/wantsign.inf
+
+#begin art/scenary/inf/WAREH01.inf
+/copy:art/scenary/inf/WAREH01.inf
+
+#begin art/scenary/inf/WAREH02.inf
+/copy:art/scenary/inf/WAREH02.inf
+
+#begin art/scenary/inf/WAREH03.inf
+/copy:art/scenary/inf/WAREH03.inf
+
+#begin art/scenary/inf/WAREH04.inf
+/copy:art/scenary/inf/WAREH04.inf
+
+#begin art/scenary/inf/WAREH05.inf
+/copy:art/scenary/inf/WAREH05.inf
+
+#begin art/scenary/inf/WAREH06.inf
+/copy:art/scenary/inf/WAREH06.inf
+
+#begin art/scenary/inf/WAREH07.inf
+/copy:art/scenary/inf/WAREH07.inf
+
+#begin art/scenary/inf/WAREH08.inf
+/copy:art/scenary/inf/WAREH08.inf
+
+#begin art/scenary/inf/WAREH09.inf
+/copy:art/scenary/inf/WAREH09.inf
+
+#begin art/scenary/inf/WAREH10.inf
+/copy:art/scenary/inf/WAREH10.inf
+
+#begin art/scenary/inf/WAREH11.inf
+/copy:art/scenary/inf/WAREH11.inf
+
+#begin art/scenary/inf/WAREH12.inf
+/copy:art/scenary/inf/WAREH12.inf
+
+#begin art/scenary/inf/wareh13.inf
+/copy:art/scenary/inf/wareh13.inf
+
+#begin art/scenary/inf/wareh14.inf
+/copy:art/scenary/inf/wareh14.inf
+
+#begin art/scenary/inf/WARTABL2.inf
+/copy:art/scenary/inf/WARTABL2.inf
+
+#begin art/scenary/inf/WARTABLE.inf
+/copy:art/scenary/inf/WARTABLE.inf
+
+#begin art/scenary/inf/WATER01.inf
+/copy:art/scenary/inf/WATER01.inf
+
+#begin art/scenary/inf/watfall.inf
+/copy:art/scenary/inf/watfall.inf
+
+#begin art/scenary/inf/WATRTANK.inf
+/copy:art/scenary/inf/WATRTANK.inf
+
+#begin art/scenary/inf/WDBEAM01.inf
+/copy:art/scenary/inf/WDBEAM01.inf
+
+#begin art/scenary/inf/WDBEAM02.inf
+/copy:art/scenary/inf/WDBEAM02.inf
+
+#begin art/scenary/inf/WDBEAM03.inf
+/copy:art/scenary/inf/WDBEAM03.inf
+
+#begin art/scenary/inf/WDBEAM04.inf
+/copy:art/scenary/inf/WDBEAM04.inf
+
+#begin art/scenary/inf/WDBEAM05.inf
+/copy:art/scenary/inf/WDBEAM05.inf
+
+#begin art/scenary/inf/WDBEAM06.inf
+/copy:art/scenary/inf/WDBEAM06.inf
+
+#begin art/scenary/inf/WDBEAM07.inf
+/copy:art/scenary/inf/WDBEAM07.inf
+
+#begin art/scenary/inf/WDBEAM08.inf
+/copy:art/scenary/inf/WDBEAM08.inf
+
+#begin art/scenary/inf/WDBEAM09.inf
+/copy:art/scenary/inf/WDBEAM09.inf
+
+#begin art/scenary/inf/WDBEAM10.inf
+/copy:art/scenary/inf/WDBEAM10.inf
+
+#begin art/scenary/inf/WDBEAM11.inf
+/copy:art/scenary/inf/WDBEAM11.inf
+
+#begin art/scenary/inf/WDBEAM12.inf
+/copy:art/scenary/inf/WDBEAM12.inf
+
+#begin art/scenary/inf/WDBEAM13.inf
+/copy:art/scenary/inf/WDBEAM13.inf
+
+#begin art/scenary/inf/WDBEAM14.inf
+/copy:art/scenary/inf/WDBEAM14.inf
+
+#begin art/scenary/inf/WDBEAM15.inf
+/copy:art/scenary/inf/WDBEAM15.inf
+
+#begin art/scenary/inf/WDBEAM16.inf
+/copy:art/scenary/inf/WDBEAM16.inf
+
+#begin art/scenary/inf/WDBEAM17.inf
+/copy:art/scenary/inf/WDBEAM17.inf
+
+#begin art/scenary/inf/WDBEAM18.inf
+/copy:art/scenary/inf/WDBEAM18.inf
+
+#begin art/scenary/inf/WDBEAM19.inf
+/copy:art/scenary/inf/WDBEAM19.inf
+
+#begin art/scenary/inf/WDBEAM20.inf
+/copy:art/scenary/inf/WDBEAM20.inf
+
+#begin art/scenary/inf/WDBEAM21.inf
+/copy:art/scenary/inf/WDBEAM21.inf
+
+#begin art/scenary/inf/WDBEAM22.inf
+/copy:art/scenary/inf/WDBEAM22.inf
+
+#begin art/scenary/inf/WDBEAM23.inf
+/copy:art/scenary/inf/WDBEAM23.inf
+
+#begin art/scenary/inf/WDBEAM24.inf
+/copy:art/scenary/inf/WDBEAM24.inf
+
+#begin art/scenary/inf/WDBEAM25.inf
+/copy:art/scenary/inf/WDBEAM25.inf
+
+#begin art/scenary/inf/WDBEAM26.inf
+/copy:art/scenary/inf/WDBEAM26.inf
+
+#begin art/scenary/inf/WDBEAM27.inf
+/copy:art/scenary/inf/WDBEAM27.inf
+
+#begin art/scenary/inf/WDBEAM28.inf
+/copy:art/scenary/inf/WDBEAM28.inf
+
+#begin art/scenary/inf/WDBEAM29.inf
+/copy:art/scenary/inf/WDBEAM29.inf
+
+#begin art/scenary/inf/WDBEAM30.inf
+/copy:art/scenary/inf/WDBEAM30.inf
+
+#begin art/scenary/inf/WDBEAM31.inf
+/copy:art/scenary/inf/WDBEAM31.inf
+
+#begin art/scenary/inf/WDBEAM32.inf
+/copy:art/scenary/inf/WDBEAM32.inf
+
+#begin art/scenary/inf/WDBEAM33.inf
+/copy:art/scenary/inf/WDBEAM33.inf
+
+#begin art/scenary/inf/WDBEAM34.inf
+/copy:art/scenary/inf/WDBEAM34.inf
+
+#begin art/scenary/inf/WDBEAM35.inf
+/copy:art/scenary/inf/WDBEAM35.inf
+
+#begin art/scenary/inf/WDOOR1.inf
+/copy:art/scenary/inf/WDOOR1.inf
+
+#begin art/scenary/inf/WDOOR2.inf
+/copy:art/scenary/inf/WDOOR2.inf
+
+#begin art/scenary/inf/WDOOR3.inf
+/copy:art/scenary/inf/WDOOR3.inf
+
+#begin art/scenary/inf/WDOOR4.inf
+/copy:art/scenary/inf/WDOOR4.inf
+
+#begin art/scenary/inf/WDOOR5.inf
+/copy:art/scenary/inf/WDOOR5.inf
+
+#begin art/scenary/inf/WDOOR6.inf
+/copy:art/scenary/inf/WDOOR6.inf
+
+#begin art/scenary/inf/wdoor7.inf
+/copy:art/scenary/inf/wdoor7.inf
+
+#begin art/scenary/inf/WEED01.inf
+/copy:art/scenary/inf/WEED01.inf
+
+#begin art/scenary/inf/WEED02.inf
+/copy:art/scenary/inf/WEED02.inf
+
+#begin art/scenary/inf/WEED03.inf
+/copy:art/scenary/inf/WEED03.inf
+
+#begin art/scenary/inf/WEED04.inf
+/copy:art/scenary/inf/WEED04.inf
+
+#begin art/scenary/inf/WEED05.inf
+/copy:art/scenary/inf/WEED05.inf
+
+#begin art/scenary/inf/WEED06.inf
+/copy:art/scenary/inf/WEED06.inf
+
+#begin art/scenary/inf/WEED07.inf
+/copy:art/scenary/inf/WEED07.inf
+
+#begin art/scenary/inf/WEED08.inf
+/copy:art/scenary/inf/WEED08.inf
+
+#begin art/scenary/inf/WEED09.inf
+/copy:art/scenary/inf/WEED09.inf
+
+#begin art/scenary/inf/WEED10.inf
+/copy:art/scenary/inf/WEED10.inf
+
+#begin art/scenary/inf/WEED11.inf
+/copy:art/scenary/inf/WEED11.inf
+
+#begin art/scenary/inf/WEED12.inf
+/copy:art/scenary/inf/WEED12.inf
+
+#begin art/scenary/inf/WEED13.inf
+/copy:art/scenary/inf/WEED13.inf
+
+#begin art/scenary/inf/WEED14.inf
+/copy:art/scenary/inf/WEED14.inf
+
+#begin art/scenary/inf/WEED15.inf
+/copy:art/scenary/inf/WEED15.inf
+
+#begin art/scenary/inf/WEED16.inf
+/copy:art/scenary/inf/WEED16.inf
+
+#begin art/scenary/inf/WEED17.inf
+/copy:art/scenary/inf/WEED17.inf
+
+#begin art/scenary/inf/WEED18.inf
+/copy:art/scenary/inf/WEED18.inf
+
+#begin art/scenary/inf/WEED19.inf
+/copy:art/scenary/inf/WEED19.inf
+
+#begin art/scenary/inf/WEED20.inf
+/copy:art/scenary/inf/WEED20.inf
+
+#begin art/scenary/inf/WEED21.inf
+/copy:art/scenary/inf/WEED21.inf
+
+#begin art/scenary/inf/WEED22.inf
+/copy:art/scenary/inf/WEED22.inf
+
+#begin art/scenary/inf/WEED23.inf
+/copy:art/scenary/inf/WEED23.inf
+
+#begin art/scenary/inf/WEED24.inf
+/copy:art/scenary/inf/WEED24.inf
+
+#begin art/scenary/inf/WEED25.inf
+/copy:art/scenary/inf/WEED25.inf
+
+#begin art/scenary/inf/WEED26.inf
+/copy:art/scenary/inf/WEED26.inf
+
+#begin art/scenary/inf/WELL1.inf
+/copy:art/scenary/inf/WELL1.inf
+
+#begin art/scenary/inf/WELL2.inf
+/copy:art/scenary/inf/WELL2.inf
+
+#begin art/scenary/inf/WHALE01.inf
+/copy:art/scenary/inf/WHALE01.inf
+
+#begin art/scenary/inf/WHALE02.inf
+/copy:art/scenary/inf/WHALE02.inf
+
+#begin art/scenary/inf/WHALE03.inf
+/copy:art/scenary/inf/WHALE03.inf
+
+#begin art/scenary/inf/WHALE04.inf
+/copy:art/scenary/inf/WHALE04.inf
+
+#begin art/scenary/inf/WHALE05.inf
+/copy:art/scenary/inf/WHALE05.inf
+
+#begin art/scenary/inf/WHALE06.inf
+/copy:art/scenary/inf/WHALE06.inf
+
+#begin art/scenary/inf/WHALE07.inf
+/copy:art/scenary/inf/WHALE07.inf
+
+#begin art/scenary/inf/WHALE08.inf
+/copy:art/scenary/inf/WHALE08.inf
+
+#begin art/scenary/inf/WHALE09.inf
+/copy:art/scenary/inf/WHALE09.inf
+
+#begin art/scenary/inf/WIRE01.inf
+/copy:art/scenary/inf/WIRE01.inf
+
+#begin art/scenary/inf/WIRE02.inf
+/copy:art/scenary/inf/WIRE02.inf
+
+#begin art/scenary/inf/WIRE03.inf
+/copy:art/scenary/inf/WIRE03.inf
+
+#begin art/scenary/inf/WIRE04.inf
+/copy:art/scenary/inf/WIRE04.inf
+
+#begin art/scenary/inf/WIRE05.inf
+/copy:art/scenary/inf/WIRE05.inf
+
+#begin art/scenary/inf/WLAMP1.inf
+/copy:art/scenary/inf/WLAMP1.inf
+
+#begin art/scenary/inf/WLAMP2.inf
+/copy:art/scenary/inf/WLAMP2.inf
+
+#begin art/scenary/inf/WLAMP3.inf
+/copy:art/scenary/inf/WLAMP3.inf
+
+#begin art/scenary/inf/WLAMP4.inf
+/copy:art/scenary/inf/WLAMP4.inf
+
+#begin art/scenary/inf/WLAMP5.inf
+/copy:art/scenary/inf/WLAMP5.inf
+
+#begin art/scenary/inf/WLAMP6.inf
+/copy:art/scenary/inf/WLAMP6.inf
+
+#begin art/scenary/inf/WLAMP7.inf
+/copy:art/scenary/inf/WLAMP7.inf
+
+#begin art/scenary/inf/WLAMP8.inf
+/copy:art/scenary/inf/WLAMP8.inf
+
+#begin art/scenary/inf/WOODFIRE.inf
+/copy:art/scenary/inf/WOODFIRE.inf
+
+#begin art/scenary/inf/WPAP01.inf
+/copy:art/scenary/inf/WPAP01.inf
+
+#begin art/scenary/inf/WPAP02.inf
+/copy:art/scenary/inf/WPAP02.inf
+
+#begin art/scenary/inf/WPAP03.inf
+/copy:art/scenary/inf/WPAP03.inf
+
+#begin art/scenary/inf/WPAP04.inf
+/copy:art/scenary/inf/WPAP04.inf
+
+#begin art/scenary/inf/WPAP05.inf
+/copy:art/scenary/inf/WPAP05.inf
+
+#begin art/scenary/inf/WPAP06.inf
+/copy:art/scenary/inf/WPAP06.inf
+
+#begin art/scenary/inf/WPAP07.inf
+/copy:art/scenary/inf/WPAP07.inf
+
+#begin art/scenary/inf/WPAP08.inf
+/copy:art/scenary/inf/WPAP08.inf
+
+#begin art/scenary/inf/WPAP09.inf
+/copy:art/scenary/inf/WPAP09.inf
+
+#begin art/scenary/inf/WPAP10.inf
+/copy:art/scenary/inf/WPAP10.inf
+
+#begin art/scenary/inf/WPAP11.inf
+/copy:art/scenary/inf/WPAP11.inf
+
+#begin art/scenary/inf/WPAP12.inf
+/copy:art/scenary/inf/WPAP12.inf
+
+#begin art/scenary/inf/WPAP13.inf
+/copy:art/scenary/inf/WPAP13.inf
+
+#begin art/scenary/inf/WPAP14.inf
+/copy:art/scenary/inf/WPAP14.inf
+
+#begin art/scenary/inf/WPAP15.inf
+/copy:art/scenary/inf/WPAP15.inf
+
+#begin art/scenary/inf/WPAP16.inf
+/copy:art/scenary/inf/WPAP16.inf
+
+#begin art/scenary/inf/WPAP17.inf
+/copy:art/scenary/inf/WPAP17.inf
+
+#begin art/scenary/inf/WPAP18.inf
+/copy:art/scenary/inf/WPAP18.inf
+
+#begin art/scenary/inf/WPAP19.inf
+/copy:art/scenary/inf/WPAP19.inf
+
+#begin art/scenary/inf/WPAP20.inf
+/copy:art/scenary/inf/WPAP20.inf
+
+#begin art/scenary/inf/WPAP21.inf
+/copy:art/scenary/inf/WPAP21.inf
+
+#begin art/scenary/inf/WPAP22.inf
+/copy:art/scenary/inf/WPAP22.inf
+
+#begin art/scenary/inf/WPAP23.inf
+/copy:art/scenary/inf/WPAP23.inf
+
+#begin art/scenary/inf/WSHELV1.inf
+/copy:art/scenary/inf/WSHELV1.inf
+
+#begin art/scenary/inf/WSHELV2.inf
+/copy:art/scenary/inf/WSHELV2.inf
+
+#begin art/scenary/inf/WSHELV3.inf
+/copy:art/scenary/inf/WSHELV3.inf
+
+#begin art/scenary/inf/WSHELV4.inf
+/copy:art/scenary/inf/WSHELV4.inf
+
+#begin art/scenary/inf/WSHELV5.inf
+/copy:art/scenary/inf/WSHELV5.inf
+
+#begin art/scenary/inf/WSHELV6.inf
+/copy:art/scenary/inf/WSHELV6.inf
+
+#begin art/scenary/inf/YIELD1.inf
+/copy:art/scenary/inf/YIELD1.inf
+
+#begin art/scenary/inf/YIELD2.inf
+/copy:art/scenary/inf/YIELD2.inf
+
+#begin art/scenary/inf/YPOLE1.inf
+/copy:art/scenary/inf/YPOLE1.inf
+
+#begin art/scenary/inf/YPOLE2.inf
+/copy:art/scenary/inf/YPOLE2.inf
+
+#begin art/scenary/inf/YPOLE3.inf
+/copy:art/scenary/inf/YPOLE3.inf
+
+#begin art/scenary/inf/YPOLE4.inf
+/copy:art/scenary/inf/YPOLE4.inf
+
+#begin art/scenary/inf/YROPE1.inf
+/copy:art/scenary/inf/YROPE1.inf
+
+#begin art/scenary/inf/YROPE2.inf
+/copy:art/scenary/inf/YROPE2.inf
+
