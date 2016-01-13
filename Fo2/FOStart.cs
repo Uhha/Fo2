@@ -163,26 +163,31 @@ namespace Fo2
 
             string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
             int cnt = 0;
-            for (int i = 42452; i < bytes.Length && cnt < 350;) // 42328
+            for (int i = 42448; i < bytes.Length && cnt < 567;) // 42328
             {
 
-                int x1 = bytes[i + 2];
-                int x2 = bytes[i + 3];
+                int x1 = bytes[i + 6];
+                int x2 = bytes[i + 7];
                 int onTheMap = (x1 * 16 * 16 + x2) + 0;
 
 
-                int y1 = bytes[i + 42];
-                int y2 = bytes[i + 43];
+                int y1 = bytes[i + 34];
+                int y2 = bytes[i + 35];
                 int positionInTheList = (y1 * 16 * 16 + y2) + 0;
-                if (bytes[i + 40] == 2 && positionInTheList != 344)
+                if (bytes[i + 32] == 2)
                 {
                     _scentaryObjects.AddFirst(ObjectFactory.GetScenaryObject(onTheMap, positionInTheList, objNames, _hexes, Content));
                 }
 
-                switch (bytes[i + 40])
+                if (bytes[i + 32] == 1)
+                {
+                    //12798 - critter
+                }
+                if (i == 75800) i -= 4; //adjustment for inventory item 
+                switch (bytes[i + 32])
                 {
                     case 0:
-                        i += 96;
+                        i += 104;
                         break;
                     case 1:
                         i += 128;
@@ -197,7 +202,7 @@ namespace Fo2
                         i += 88;
                         break;
                     case 5:
-                        i += 104;
+                        i += 88;
                         break;
                     case 6:
                         i += 88;
