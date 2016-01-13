@@ -61,24 +61,6 @@ namespace Fo2
                 _hexes[i] = new Hex(position);
             }
 
-
-            //for (var i = 0; i < 40000; i++)
-            //{
-            //    var x = 200 - (i % 200);
-            //    var y = i / 200;
-            //    var mod = 0;
-            //    if (x % 2 == 0)
-            //    {
-            //        mod = 1;
-            //    }
-
-            //    var xpos =( (x * 24) + ((mod) * 8) + (y * 16) + 41 ) -4800;
-
-            //    var ypos = ((200 - x) * 6) + ((mod) * 6) + (y * 12) - 9;
-            //    _hexes[i] = new Hex(new Vector2(xpos,ypos));
-            //}
-
-
             previousState = Keyboard.GetState();
 
 
@@ -102,7 +84,7 @@ namespace Fo2
             HelperFuncts.blankTexture = BlankTexture;
 
             //byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
-            byte[] bytes = File.ReadAllBytes(@"Content/maps/miniart3.map");
+            byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
             string[] tilesNames = File.ReadAllLines(@"Content/art/tiles/tiles.lst");
             _texturesList = new Texture2D[tilesNames.Length];
             _sequence = new int[10000];
@@ -125,21 +107,113 @@ namespace Fo2
             }
 
             //Objs
-            string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray(); 
+            //string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray(); 
+            //int cnt = 0;
+            //for (int i = 42452; i < bytes.Length && cnt < 232; ) // 42328
+            //{
+
+            //    int x1 = bytes[i+6];
+            //    int x2 = bytes[i+7];
+            //    int onTheMap = (x1 * 16 * 16 + x2) + 0;
+
+
+            //    int y1 = bytes[i + 34];
+            //    int y2 = bytes[i + 35];
+            //    int positionInTheList = (y1 * 16 * 16 + y2) + 0;
+            //    if (bytes[i + 32] == 2 && positionInTheList != 344)
+            //    {
+            //        _scentaryObjects.AddFirst(ObjectFactory.GetScenaryObject(onTheMap, positionInTheList, objNames, _hexes, Content));
+            //    }
+
+            //    switch (bytes[i + 32])
+            //    {
+            //        case 0: i += 96;
+            //            break;
+            //        case 1:
+            //            i += 128;
+            //            break;
+            //        case 2: i += 88;
+            //            break;
+            //        case 3:
+            //            i += 88;
+            //            break;
+            //        case 4:
+            //            i += 88;
+            //            break;
+            //        case 5:
+            //            i += 104;
+            //            break;
+            //        case 6:
+            //            i += 88;
+            //            break;
+            //        case 7:
+            //            i += 88;
+            //            break;
+            //        case 8:
+            //            i += 88;
+            //            break;
+            //        case 9:
+            //            i += 88;
+            //            break;
+            //        default: i += 88;
+            //            break;
+            //    }
+            //    cnt++;
+            //}
+
+            string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
             int cnt = 0;
-            for (int i = 42328; i < bytes.Length && cnt < 11; i+=88) // 46408
+            for (int i = 42452; i < bytes.Length && cnt < 350;) // 42328
             {
 
-                int x1 = bytes[i+6];
-                int x2 = bytes[i+7];
+                int x1 = bytes[i + 2];
+                int x2 = bytes[i + 3];
                 int onTheMap = (x1 * 16 * 16 + x2) + 0;
 
-                int y1 = bytes[i + 34];
-                int y2 = bytes[i + 35];
+
+                int y1 = bytes[i + 42];
+                int y2 = bytes[i + 43];
                 int positionInTheList = (y1 * 16 * 16 + y2) + 0;
-                if (bytes[i + 44] == 2)
+                if (bytes[i + 40] == 2 && positionInTheList != 344)
                 {
                     _scentaryObjects.AddFirst(ObjectFactory.GetScenaryObject(onTheMap, positionInTheList, objNames, _hexes, Content));
+                }
+
+                switch (bytes[i + 40])
+                {
+                    case 0:
+                        i += 96;
+                        break;
+                    case 1:
+                        i += 128;
+                        break;
+                    case 2:
+                        i += 88;
+                        break;
+                    case 3:
+                        i += 88;
+                        break;
+                    case 4:
+                        i += 88;
+                        break;
+                    case 5:
+                        i += 104;
+                        break;
+                    case 6:
+                        i += 88;
+                        break;
+                    case 7:
+                        i += 88;
+                        break;
+                    case 8:
+                        i += 88;
+                        break;
+                    case 9:
+                        i += 88;
+                        break;
+                    default:
+                        i += 88;
+                        break;
                 }
                 cnt++;
             }
