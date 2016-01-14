@@ -34,7 +34,8 @@ namespace Fo2
         public FOStart()
         {
             IsMouseVisible = true;
-            
+            FRM f = new FRM();
+
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 600;
             graphics.PreferredBackBufferWidth = 800;

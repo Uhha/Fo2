@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FOStart.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="FrameDirecion.cs" />
+    <Compile Include="FRM.cs" />
     <Compile Include="HelperFuncts.cs" />
     <Compile Include="Hex.cs" />
     <Compile Include="ObjectFactory.cs" />

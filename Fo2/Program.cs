@@ -16,6 +16,7 @@ namespace Fo2
         {
             using (var game = new FOStart())
                 game.Run();
+            
         }
     }
 #endif
