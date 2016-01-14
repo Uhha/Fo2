@@ -9,11 +9,14 @@ namespace Fo2
         private int _directionOffsetY;
         private int _numberOfFrames;
 
+        public int _directionOffset;
 
-        public FrameDirecion(int numberOfFrames)
+
+        public FrameDirecion(int numberOfFrames, int directionOffset)
         {
             _frames = new LinkedList<Frame>();
             _numberOfFrames = numberOfFrames;
+            _directionOffset = directionOffset;
         }
     }
 }

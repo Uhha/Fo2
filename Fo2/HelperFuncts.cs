@@ -76,5 +76,18 @@ namespace Fo2
             angle, Vector2.Zero, new Vector2(length, lineWidth),
             SpriteEffects.None, 0f);
         }
+
+        public static int SumTwoBytes(int byte1, int byte2)
+        {
+            return byte1 * 16 * 16 + byte2;
+        }
+        public static int SumTwoBytes(int byte1, int byte2, int byte3, int byte4)
+        {
+            int aa = byte1 * 16 * 16 * 16 * 16 * 16 * 16;
+            int aa2 = byte2 * 16 * 16 * 16 * 16;
+            int aa3 = byte3 * 16 * 16;
+
+            return byte1 * (16 * 16 * 16 * 16)*(16 * 16 * 16 * 16) + byte2 * 16 * 16 * 16 * 16 + byte3 * 256 + byte4;
+        }
     }
 }

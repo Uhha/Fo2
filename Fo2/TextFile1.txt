@@ -1,0 +1,153 @@
+﻿//////////////////////////////////////////////////////////////////////
+// CFrmSet Class
+//////////////////////////////////////////////////////////////////////
+
+#include "frmset.h"
+#include "mdi.h"
+#include "frame.h"
+#include "pal.h"
+#include "utilites.h"
+#include "macros.h"
+//---------------------------------------------------------------------------
+CFrmSet::CFrmSet(void)
+{
+   lError = true;
+   pPal = frmMDI->pPal;
+   pUtil = frmMDI->pUtil;
+   pFRM = new CFrame();
+   lError = false;
+}
+//---------------------------------------------------------------------------
+void CFrmSet::LoadFRM(String sFile)
+{
+   //Ïîëó÷àåì óêàçàòåëü íà FRM, êóäà áóäåì ïèñàòü äàííûå
+   CFrame *l_pFRM = pFRM;
+   //Ïðîâåðÿåì FRM íà ãîòîâíîñòü, åñëè óæå ñóùåñòâóåì òî âûõîä èç ô-öèè
+//   if (l_pFRM->GetBMP()) return;
+
+   ULONG i; // èñïîëüçóåòñÿ äëÿ ôàéëîâûõ îïåðàöèé
+   DWORD a_width, bmpsize, frmsize, dwPtr, dwFramesBufSize, dwPixDataSize;
+   WORD nFrames, width, height;
+
+   if (!pPal->LoadUserPalette(ChangeFileExt(sFile, ".pal")))
+      pPal->LoadPalette();
+   // Ïðîáóåì îòêðûòü FRM ôàéë äëÿ ÷òåíèÿ
+   HANDLE h_frm = CreateFile(sFile.c_str(),
+	        	GENERIC_READ,
+	        	FILE_SHARE_READ,
+	         	NULL,
+	         	OPEN_EXISTING,
+	        	FILE_ATTRIBUTE_NORMAL,
+	        	NULL);
+
+   // Åñëè ïîëó÷àåì îøèáêó, òî âûõîä èç ô-öèè
+   if (h_frm == INVALID_HANDLE_VALUE)
+   {
+      LPVOID lpMsgBuf;
+      FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER |
+                    FORMAT_MESSAGE_FROM_SYSTEM |
+                    FORMAT_MESSAGE_IGNORE_INSERTS,
+                    NULL,
+                    GetLastError(),
+                    MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),//Default language
+                    (LPTSTR) &lpMsgBuf,
+                    0,
+                    NULL);
+      // Process any inserts in lpMsgBuf.
+      // ...
+      // Display the string.
+      MessageBox( NULL, (LPCTSTR)lpMsgBuf, "Error", MB_OK | MB_ICONINFORMATION );
+      // Free the buffer.
+      LocalFree( lpMsgBuf );
+      return;
+   }
+   //Ставим файловый указатель на смещение 0x08 от начала файла
+   SetFilePointer(h_frm, 0x08, NULL, FILE_BEGIN);
+   //Считываем 2 байта (кол-во кадров для одного направления(может быть = 1))
+   ReadFile(h_frm, &nFrames, 2, &i, NULL);
+   l_pFRM->nFrames = pUtil->GetW(&nFrames);
+   //Считываем 12 байт (WORD * 6 : смещение по Х относительно преведущего кадра)аправления(может быть = 1))
+   ReadFile(h_frm, &doffX, 12, &i, NULL);
+   //Считываем 12 байт (WORD * 6 : смещение по У относительно преведущего кадра)
+   ReadFile(h_frm, &doffY, 12, &i, NULL);
+   //Считываем 24 байта (DWORD * 6 : смещение в файле от начала фреймов)
+   ReadFile(h_frm, &dwDirectionOffset, 24, &i, NULL);
+   //Считываем 4 байта (DWORD размер области фреймов)
+   ReadFile(h_frm, &dwFramesBufSize, 4, &i, NULL);
+   pUtil->ReverseDW(&dwFramesBufSize);
+   //Готовим буфер и считываем туда область фреймов, при ошибке выход из ф - ции
+   BYTE *framesdata;
+   if ((framesdata = (BYTE *)malloc(dwFramesBufSize)) == NULL)
+      return;
+   ReadFile(h_frm, framesdata, dwFramesBufSize, &i, NULL);
+   //Закрываем файл за ненадобностью
+   CloseHandle(h_frm);
+   //Смотрим, сколько реальных направлений имеет FRM файл
+   l_pFRM->nDirTotal = 1 + (pUtil->GetDW(&dwDirectionOffset[1]) != 0) +
+                           (pUtil->GetDW(&dwDirectionOffset[2]) != 0) +
+                           (pUtil->GetDW(&dwDirectionOffset[3]) != 0) +
+                           (pUtil->GetDW(&dwDirectionOffset[4]) != 0) +
+                           (pUtil->GetDW(&dwDirectionOffset[5]) != 0);
+   //Подготовка массивов для кадров
+   l_pFRM->PrepareFrames();
+   WORD HeightMAX = 0;
+   WORD HeightSpr = 0;
+   WORD WidthSpr = 0;
+   WORD WidthSprMAX = 0;
+   //Проходим цикл направлений
+   for (int nDir = 0; nDir < l_pFRM->nDirTotal; nDir++)
+   {
+      //Получаем смещение для данного направления
+      dwPtr = pUtil->GetDW(&dwDirectionOffset[nDir]);
+      //Получаем смещение кадра по Х и У для данного направления
+      l_pFRM->doffX[nDir] = pUtil->GetW((WORD *)&doffX[nDir]);
+      l_pFRM->doffY[nDir] = pUtil->GetW((WORD *)&doffY[nDir]);
+
+      //Проходим цикл кадров
+      for (int nFrame = 0; nFrame < l_pFRM->nFrames; nFrame++)
+      {
+         //Х начальная координата кадра в спрайте
+         l_pFRM->sprX[nDir][nFrame] = WidthSpr;
+         //У начальная координата кадра в спрайте
+         l_pFRM->sprY[nDir][nFrame] = HeightSpr;
+         //Получаем длинну кадра
+         width = pUtil->GetW((WORD *)(framesdata + dwPtr));
+         l_pFRM->width[nDir][nFrame] = width;
+         //Складываем длинны кадров
+         WidthSpr += width;
+         //Получаем высоту кадра
+         height = pUtil->GetW((WORD *)(framesdata + dwPtr + 2));
+         l_pFRM->height[nDir][nFrame] = height;
+         //Высчитываем максимальную высоту кадров по одному направлению
+         HeightMAX = max(HeightMAX, height);
+         //Получаем размер области с пикселями для данного кадра
+         dwPixDataSize = pUtil->GetDW((DWORD *)(framesdata + dwPtr + 4));
+         //Получаем смещение по Х относительно преведущего кадра
+         l_pFRM->foffX[nDir][nFrame] =
+                                  pUtil->GetW((WORD *)(framesdata + dwPtr + 8));
+         //Получаем смещение по У относительно преведущего кадра
+         l_pFRM->foffY[nDir][nFrame] =
+                                 pUtil->GetW((WORD *)(framesdata + dwPtr + 10));
+         //Считываем кадр и пробразовываем в HBITMAP
+         l_pFRM->LoadData(nDir, nFrame, framesdata + dwPtr + 12);
+         //Увеличиваем смещение на длинну кадра для обработки следующего
+         dwPtr += (12 + dwPixDataSize);
+      }
+      //Складываем высоты для каждого направления
+      HeightSpr += HeightMAX;
+      //Находим максимальную длинну суммы кадров направлений
+      WidthSprMAX = max(WidthSprMAX, WidthSpr);
+      //Обнуляем переменные
+      WidthSpr = 0;
+      HeightMAX = 0;
+   }
+   l_pFRM->BuildFrames(WidthSprMAX, HeightSpr);
+   l_pFRM->FileName = ExtractFileName(sFile);
+   free (framesdata);
+}
+//---------------------------------------------------------------------------
+CFrmSet::~CFrmSet()
+{
+   if (pFRM) delete pFRM;
+}
+//---------------------------------------------------------------------------
