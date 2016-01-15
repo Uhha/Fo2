@@ -29,12 +29,14 @@ namespace Fo2
         private float _scenaryMoveXX = -327;
         private float _scenaryMoveYY = 1566;
 
+        private Texture2D _testTexture;
+
         public static Texture2D BlankTexture { get; private set; }
 
         public FOStart()
         {
             IsMouseVisible = true;
-            FRM f = new FRM();
+            //FRM f = new FRM();
 
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 600;
@@ -76,8 +78,37 @@ namespace Fo2
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+           
+
+
+        // Create a new SpriteBatch, which can be used to draw textures.
+        spriteBatch = new SpriteBatch(GraphicsDevice);
+
+
+            byte[] aa = File.ReadAllBytes("c:/ABOMB2.bmp");
+            int[] ab = new int[aa.Length];
+            for (int i = 0; i < aa.Length; i++)
+            {
+                ab[i] = aa[i];
+            }
+            _testTexture = Content.Load<Texture2D>("t4px"); //new Texture2D(graphics.GraphicsDevice, 30,30);
+            byte[] tt = new byte[2*2 * 4];
+            //for (int i = 0; i < 900 * 4; i++)
+            //{
+            //    tt[i] = 255;
+            //    tt[++i] = 255;
+            //    tt[++i] = 255;
+            //    tt[++i] = 255;
+            //}
+            //_testTexture.SetData<int>(tt);
+
+            _testTexture.GetData<byte>(tt);
+
+
+
+
+
+
             tempFont = Content.Load<SpriteFont>("TempFont");
 
             BlankTexture = new Texture2D(GraphicsDevice, 1, 1);
@@ -106,61 +137,7 @@ namespace Fo2
                 } 
                 
             }
-
-            //Objs
-            //string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray(); 
-            //int cnt = 0;
-            //for (int i = 42452; i < bytes.Length && cnt < 232; ) // 42328
-            //{
-
-            //    int x1 = bytes[i+6];
-            //    int x2 = bytes[i+7];
-            //    int onTheMap = (x1 * 16 * 16 + x2) + 0;
-
-
-            //    int y1 = bytes[i + 34];
-            //    int y2 = bytes[i + 35];
-            //    int positionInTheList = (y1 * 16 * 16 + y2) + 0;
-            //    if (bytes[i + 32] == 2 && positionInTheList != 344)
-            //    {
-            //        _scentaryObjects.AddFirst(ObjectFactory.GetScenaryObject(onTheMap, positionInTheList, objNames, _hexes, Content));
-            //    }
-
-            //    switch (bytes[i + 32])
-            //    {
-            //        case 0: i += 96;
-            //            break;
-            //        case 1:
-            //            i += 128;
-            //            break;
-            //        case 2: i += 88;
-            //            break;
-            //        case 3:
-            //            i += 88;
-            //            break;
-            //        case 4:
-            //            i += 88;
-            //            break;
-            //        case 5:
-            //            i += 104;
-            //            break;
-            //        case 6:
-            //            i += 88;
-            //            break;
-            //        case 7:
-            //            i += 88;
-            //            break;
-            //        case 8:
-            //            i += 88;
-            //            break;
-            //        case 9:
-            //            i += 88;
-            //            break;
-            //        default: i += 88;
-            //            break;
-            //    }
-            //    cnt++;
-            //}
+            
 
             string[] objNames = (File.ReadAllLines(@"Content/art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
             int cnt = 0;
@@ -382,7 +359,7 @@ namespace Fo2
 
 
 
-            
+            spriteBatch.Draw(_testTexture, new Vector2(-400, 1400), Color.White);
 
 
             Vector2[] ver1 = new Vector2[4];

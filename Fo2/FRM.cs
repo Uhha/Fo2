@@ -9,34 +9,60 @@ namespace Fo2
     class FRM
     {
         private FrameDirecion[] _directions;
-
-        
-
         private int _numberOfDirections = 0;
         private byte[] _bytes;
+        
 
 
         public FRM()
         {
-            //_fs = new FileStream("C:/HANPWRMJ.FRM", FileMode.Open);
             _bytes = File.ReadAllBytes("C:/HANPWRMJ.FRM");
             _directions = new FrameDirecion[6];
             int numberOfFrames = HelperFuncts.SumTwoBytes(_bytes[8], _bytes[9]);
-            int frameArea = HelperFuncts.SumTwoBytes(_bytes[58], _bytes[59], _bytes[60], _bytes[61]);
+            int frameAreaSize = HelperFuncts.SumTwoBytes(_bytes[58], _bytes[59], _bytes[60], _bytes[61]);
+            int currentBytesPosition = 62; //3E
 
             InitializeDirections(numberOfFrames);
 
-            for (int i = 0; i < _numberOfDirections; i++)
-            {
-                int directionOffset = ;
-                //Получаем смещение кадра по Х и У для данного направления
-                l_pFRM->doffX[nDir] = pUtil->GetW((WORD*)&doffX[nDir]);
-                l_pFRM->doffY[nDir] = pUtil->GetW((WORD*)&doffY[nDir]);
+            int HeightMAX = 0;
+            int HeightSpr = 0;
+            int WidthSpr = 0;
+            int WidthSprMAX = 0;
 
+
+            for (int dir = 0; dir < _numberOfDirections; dir++)
+            {
+                int directionOffset = _directions[dir]._directionOffset;
+
+                int directionOffsetX = _directions[dir]._directionOffsetX;
+                int directionOffsetY = _directions[dir]._directionOffsetY;
+
+                for (int frame = 0; frame < numberOfFrames; frame++)
+                {
+
+                    var width = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset], _bytes[currentBytesPosition + directionOffset + 1]);
+                    WidthSpr += width;
+                    var height = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 2], _bytes[currentBytesPosition + directionOffset + 3]);
+                    HeightMAX = Math.Max(HeightMAX, height);
+
+                    var PixelDataSize = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 4], _bytes[currentBytesPosition + directionOffset + 5], _bytes[currentBytesPosition + directionOffset + 6], _bytes[currentBytesPosition + directionOffset + 7]);
+                    var offsetX = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 8], _bytes[currentBytesPosition + directionOffset + 9]);
+                    var offsetY = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 10], _bytes[currentBytesPosition + directionOffset + 11]);
+
+                    _directions[dir].AddFrame(frame,  width, height, offsetX, offsetY, WidthSpr, HeightSpr, _bytes, PixelDataSize, currentBytesPosition + directionOffset + 12);
+
+
+                    directionOffset += (12 + PixelDataSize);
+                }
+
+                HeightSpr += HeightMAX;
+                WidthSprMAX = Math.Max(WidthSprMAX, WidthSpr);
+                WidthSpr = 0;
+                HeightMAX = 0;
 
             }
 
-                string a = "";
+            string a = "";
 
 
 
@@ -55,6 +81,7 @@ namespace Fo2
                     _directions[i] = new FrameDirecion(numberOfFrames, directionOffset);
                     _numberOfDirections++;
                 }
+                bytePos++;
             }
 
 
