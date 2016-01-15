@@ -5,7 +5,7 @@ namespace Fo2
 {
     internal class FrameDirecion
     {
-        private Frame[] _frames;
+        public Frame[] _frames;
         public int _directionOffsetX;
         public int _directionOffsetY;
         private int _numberOfFrames;

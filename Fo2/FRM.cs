@@ -8,7 +8,7 @@ namespace Fo2
 {
     class FRM
     {
-        private FrameDirecion[] _directions;
+        public FrameDirecion[] _directions;
         private int _numberOfDirections = 0;
         private byte[] _bytes;
         

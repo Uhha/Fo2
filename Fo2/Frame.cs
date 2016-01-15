@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework.Graphics;
+using System.IO;
 
 namespace Fo2
 {
@@ -7,8 +8,8 @@ namespace Fo2
     {
         private Texture2D _texture;
         private int _frameNumber;
-        private int _width;
-        private int _hight;
+        public int _width;
+        public int _hight;
         private int _offsetX;
         private int _offsetY;
         private int _sprX;
@@ -16,6 +17,8 @@ namespace Fo2
         private byte[] _bytes;
         private int _pixelDataSize;
         private int _startingPoint;
+
+        public byte[] _res;
 
        
         public Frame(int frameNumber, int width, int height, int offsetX, int offsetY, int sprX, int sprY, byte[] bytes, int pixelDataSize, int startingPoint) 
@@ -31,7 +34,28 @@ namespace Fo2
             _sprX = sprX;
             _sprY = sprY;
 
-            FormTexture();
+
+            byte[] pal = File.ReadAllBytes("Content/short.pal");
+            byte[] aa = new byte[pixelDataSize];
+            for (int i = 0; i < aa.Length; i++,startingPoint++)
+            {
+                aa[i] = bytes[startingPoint];
+            }
+            _res = new byte[aa.Length * 4];
+            int aind = 0;
+            for (int j = 0; j < _res.Length; j++)
+            {
+                _res[j] =   (byte)(pal[aa[aind] * 3]     * 4);
+                _res[++j] = (byte)(pal[aa[aind] * 3 + 1] * 4);
+                _res[++j] = (byte)(pal[aa[aind] * 3 + 2] * 4);
+                _res[++j] = (aa[aind] == 0) ? (byte)0 : (byte)255;
+                     
+
+                aind++;
+            }
+            
+
+            //FormTexture();
         }
 
         private void FormTexture()

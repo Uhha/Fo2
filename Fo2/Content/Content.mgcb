@@ -67050,3 +67050,6 @@
 /processorParam:TextureFormat=Color
 /build:t4px.bmp
 
+#begin short.pal
+/copy:short.pal
+

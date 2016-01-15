@@ -30,13 +30,14 @@ namespace Fo2
         private float _scenaryMoveYY = 1566;
 
         private Texture2D _testTexture;
+        private FRM f;
 
         public static Texture2D BlankTexture { get; private set; }
 
         public FOStart()
         {
             IsMouseVisible = true;
-            //FRM f = new FRM();
+             f = new FRM();
 
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 600;
@@ -85,14 +86,23 @@ namespace Fo2
         spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
-            byte[] aa = File.ReadAllBytes("c:/ABOMB2.bmp");
-            int[] ab = new int[aa.Length];
-            for (int i = 0; i < aa.Length; i++)
-            {
-                ab[i] = aa[i];
-            }
+            //byte[] aa = File.ReadAllBytes("c:/ABOMB2.bmp");
+            //int[] ab = new int[aa.Length];
+            //for (int i = 0; i < aa.Length; i++)
+            //{
+            //    ab[i] = aa[i];
+            //}
             _testTexture = Content.Load<Texture2D>("t4px"); //new Texture2D(graphics.GraphicsDevice, 30,30);
-            byte[] tt = new byte[2*2 * 4];
+
+            var ss = f._directions[0]._frames[0];
+            _testTexture = new Texture2D(graphics.GraphicsDevice, ss._width, ss._hight);
+            
+
+            //byte[] tt = new byte[2*2 * 4];
+
+            
+            
+
             //for (int i = 0; i < 900 * 4; i++)
             //{
             //    tt[i] = 255;
@@ -102,7 +112,7 @@ namespace Fo2
             //}
             //_testTexture.SetData<int>(tt);
 
-            _testTexture.GetData<byte>(tt);
+            _testTexture.SetData<byte>(ss._res);
 
 
 
