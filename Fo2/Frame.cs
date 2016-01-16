@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework.Graphics;
 using System.IO;
+using Microsoft.Xna.Framework;
 
 namespace Fo2
 {
@@ -12,94 +13,75 @@ namespace Fo2
         public int _hight;
         private int _offsetX;
         private int _offsetY;
-        private int _sprX;
-        private int _sprY;
-        private byte[] _bytes;
-        private int _pixelDataSize;
-        private int _startingPoint;
-
-        public byte[] _res;
+        private int _widthSpr;
+        private int _heightSpr;
+        
+        public int PosX { get; set; }
+        public int PosY { get; set; }
 
        
-        public Frame(int frameNumber, int width, int height, int offsetX, int offsetY, int sprX, int sprY, byte[] bytes, int pixelDataSize, int startingPoint) 
+        public Frame(int posX, int posY, int frameNumber, int width, int height, int offsetX, int offsetY, int widthSpr, int heightSpr, byte[] bytes, int pixelDataSize, int startingPoint) 
         {
             _frameNumber = frameNumber;
             _width = width;
             _hight = height;
             _offsetX = offsetX;
             _offsetY = offsetY;
-            _bytes = bytes;
-            _pixelDataSize = pixelDataSize;
-            _startingPoint = startingPoint;
-            _sprX = sprX;
-            _sprY = sprY;
+            _widthSpr = widthSpr;
+            _heightSpr = heightSpr;
+            PosX = posX + offsetX - _width/ 2;
+            PosY = posY + offsetY - _hight;
 
-
-            byte[] pal = File.ReadAllBytes("Content/short.pal");
-            byte[] aa = new byte[pixelDataSize];
-            for (int i = 0; i < aa.Length; i++,startingPoint++)
+            byte[] textureArray = new byte[pixelDataSize * 4];
+            for (int i = 0; i < textureArray.Length; i++,startingPoint++)
             {
-                aa[i] = bytes[startingPoint];
+                HelperFuncts.GetPalleteColor(bytes[startingPoint], out textureArray[i], out textureArray[++i], out textureArray[++i], out textureArray[++i]);
             }
-            _res = new byte[aa.Length * 4];
-            int aind = 0;
-            for (int j = 0; j < _res.Length; j++)
-            {
-                _res[j] =   (byte)(pal[aa[aind] * 3]     * 4);
-                _res[++j] = (byte)(pal[aa[aind] * 3 + 1] * 4);
-                _res[++j] = (byte)(pal[aa[aind] * 3 + 2] * 4);
-                _res[++j] = (aa[aind] == 0) ? (byte)0 : (byte)255;
-                     
-
-                aind++;
-            }
+            _texture = new Texture2D(HelperFuncts.GraphicsDevicePointer, _width, _hight);
+            _texture.SetData<byte>(textureArray);
             
-
-            //FormTexture();
         }
 
-        private void FormTexture()
+        public void Draw(SpriteBatch sb)
         {
-            var a_width = (4 - _width % 4) % 4;
-            int size = (a_width + _width) * _hight;
-
-            int[] data = new int[size];
-
-            var lastByte = _width * _hight - 1;
-
-            for (int i = 0; i < _hight; i++) {
-
-                int k = lastByte - i * _width;
-                int m = i * (_width + a_width);
-                for (int j =0;  j < _width; j++, k--, m++)
-                {
-                    data[m] = _bytes[k];
-                }
-                //memcpy(data + i * (width +  a_width), tdata - i * width,   width);
-
-
-
-                //Texture2D asd = new Texture2D( new GraphicsDevice(), 74,56);
-                //asd.SetData<int>(data);
-                //Bitmap bmp = new Bitmap(512, 512, PixelFormat.Format8bppIndexed);
-                //var bmpData = bmp.LockBits(
-                //    new Rectangle(0, 0, bmp.Width, bmp.Height),
-                //    ImageLockMode.WriteOnly, bmp.PixelFormat);
-
-                //// move our data in
-                //Marshal.Copy(data, 0, bmpData.Scan0, data.Length);
-                //bmp.UnlockBits(bmpData);
-
-                //// create the palette
-                //var pal = bmp.Palette;
-                //for (int i = 0; i < colors.Count; i++) pal.Entries[i] = colors[i];
-                //bmp.Palette = pal;
-
-                //// display
-                //pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-                //pictureBox1.Image = bmp;
-            }
-            string a = "";
+            sb.Draw(_texture, new Rectangle(PosX  , PosY  , _width, _hight), Color.White);
         }
+
+        //private void FormTexture()
+        //{
+
+        //_res = new byte[textureArray.Length * 4];
+        //int aind = 0;
+        //for (int j = 0; j < _res.Length; j++)
+        //{
+
+        //        _res[j] = (byte)(pal[textureArray[aind] * 3] * 4);
+        //        _res[++j] = (byte)(pal[textureArray[aind] * 3 + 1] * 4);
+        //        _res[++j] = (byte)(pal[textureArray[aind] * 3 + 2] * 4);
+        //        _res[++j] = 255;
+
+        //    aind++;
+        //}
+
+
+        //FormTexture();
+        //    //var a_width = (4 - _width % 4) % 4;
+        //    //int size = (a_width + _width) * _hight;
+
+        //    //int[] data = new int[size];
+
+        //    //var lastByte = _width * _hight - 1;
+
+        //    //for (int i = 0; i < _hight; i++) {
+
+        //    //    int k = lastByte - i * _width;
+        //    //    int m = i * (_width + a_width);
+        //    //    for (int j =0;  j < _width; j++, k--, m++)
+        //    //    {
+        //    //        data[m] = _bytes[k];
+        //    //    }
+        //        //memcpy(data + i * (width +  a_width), tdata - i * width,   width);
+
+        //}
     }
 }

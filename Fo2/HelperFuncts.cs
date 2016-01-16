@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -17,6 +18,11 @@ namespace Fo2
         public static int HexAdjX = 0;
         public static int HexAdjY = 0;
 
+        public static GraphicsDevice GraphicsDevicePointer { get; set; }
+
+        public static byte[] _pallete = File.ReadAllBytes("Content/short.pal");
+            
+        
 
         public static Texture2D blankTexture;
         public const int MapZeroCoordinate = 0;
@@ -79,8 +85,10 @@ namespace Fo2
 
         public static int SumTwoBytes(int byte1, int byte2)
         {
-            return byte1 * 16 * 16 + byte2;
+            //return byte1 * 16 * 16 + byte2;
+            return (byte1 == 255) ? byte2 - 256 : (byte1 * 16 * 16 + byte2);
         }
+
         public static int SumTwoBytes(int byte1, int byte2, int byte3, int byte4)
         {
             int aa = byte1 * 16 * 16 * 16 * 16 * 16 * 16;
@@ -88,6 +96,23 @@ namespace Fo2
             int aa3 = byte3 * 16 * 16;
 
             return byte1 * (16 * 16 * 16 * 16)*(16 * 16 * 16 * 16) + byte2 * 16 * 16 * 16 * 16 + byte3 * 256 + byte4;
+        }
+
+        public static void GetPalleteColor(byte bt, out byte R, out byte G, out byte B, out byte A)
+        {
+            if (bt != 0)
+            {
+                R = (byte)(_pallete[bt * 3] * 4);
+                G = (byte)(_pallete[bt * 3 + 1] * 4);
+                B = (byte)(_pallete[bt * 3 + 2] * 4);
+                A = 255;
+            }
+            else {
+                R = 0;
+                G = 0;
+                B = 0;
+                A = 0;
+            }
         }
     }
 }

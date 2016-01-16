@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,15 +12,32 @@ namespace Fo2
     {
         public FrameDirecion[] _directions;
         private int _numberOfDirections = 0;
+        public Direction CurrentDirection = Direction.N;
         private byte[] _bytes;
-        
+        public int _posX;
+        public int _posY;
 
 
-        public FRM()
+        public FRM(int posX, int posY)
         {
             _bytes = File.ReadAllBytes("C:/HANPWRMJ.FRM");
+            //_bytes = File.ReadAllBytes(@"C:\!tmp\f2\data\art\scenery\TEMPLE04.FRM");
+            _posX = posX;
+            _posY = posY;
+
             _directions = new FrameDirecion[6];
             int numberOfFrames = HelperFuncts.SumTwoBytes(_bytes[8], _bytes[9]);
+
+            Vector2[] dirOffsets = new Vector2[6];
+            int v = 10;
+            int w = 22;
+            for (int i = 0; i < 6; i++, v++, w++)
+            {
+                dirOffsets[i] = new Vector2(HelperFuncts.SumTwoBytes(_bytes[v], _bytes[++v]), HelperFuncts.SumTwoBytes(_bytes[w], _bytes[++w]));
+            }
+
+
+
             int frameAreaSize = HelperFuncts.SumTwoBytes(_bytes[58], _bytes[59], _bytes[60], _bytes[61]);
             int currentBytesPosition = 62; //3E
 
@@ -34,9 +53,12 @@ namespace Fo2
             {
                 int directionOffset = _directions[dir]._directionOffset;
 
-                int directionOffsetX = _directions[dir]._directionOffsetX;
-                int directionOffsetY = _directions[dir]._directionOffsetY;
+                _directions[dir]._directionOffsetX = (int) dirOffsets[dir].X; 
+                _directions[dir]._directionOffsetY = (int) dirOffsets[dir].Y;
 
+
+                //int[] ofs = {-1, 2,-1,0,0,0,1,-1};
+                int[] ofs = { 0, -1, +1, 0, 0, 0, 0, +1 };
                 for (int frame = 0; frame < numberOfFrames; frame++)
                 {
 
@@ -49,7 +71,7 @@ namespace Fo2
                     var offsetX = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 8], _bytes[currentBytesPosition + directionOffset + 9]);
                     var offsetY = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 10], _bytes[currentBytesPosition + directionOffset + 11]);
 
-                    _directions[dir].AddFrame(frame,  width, height, offsetX, offsetY, WidthSpr, HeightSpr, _bytes, PixelDataSize, currentBytesPosition + directionOffset + 12);
+                    _directions[dir].AddFrame(frame,  width, height, ofs[frame], offsetY, WidthSpr, HeightSpr, _bytes, PixelDataSize, currentBytesPosition + directionOffset + 12);
 
 
                     directionOffset += (12 + PixelDataSize);
@@ -61,89 +83,38 @@ namespace Fo2
                 HeightMAX = 0;
 
             }
-
-            string a = "";
-
-
-
         }
 
         private void InitializeDirections(int numberOfFrames)
         {
             int directionOffset = -1;
-            _directions[0] = new FrameDirecion(numberOfFrames, 0);
+            _directions[0] = new FrameDirecion(numberOfFrames, 0, _posX, _posY);
+            _numberOfDirections++;
             int bytePos = 38;
             for (int i = 1; i < 6; i++)
             {
                 directionOffset = HelperFuncts.SumTwoBytes(_bytes[bytePos], _bytes[++bytePos], _bytes[++bytePos], _bytes[++bytePos]);
                 if (directionOffset > 0)
                 {
-                    _directions[i] = new FrameDirecion(numberOfFrames, directionOffset);
+                    _directions[i] = new FrameDirecion(numberOfFrames, directionOffset, _posX, _posY);
                     _numberOfDirections++;
                 }
                 bytePos++;
             }
+        }
 
-
-
-
-            //N = new FrameDirecion(numberOfFrames, 0);
-            //_numberOfDirections++;
-            //int directionOffset = -1;
-            //directionOffset = HelperFuncts.SumTwoBytes(_bytes[38], _bytes[39], _bytes[40], _bytes[41]);
-            //if (directionOffset > 0)
-            //{
-            //    NE = new FrameDirecion(numberOfFrames, directionOffset);
-            //    _numberOfDirections++;
-            //}
-            //directionOffset = HelperFuncts.SumTwoBytes(_bytes[42], _bytes[43], _bytes[44], _bytes[45]);
-            //if (directionOffset > 0)
-            //{
-            //    SE = new FrameDirecion(numberOfFrames, directionOffset);
-            //    _numberOfDirections++;
-            //}
-            //directionOffset = HelperFuncts.SumTwoBytes(_bytes[46], _bytes[47], _bytes[48], _bytes[49]);
-            //if (directionOffset > 0)
-            //{
-            //    S = new FrameDirecion(numberOfFrames, directionOffset);
-            //    _numberOfDirections++;
-            //}
-            //directionOffset = HelperFuncts.SumTwoBytes(_bytes[50], _bytes[51], _bytes[52], _bytes[53]);
-            //if (directionOffset > 0)
-            //{
-            //    SW = new FrameDirecion(numberOfFrames, directionOffset);
-            //    _numberOfDirections++;
-            //}
-            //directionOffset = HelperFuncts.SumTwoBytes(_bytes[54], _bytes[55], _bytes[56], _bytes[57]);
-            //if (directionOffset > 0)
-            //{
-            //    NW = new FrameDirecion(numberOfFrames, directionOffset);
-            //    _numberOfDirections++;
-            //}
+        public void Update(double gameTime)
+        {
+            _directions[(int)CurrentDirection].Update(gameTime);
         }
 
 
-        //private int ReadByte(int number)
-        //{
-        //    int hexIn = -1;
-        //    for (int i = 0; i <= number; i++)
-        //    {
-        //        hexIn = _fs.ReadByte();
-        //        //hex = string.Format("{0:X2}", hexIn);
-        //    }
-        //    return hexIn;
-        //}
+        public void Draw(SpriteBatch sb)
+        {
+            _directions[(int)CurrentDirection].Draw(sb);
+        }
 
-        //private int[] ReadByte(int starting, int number)
-        //{
-        //    int[] ret = new int[number];
-        //    int hexIn = -1;
-        //    for (int i = 0; i <= number; i++)
-        //    {
-        //        hexIn = _fs.ReadByte();
-        //        //hex = string.Format("{0:X2}", hexIn);
-        //    }
-        //    return hexIn;
-        //}
+
+
     }
 }

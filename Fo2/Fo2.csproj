@@ -38,6 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
     <Compile Include="FOStart.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="FrameDirecion.cs" />

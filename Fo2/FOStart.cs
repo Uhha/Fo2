@@ -37,7 +37,7 @@ namespace Fo2
         public FOStart()
         {
             IsMouseVisible = true;
-             f = new FRM();
+            
 
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 600;
@@ -53,7 +53,6 @@ namespace Fo2
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
 
             _scentaryObjects = new LinkedList<ScenaryObject>();
             _camera = new Camera2D(GraphicsDevice);
@@ -67,7 +66,7 @@ namespace Fo2
 
             previousState = Keyboard.GetState();
 
-
+            HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
 
             base.Initialize();
 
@@ -79,44 +78,14 @@ namespace Fo2
         /// </summary>
         protected override void LoadContent()
         {
-           
 
-
-        // Create a new SpriteBatch, which can be used to draw textures.
-        spriteBatch = new SpriteBatch(GraphicsDevice);
-
-
-            //byte[] aa = File.ReadAllBytes("c:/ABOMB2.bmp");
-            //int[] ab = new int[aa.Length];
-            //for (int i = 0; i < aa.Length; i++)
-            //{
-            //    ab[i] = aa[i];
-            //}
-            _testTexture = Content.Load<Texture2D>("t4px"); //new Texture2D(graphics.GraphicsDevice, 30,30);
-
-            var ss = f._directions[0]._frames[0];
-            _testTexture = new Texture2D(graphics.GraphicsDevice, ss._width, ss._hight);
-            
-
-            //byte[] tt = new byte[2*2 * 4];
-
-            
-            
-
-            //for (int i = 0; i < 900 * 4; i++)
-            //{
-            //    tt[i] = 255;
-            //    tt[++i] = 255;
-            //    tt[++i] = 255;
-            //    tt[++i] = 255;
-            //}
-            //_testTexture.SetData<int>(tt);
-
-            _testTexture.SetData<byte>(ss._res);
+            // Create a new SpriteBatch, which can be used to draw textures.
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
 
 
+            f = new FRM(0, 1800);
 
 
             tempFont = Content.Load<SpriteFont>("TempFont");
@@ -125,7 +94,6 @@ namespace Fo2
             BlankTexture.SetData(new Color[] { Color.White });
             HelperFuncts.blankTexture = BlankTexture;
 
-            //byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
             byte[] bytes = File.ReadAllBytes(@"Content/maps/artemple.map");
             string[] tilesNames = File.ReadAllLines(@"Content/art/tiles/tiles.lst");
             _texturesList = new Texture2D[tilesNames.Length];
@@ -249,10 +217,17 @@ namespace Fo2
                 Exit();
 
 
-           
+            
 
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             var keyboardState = Keyboard.GetState();
+
+
+            if (keyboardState.IsKeyDown(Keys.Q) && !previousState.IsKeyDown(Keys.Q))
+                f.Update(gameTime.ElapsedGameTime.Milliseconds);
+            if (keyboardState.IsKeyDown(Keys.E) && !previousState.IsKeyDown(Keys.E))
+                f.CurrentDirection++;
+
 
 
             if (keyboardState.IsKeyDown(Keys.H) && !previousState.IsKeyDown(Keys.H))
@@ -332,9 +307,6 @@ namespace Fo2
                 spriteBatch.Draw(_texturesList[_sequence[i]], new Rectangle((int)pos.X, (int)pos.Y, 80, 36), Color.White);
             }
 
-
-            //spriteBatch.Draw(_scenary, new Rectangle(_scenaryMoveX, _scenaryMoveY, _scenary.Width, _scenary.Height), Color.White);
-
             foreach (var so in _scentaryObjects)
             {
                 so.Draw(spriteBatch, tempFont);
@@ -361,15 +333,16 @@ namespace Fo2
             spriteBatch.DrawString(tempFont, "world X=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).X, _camera.ScreenToWorld(new Vector2(700, 60)), Color.White);
             spriteBatch.DrawString(tempFont, "world Y=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).Y, _camera.ScreenToWorld(new Vector2(700, 80)), Color.White);
 
-            
-            
-
             spriteBatch.DrawString(tempFont, "obj X=" + _scenaryMoveX, _camera.ScreenToWorld(new Vector2(700, 100)), Color.Red);
             spriteBatch.DrawString(tempFont, "obj Y=" + _scenaryMoveY, _camera.ScreenToWorld(new Vector2(700, 120)), Color.Red);
 
 
+            
+            f.Draw(spriteBatch);
 
-            spriteBatch.Draw(_testTexture, new Vector2(-400, 1400), Color.White);
+            //spriteBatch.Draw(_testTexture, new Vector2(0, 1400), Color.White);
+
+
 
 
             Vector2[] ver1 = new Vector2[4];
@@ -380,15 +353,6 @@ namespace Fo2
 
 
             HelperFuncts.DrawPolygon(spriteBatch, ver1, 4, Color.White, 1);
-
-            Vector2[] ver2 = new Vector2[4];
-            ver2[0] = new Vector2(568, 0);
-            ver2[1] = new Vector2(600, 0);
-            ver2[2] = new Vector2(600, 16);
-            ver2[3] = new Vector2(568, 16);
-
-
-            HelperFuncts.DrawPolygon(spriteBatch, ver2, 4, Color.White, 1);
 
 
             spriteBatch.End();
