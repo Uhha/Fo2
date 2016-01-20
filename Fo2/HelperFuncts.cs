@@ -37,7 +37,7 @@ namespace Fo2
             }
             Vector2 ret = new Vector2((MapZeroCoordinate - 80) - TileNumX * 48 + TileNumY * 32, 0 + 12 * TileNumX + TileNumY * 24);
             TileNumX++;
-            return ret;
+            return new Vector2(ret.X += 40, ret.Y += 36);
         }
 
         public static Vector2 NextHexPos()

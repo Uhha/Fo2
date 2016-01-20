@@ -45,6 +45,7 @@
     <Compile Include="FRM.cs" />
     <Compile Include="HelperFuncts.cs" />
     <Compile Include="Hex.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="ObjectFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

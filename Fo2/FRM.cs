@@ -13,35 +13,36 @@ namespace Fo2
         public FrameDirecion[] _directions;
         private int _numberOfDirections = 0;
         public Direction CurrentDirection = Direction.N;
-        private byte[] _bytes;
         public int _posX;
         public int _posY;
+        public LinkedList<Vector2> _additionalDrawElements;
 
 
-        public FRM(int posX, int posY)
+        public FRM(string filename, int posX, int posY)
         {
-            _bytes = File.ReadAllBytes("C:/HANPWRMJ.FRM");
+            byte[] bytes = File.ReadAllBytes(filename);
             //_bytes = File.ReadAllBytes(@"C:\!tmp\f2\data\art\scenery\TEMPLE04.FRM");
+            //_bytes = File.ReadAllBytes(@"D:\Games\Fallout 2\data\art\scenery\TEMPLE04.FRM");
             _posX = posX;
             _posY = posY;
 
             _directions = new FrameDirecion[6];
-            int numberOfFrames = HelperFuncts.SumTwoBytes(_bytes[8], _bytes[9]);
+            int numberOfFrames = HelperFuncts.SumTwoBytes(bytes[8], bytes[9]);
 
             Vector2[] dirOffsets = new Vector2[6];
             int v = 10;
             int w = 22;
             for (int i = 0; i < 6; i++, v++, w++)
             {
-                dirOffsets[i] = new Vector2(HelperFuncts.SumTwoBytes(_bytes[v], _bytes[++v]), HelperFuncts.SumTwoBytes(_bytes[w], _bytes[++w]));
+                dirOffsets[i] = new Vector2(HelperFuncts.SumTwoBytes(bytes[v], bytes[++v]), HelperFuncts.SumTwoBytes(bytes[w], bytes[++w]));
             }
 
 
 
-            int frameAreaSize = HelperFuncts.SumTwoBytes(_bytes[58], _bytes[59], _bytes[60], _bytes[61]);
+            int frameAreaSize = HelperFuncts.SumTwoBytes(bytes[58], bytes[59], bytes[60], bytes[61]);
             int currentBytesPosition = 62; //3E
 
-            InitializeDirections(numberOfFrames);
+            InitializeDirections(numberOfFrames, bytes);
 
             int HeightMAX = 0;
             int HeightSpr = 0;
@@ -58,21 +59,31 @@ namespace Fo2
 
 
                 //int[] ofs = {-1, 2,-1,0,0,0,1,-1};
-                int[] ofs = { 0, -1, +1, 0, 0, 0, 0, +1 };
+                //int[] ofs = { 0, -1, +1, 0, 0, 0, 0, +1 };
+                //int[] ofsy = { 0, +1, 0, +1, +1, +1, +1, +1 };
+                //int[] ofs = { 0, -5, -4, -12, -12, -16, -18, +1 };
+                //int[] ofs = {-1, 1, 0 ,0,0,0,1,0};
+
+                int previousOffsetX = 0;
+                int previousOffsetY = 0;
                 for (int frame = 0; frame < numberOfFrames; frame++)
                 {
 
-                    var width = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset], _bytes[currentBytesPosition + directionOffset + 1]);
+                    var width = HelperFuncts.SumTwoBytes(bytes[currentBytesPosition + directionOffset], bytes[currentBytesPosition + directionOffset + 1]);
                     WidthSpr += width;
-                    var height = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 2], _bytes[currentBytesPosition + directionOffset + 3]);
+                    var height = HelperFuncts.SumTwoBytes(bytes[currentBytesPosition + directionOffset + 2], bytes[currentBytesPosition + directionOffset + 3]);
                     HeightMAX = Math.Max(HeightMAX, height);
 
-                    var PixelDataSize = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 4], _bytes[currentBytesPosition + directionOffset + 5], _bytes[currentBytesPosition + directionOffset + 6], _bytes[currentBytesPosition + directionOffset + 7]);
-                    var offsetX = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 8], _bytes[currentBytesPosition + directionOffset + 9]);
-                    var offsetY = HelperFuncts.SumTwoBytes(_bytes[currentBytesPosition + directionOffset + 10], _bytes[currentBytesPosition + directionOffset + 11]);
+                    var PixelDataSize = HelperFuncts.SumTwoBytes(bytes[currentBytesPosition + directionOffset + 4], bytes[currentBytesPosition + directionOffset + 5], bytes[currentBytesPosition + directionOffset + 6], bytes[currentBytesPosition + directionOffset + 7]);
+                    var offsetX = HelperFuncts.SumTwoBytes(bytes[currentBytesPosition + directionOffset + 8], bytes[currentBytesPosition + directionOffset + 9]);
+                    var offsetY = HelperFuncts.SumTwoBytes(bytes[currentBytesPosition + directionOffset + 10], bytes[currentBytesPosition + directionOffset + 11]);
 
-                    _directions[dir].AddFrame(frame,  width, height, ofs[frame], offsetY, WidthSpr, HeightSpr, _bytes, PixelDataSize, currentBytesPosition + directionOffset + 12);
-
+                    int previousFrame;
+                    if (frame == 0) { previousFrame = 0; } //numberOfFrames - 1
+                    else { previousFrame = frame; }
+                    _directions[dir].AddFrame(previousFrame,  width, height, offsetX + previousOffsetX, offsetY + previousOffsetY, WidthSpr, HeightSpr, bytes, PixelDataSize, currentBytesPosition + directionOffset + 12);
+                    previousOffsetX += offsetX;
+                    previousOffsetY += offsetY;
 
                     directionOffset += (12 + PixelDataSize);
                 }
@@ -85,23 +96,25 @@ namespace Fo2
             }
         }
 
-        private void InitializeDirections(int numberOfFrames)
+        private void InitializeDirections(int numberOfFrames, byte[] bytes)
         {
             int directionOffset = -1;
-            _directions[0] = new FrameDirecion(numberOfFrames, 0, _posX, _posY);
+            _directions[0] = new FrameDirecion(this, numberOfFrames, 0);
             _numberOfDirections++;
             int bytePos = 38;
             for (int i = 1; i < 6; i++)
             {
-                directionOffset = HelperFuncts.SumTwoBytes(_bytes[bytePos], _bytes[++bytePos], _bytes[++bytePos], _bytes[++bytePos]);
+                directionOffset = HelperFuncts.SumTwoBytes(bytes[bytePos], bytes[++bytePos], bytes[++bytePos], bytes[++bytePos]);
                 if (directionOffset > 0)
                 {
-                    _directions[i] = new FrameDirecion(numberOfFrames, directionOffset, _posX, _posY);
+                    _directions[i] = new FrameDirecion(this, numberOfFrames, directionOffset);
                     _numberOfDirections++;
                 }
                 bytePos++;
             }
         }
+
+        
 
         public void Update(double gameTime)
         {
@@ -114,6 +127,16 @@ namespace Fo2
             _directions[(int)CurrentDirection].Draw(sb);
         }
 
+
+        internal void AddDrawElement(Vector2 position)
+        {
+            if (_additionalDrawElements == null)
+            {
+                _additionalDrawElements = new LinkedList<Vector2>();
+            }
+            _additionalDrawElements.AddFirst(position);
+
+        }
 
 
     }

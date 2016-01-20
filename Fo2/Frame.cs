@@ -7,8 +7,9 @@ namespace Fo2
 {
     internal class Frame
     {
+        public FrameDirecion _parent;
         private Texture2D _texture;
-        private int _frameNumber;
+        private int _previousFrame;
         public int _width;
         public int _hight;
         private int _offsetX;
@@ -16,21 +17,19 @@ namespace Fo2
         private int _widthSpr;
         private int _heightSpr;
         
-        public int PosX { get; set; }
-        public int PosY { get; set; }
+        
 
        
-        public Frame(int posX, int posY, int frameNumber, int width, int height, int offsetX, int offsetY, int widthSpr, int heightSpr, byte[] bytes, int pixelDataSize, int startingPoint) 
+        public Frame(FrameDirecion parent, int previousFrame, int width, int height, int offsetX, int offsetY, int widthSpr, int heightSpr, byte[] bytes, int pixelDataSize, int startingPoint) 
         {
-            _frameNumber = frameNumber;
+            _parent = parent;
+            _previousFrame = previousFrame;
             _width = width;
             _hight = height;
             _offsetX = offsetX;
             _offsetY = offsetY;
             _widthSpr = widthSpr;
             _heightSpr = heightSpr;
-            PosX = posX + offsetX - _width/ 2;
-            PosY = posY + offsetY - _hight;
 
             byte[] textureArray = new byte[pixelDataSize * 4];
             for (int i = 0; i < textureArray.Length; i++,startingPoint++)
@@ -44,7 +43,28 @@ namespace Fo2
 
         public void Draw(SpriteBatch sb)
         {
-            sb.Draw(_texture, new Rectangle(PosX  , PosY  , _width, _hight), Color.White);
+            sb.Draw(_texture, new Rectangle(PositionX(), PositionY(), _width, _hight), Color.White);
+
+
+            var additionaDraw = _parent._parent._additionalDrawElements;
+            if (additionaDraw != null)
+            {
+                foreach (var posVect in additionaDraw)
+                {
+                    Vector2 pos = new Vector2(posVect.X - _width/2, posVect.Y - _hight);
+                    sb.Draw(_texture, new Rectangle((int)pos.X, (int)pos.Y, _width, _hight), Color.White);
+                }
+            }
+        }
+
+        private int PositionX()
+        {
+            return _parent._parent._posX + _parent._directionOffsetX + _parent._frames[_previousFrame]._offsetX - _width / 2;
+        }
+
+        private int PositionY()
+        {
+            return _parent._parent._posY + _parent._directionOffsetY + _parent._frames[_previousFrame]._offsetY - _hight;
         }
 
         //private void FormTexture()

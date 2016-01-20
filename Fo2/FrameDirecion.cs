@@ -6,12 +6,11 @@ namespace Fo2
 {
     internal class FrameDirecion
     {
+        public FRM _parent;
         public Frame[] _frames;
         public int _directionOffsetX;
         public int _directionOffsetY;
         private int _numberOfFrames;
-        public int _posX;
-        public int _posY;
 
         public int _directionOffset;
 
@@ -19,19 +18,18 @@ namespace Fo2
         private int _anumationIndex = 0;
 
 
-        public FrameDirecion(int numberOfFrames, int directionOffset, int posX, int posY) 
+        public FrameDirecion(FRM parent, int numberOfFrames, int directionOffset) 
         {
+            _parent = parent;
             _frames = new Frame[numberOfFrames];
             _numberOfFrames = numberOfFrames;
             _directionOffset = directionOffset;
-            _posX = posX;
-            _posY = posY;
         }
 
         private int _currentFrame = 0;
-        public void AddFrame(int frame, int width, int height, int offsetX, int offsetY, int widthSpr, int heightSpr, byte[] _bytes, int pixelDataSize, int startingPoint)
+        public void AddFrame(int previousFrame, int width, int height, int offsetX, int offsetY, int widthSpr, int heightSpr, byte[] _bytes, int pixelDataSize, int startingPoint)
         {
-            _frames[_currentFrame] = new Frame(_posX + _directionOffsetX, _posY + _directionOffsetY, frame, width, height, offsetX, offsetY, widthSpr, heightSpr, _bytes, pixelDataSize, startingPoint);
+            _frames[_currentFrame] = new Frame(this, previousFrame, width, height, offsetX, offsetY, widthSpr, heightSpr, _bytes, pixelDataSize, startingPoint);
             _currentFrame++;
         }
 
@@ -47,13 +45,12 @@ namespace Fo2
 
         public void Update(double gameTime)
         {
-            //_counter += gameTime;
-            //if (_counter > 100)
-            //{
-            //    NextIndex();
-            //    _counter = 0;
-            //}
-            NextIndex();
+            _counter += gameTime;
+            if (_counter > 50)
+            {
+                NextIndex();
+                _counter = 0;
+            }
         }
 
         
