@@ -9,13 +9,16 @@ namespace Fo2
 {
     class Map
     {
-        private string repo = "D:/Games/Fallout 2/data/";
+        //private string repo = "D:/Games/Fallout 2/data/";
+        private string _repo = HelperFuncts.Repo;
         public Dictionary<int, FRM> _tiles;
         public LinkedList<FRM> _sceneryObjects;
 
+        public LinkedList<MapObject> _mapObjects;
+
         public Map(Hex[] hexes)
         {
-            byte[] bytes = File.ReadAllBytes(repo + "/maps/artemple.map");
+            byte[] bytes = File.ReadAllBytes(_repo + "/maps/artemple.map");
             InitTiles(bytes);
             InitSceneryObjects(bytes, hexes);
 
@@ -26,7 +29,7 @@ namespace Fo2
         {
             _tiles = new Dictionary<int, FRM>();
 
-            string[] tilesNames = File.ReadAllLines(repo + "art/tiles/tiles.lst");
+            string[] tilesNames = File.ReadAllLines(_repo + "art/tiles/tiles.lst");
             for (int i = 236; i < 40236 - 3; i++)
             {
                 int Y1 = bytes[i];
@@ -39,7 +42,7 @@ namespace Fo2
 
                 if (!_tiles.ContainsKey(positionInTheList))
                 {
-                    _tiles.Add(positionInTheList, new FRM(repo + "art/tiles/" + tilesNames[positionInTheList], (int)pos.X, (int)pos.Y));
+                    _tiles.Add(positionInTheList, new FRM(_repo + "art/tiles/" + tilesNames[positionInTheList], (int)pos.X, (int)pos.Y));
                 }
                 else
                 {
@@ -51,12 +54,13 @@ namespace Fo2
         private void InitSceneryObjects(byte[] bytes, Hex[] hexes)
         {
             _sceneryObjects = new LinkedList<FRM>();
+            _mapObjects = new LinkedList<MapObject>();
 
-            string[] objNames = (File.ReadAllLines(repo + "art /scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
-            string[] criNames = (File.ReadAllLines(repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
+            string[] objNames = (File.ReadAllLines(_repo + "art/scenery/scenery.lst")).Select(l => l.Trim()).ToArray();
+            string[] criNames = (File.ReadAllLines(_repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
 
             int cnt = 0;
-            for (int i = 42448; i < bytes.Length && cnt < 567;)
+            for (int i = 42448; i < bytes.Length && cnt < 566;)
             {
 
                 int x1 = bytes[i + 6];
@@ -68,21 +72,22 @@ namespace Fo2
                 int positionInTheList = (y1 * 16 * 16 + y2) + 0;
                 if (bytes[i + 32] == 2)
                 {
-                    _sceneryObjects.AddLast(new FRM(repo + "art/scenery/" + objNames[positionInTheList], (int)hexes[onTheMap]._vertexes[0].X, (int)hexes[onTheMap]._vertexes[0].Y));
+                    _sceneryObjects.AddLast(new FRM(_repo + "art/scenery/" + objNames[positionInTheList], (int)hexes[onTheMap]._vertexes[0].X, (int)hexes[onTheMap]._vertexes[0].Y));
                 }
                 if (bytes[i + 32] == 1)
                 {
+                    _mapObjects.AddLast(MapObjectFactory.GetMapObject(i, bytes, hexes, out i));
                     //_scentaryObjects.AddFirst(new FRM(repo + "art/critters/" + criNames[positionInTheList], (int)_hexes[onTheMap]._vertexes[0].X, (int)_hexes[onTheMap]._vertexes[0].Y));
                     //12798 - critter
                 }
-                if (i == 75800) i -= 4; //adjustment for inventory item 
+                //if (i == 75800) i -= 4; //adjustment for inventory item 
                 switch (bytes[i + 32])
                 {
                     case 0:
                         i += 104;
                         break;
                     case 1:
-                        i += 128;
+                        //i += 128;
                         break;
                     case 2:
                         i += 88;
@@ -121,9 +126,9 @@ namespace Fo2
         {
             _sceneryObjects = new LinkedList<FRM>();
 
-            string[] objNames = (File.ReadAllLines(repo + "art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
-            string[] criNames = (File.ReadAllLines(repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
-            string[] protoCritterNames = (File.ReadAllLines(repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
+            string[] objNames = (File.ReadAllLines(_repo + "art/scenary/scenery.lst")).Select(l => l.Trim()).ToArray();
+            string[] criNames = (File.ReadAllLines(_repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
+            string[] protoCritterNames = (File.ReadAllLines(_repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
 
 
             string subFolder = "";
@@ -149,7 +154,7 @@ namespace Fo2
                         subFolder = "misc";
                         break;
                 }
-                byte[] protoFile = (File.ReadAllBytes(repo + "proto/" + subFolder +"/"+ protoCritterNames[bytes[i + 44]]));
+                byte[] protoFile = (File.ReadAllBytes(_repo + "proto/" + subFolder +"/"+ protoCritterNames[bytes[i + 44]]));
                 int objectSubType = protoFile[32];
                 
                 int offset = -1;
@@ -191,7 +196,7 @@ namespace Fo2
                 int positionInTheList = (y1 * 16 * 16 + y2) + 0;
                 if (bytes[i + 32] == 2)
                 {
-                    _sceneryObjects.AddLast(new FRM(repo + "art/scenery/" + objNames[positionInTheList], (int)hexes[onTheMap]._vertexes[0].X, (int)hexes[onTheMap]._vertexes[0].Y));
+                    _sceneryObjects.AddLast(new FRM(_repo + "art/scenery/" + objNames[positionInTheList], (int)hexes[onTheMap]._vertexes[0].X, (int)hexes[onTheMap]._vertexes[0].Y));
                 }
                 if (bytes[i + 32] == 1)
                 {

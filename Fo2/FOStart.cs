@@ -21,7 +21,6 @@ namespace Fo2
         private SpriteFont tempFont;
         private Map _map;
         
-        private string repo = "D:/Games/Fallout 2/data/";
 
 
         public static Texture2D BlankTexture { get; private set; }
@@ -133,6 +132,11 @@ namespace Fo2
                 sceneryObjects.Update(gameTime.ElapsedGameTime.Milliseconds);
             }
 
+            foreach (var mapObj in _map._mapObjects)
+            {
+                mapObj.Update(gameTime.ElapsedGameTime.Milliseconds);
+            }
+
             previousState = keyboardState;
 
             base.Update(gameTime);
@@ -155,10 +159,18 @@ namespace Fo2
                 tiles.Value.Draw(spriteBatch);
             }
 
+
+            foreach (var mo in _map._mapObjects)
+            {
+                mo.Draw(spriteBatch);
+            }
+
             foreach (var so in _map._sceneryObjects)
             {
                 so.Draw(spriteBatch);
             }
+
+            
 
             foreach (var hex in _hexes)
             {

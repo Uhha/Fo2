@@ -38,6 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MapObjects\Critter.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="FOStart.cs" />
     <Compile Include="Frame.cs" />
@@ -46,7 +47,8 @@
     <Compile Include="HelperFuncts.cs" />
     <Compile Include="Hex.cs" />
     <Compile Include="Map.cs" />
-    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="MapObject.cs" />
+    <Compile Include="MapObjectFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScenaryObject.cs" />

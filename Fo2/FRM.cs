@@ -12,7 +12,7 @@ namespace Fo2
     {
         public FrameDirecion[] _directions;
         private int _numberOfDirections = 0;
-        public Direction CurrentDirection = Direction.N;
+        public int CurrentDirection = 0;
         public int _posX;
         public int _posY;
         public LinkedList<Vector2> _additionalDrawElements;
@@ -118,13 +118,13 @@ namespace Fo2
 
         public void Update(double gameTime)
         {
-            _directions[(int)CurrentDirection].Update(gameTime);
+            _directions[CurrentDirection].Update(gameTime);
         }
 
 
         public void Draw(SpriteBatch sb)
         {
-            _directions[(int)CurrentDirection].Draw(sb);
+            _directions[CurrentDirection].Draw(sb);
         }
 
 
