@@ -127,10 +127,6 @@ namespace Fo2
 
 
 
-            foreach (var sceneryObjects in _map._sceneryObjects)
-            {
-                sceneryObjects.Update(gameTime.ElapsedGameTime.Milliseconds);
-            }
 
             foreach (var mapObj in _map._mapObjects)
             {
@@ -165,10 +161,7 @@ namespace Fo2
                 mo.Draw(spriteBatch);
             }
 
-            foreach (var so in _map._sceneryObjects)
-            {
-                so.Draw(spriteBatch);
-            }
+            
 
             
 

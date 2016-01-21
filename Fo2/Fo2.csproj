@@ -38,6 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MapObjects\Scenery.cs" />
     <Compile Include="MapObjects\Critter.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="FOStart.cs" />
