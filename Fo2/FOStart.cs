@@ -23,6 +23,7 @@ namespace Fo2
         
 
 
+
         public static Texture2D BlankTexture { get; private set; }
 
         public FOStart()

@@ -21,8 +21,6 @@ namespace Fo2
         public FRM(string filename, int posX, int posY)
         {
             byte[] bytes = File.ReadAllBytes(filename);
-            //_bytes = File.ReadAllBytes(@"C:\!tmp\f2\data\art\scenery\TEMPLE04.FRM");
-            //_bytes = File.ReadAllBytes(@"D:\Games\Fallout 2\data\art\scenery\TEMPLE04.FRM");
             _posX = posX;
             _posY = posY;
 

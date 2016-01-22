@@ -8,7 +8,7 @@ namespace Fo2
     internal class Frame
     {
         public FrameDirecion _parent;
-        private Texture2D _texture;
+        public Texture2D _texture;
         private int _previousFrame;
         public int _width;
         public int _hight;

@@ -8,6 +8,9 @@ namespace Fo2
 {
     abstract class MapObject
     {
+        public MapObjectType MapObjectType;
+        public string TextureName;
+
         public abstract void Update(double gameTime);
         public abstract void Draw(SpriteBatch sb);
     }

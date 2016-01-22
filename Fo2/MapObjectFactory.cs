@@ -13,8 +13,11 @@ namespace Fo2
     static class MapObjectFactory
     {
         private static string repo = HelperFuncts.Repo;
-        private static string[] sceNames;
+
         private static string[] criNames;
+        private static string[] sceNames;
+        private static string[] miscNames;
+        private static string[] wallNames;
         private static string[] itemsProtoNames;
 
 
@@ -22,6 +25,8 @@ namespace Fo2
         {
             sceNames = (File.ReadAllLines(repo + "art/scenery/scenery.lst")).Select(l => l.Trim()).ToArray();
             criNames = (File.ReadAllLines(repo + "art/critters/critters.lst")).Select(l => l.Trim()).ToArray();
+            miscNames = (File.ReadAllLines(repo + "art/misc/misc.lst")).Select(l => l.Trim()).ToArray();
+            wallNames = (File.ReadAllLines(repo + "art/walls/walls.lst")).Select(l => l.Trim()).ToArray();
             itemsProtoNames = (File.ReadAllLines(repo + "proto/items/items.lst")).Select(l => l.Trim()).ToArray();
         }
 
@@ -35,12 +40,12 @@ namespace Fo2
                     return new Critter(start, bytes, hexes, criNames, itemsProtoNames, out newStart);
                 case MapObjectType.Scenery:
                     return new Scenery(start, bytes, hexes, sceNames, itemsProtoNames, out newStart);
-                //case MapObjectType.Walls:
-                //    break;
+                case MapObjectType.Wall:
+                    return new Wall(start, bytes, hexes, wallNames, itemsProtoNames, out newStart);
                 //case MapObjectType.Tiles:
                 //    break;
-                //case MapObjectType.Misc:
-                //    break;
+                case MapObjectType.Misc:
+                    return new Misc(start, bytes, hexes, miscNames, itemsProtoNames, out newStart);
                 //case MapObjectType.Interface:
                 //    break;
                 //case MapObjectType.Invent:
@@ -66,6 +71,8 @@ namespace Fo2
         {
             sceNames = null;
             criNames = null;
+            miscNames = null;
+            wallNames = null;
             itemsProtoNames = null;
         }
     }

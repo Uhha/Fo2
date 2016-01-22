@@ -14,13 +14,14 @@ namespace Fo2
         public Dictionary<int, FRM> _tiles;
 
         public LinkedList<MapObject> _mapObjects;
+        private int[] test = new int[256];
 
         public Map(Hex[] hexes)
         {
             byte[] bytes = File.ReadAllBytes(_repo + "/maps/artemple.map");
             InitTiles(bytes);
             MapObjectFactory.Initialize();
-            InitSceneryObjects(bytes, hexes);
+            CreateObjects(bytes, hexes);
 
             MapObjectFactory.DeInitialize();
         }
@@ -52,15 +53,18 @@ namespace Fo2
             }
         }
 
-        private void InitSceneryObjects(byte[] bytes, Hex[] hexes)
+        private void CreateObjects(byte[] bytes, Hex[] hexes)
         {
             _mapObjects = new LinkedList<MapObject>();
             
             int cnt = 0;
             for (int i = 42448; i < bytes.Length - 88 || cnt < 566;)
             {
+                var asd = bytes[i + 32];
+                test[asd]++;
                 
-                if (bytes[i + 32] == 1 || bytes[i + 32] == 2)
+
+                if (bytes[i + 32] == 1 || bytes[i + 32] == 2  || bytes[i + 32] == 5 || bytes[i + 32] == 3)
                 {
                     _mapObjects.AddLast(MapObjectFactory.GetMapObject(i, (MapObjectType)bytes[i + 32], bytes, hexes, out i));
                     //12798 - critter
@@ -68,39 +72,40 @@ namespace Fo2
                     continue;
                 }
                 //if (i == 75800) i -= 4; //adjustment for inventory item 
-                var asd = bytes[i + 32];
-                switch (bytes[i + 32])
-                {
-                    case 0:
-                        i += 104;
-                        break;
-                    case 3:
-                        i += 88;
-                        break;
-                    case 4:
-                        i += 88;
-                        break;
-                    case 5:
-                        i += 88;
-                        break;
-                    case 6:
-                        i += 88;
-                        break;
-                    case 7:
-                        i += 88;
-                        break;
-                    case 8:
-                        i += 88;
-                        break;
-                    case 9:
-                        i += 88;
-                        break;
-                    case 255:
-                        i += 88;
-                        break;
-                }
-                cnt++;
+                
+                //switch (bytes[i + 32])
+                //{
+                //    case 0:
+                //        i += 104;
+                //        break;
+                //    case 3:
+                //        i += 88;
+                //        break;
+                //    case 4:
+                //        i += 88;
+                //        break;
+                //    case 5:
+                //        i += 88;
+                //        break;
+                //    case 6:
+                //        i += 88;
+                //        break;
+                //    case 7:
+                //        i += 88;
+                //        break;
+                //    case 8:
+                //        i += 88;
+                //        break;
+                //    case 9:
+                //        i += 88;
+                //        break;
+                //    case 255:
+                //        i += 88;
+                //        break;
+                //}
+                //cnt++;
             }
+            string a = "";
         }
     }
 }

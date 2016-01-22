@@ -10,7 +10,7 @@ namespace Fo2.MapObjects
 {
     class Critter : MapObject
     {
-        public MapObjectType MapObjectType = MapObjectType.Critter;
+        
 
         private FRM _texture;
         private int _frameNumer;
@@ -23,10 +23,13 @@ namespace Fo2.MapObjects
 
         public Critter(int start, byte[] bytes, Hex[] hexes, string[] criNames, string[] itemsProtoNames, out int newStart)
         {
+            MapObjectType = MapObjectType.Critter;
+            TextureName = criNames[bytes[start + 35]].Split(',')[0] + "GA.frm";
+
             int hexNumber = HelperFuncts.SumTwoBytes(bytes[start + 6], bytes[start + 7]);
             _objDirection = bytes[start + 31];
 
-            string frmName = _repo + "art/critters/" + criNames[bytes[start + 35]].Split(',')[0] + "GA.frm";
+            string frmName = _repo + "art/critters/" + TextureName;
             _texture = new FRM(frmName, (int)hexes[hexNumber]._vertexes[0].X, (int)hexes[hexNumber]._vertexes[0].Y);
             _texture.CurrentDirection = _objDirection;
             _frameNumer = bytes[start + 27];
