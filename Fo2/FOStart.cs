@@ -20,9 +20,7 @@ namespace Fo2
         private KeyboardState previousState;
         private SpriteFont tempFont;
         private Map _map;
-        
-
-
+        private Effect effect;
 
         public static Texture2D BlankTexture { get; private set; }
 
@@ -72,8 +70,9 @@ namespace Fo2
             BlankTexture = new Texture2D(GraphicsDevice, 1, 1);
             BlankTexture.SetData(new Color[] { Color.White });
             HelperFuncts.blankTexture = BlankTexture;
+            effect = Content.Load<Effect>("ambient");
 
-           _map = new Map(_hexes);
+            _map = new Map(_hexes);
 
         }
 
@@ -148,8 +147,8 @@ namespace Fo2
             GraphicsDevice.Clear(Color.Black);
             //spriteBatch.Begin();
             var viewMatrix = _camera.GetViewMatrix();
-            spriteBatch.Begin(transformMatrix: viewMatrix);
-
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: viewMatrix);
+            //effect.CurrentTechnique.Passes[0].Apply();
 
             foreach (var tiles in _map._tiles)
             {
@@ -172,7 +171,7 @@ namespace Fo2
             }
 
 
-
+            
 
             spriteBatch.DrawString(tempFont, "screen X=" + Mouse.GetState().Position.X.ToString(), _camera.ScreenToWorld(new Vector2(700, 20)), Color.White);
             spriteBatch.DrawString(tempFont, "screen Y=" + Mouse.GetState().Position.Y.ToString(), _camera.ScreenToWorld(new Vector2(700, 40)), Color.White);

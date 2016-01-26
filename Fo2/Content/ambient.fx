@@ -1,50 +1,22 @@
-// XNA 4.0 Shader Programming #1 - Ambient light
+sampler s0;
 
-// Matrix
-float4x4 World;
-float4x4 View;
-float4x4 Projection;
 
-// Light related
-float4 AmbientColor;
-float AmbientIntensity;
+float4 AmbientColor = float4(0, 0, 0, 1);
+float AmbientIntensity = 0.3;
 
-// The input for the VertexShader
-struct VertexShaderInput
+float4 PixelShaderFunction(float4 position : SV_Position, float4 color : COLOR0, float2 texCoord : TEXCOORD0) : COLOR0
 {
-	float4 Position : POSITION0;
-};
-
-// The output from the vertex shader, used for later processing
-struct VertexShaderOutput
-{
-	float4 Position : POSITION0;
-};
-
-// The VertexShader.
-VertexShaderOutput VertexShaderFunction(VertexShaderInput input)
-{
-	VertexShaderOutput output;
-
-	float4 worldPosition = mul(input.Position, World);
-	float4 viewPosition = mul(worldPosition, View);
-	output.Position = mul(viewPosition, Projection);
-
-	return output;
+	//return float4(1, 1, 0, 1);
+	//float4 c1 = tex2D(s0, texCoord);
+	//c1.gb = c1.r;
+	//return c1;
+	return AmbientColor * AmbientIntensity;
 }
 
-// The Pixel Shader
-float4 PixelShaderFunction(VertexShaderOutput input) : COLOR0
-{
-	return AmbientColor*AmbientIntensity;
-}
-
-// Our Techinique
 technique Technique1
 {
 	pass Pass1
 	{
-		VertexShader = compile vs_5_0 VertexShaderFunction();
-		PixelShader = compile ps_5_0 PixelShaderFunction();
+		PixelShader = compile ps_4_0_level_9_1 PixelShaderFunction();
 	}
 }

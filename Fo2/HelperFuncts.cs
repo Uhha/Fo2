@@ -21,8 +21,8 @@ namespace Fo2
         public static GraphicsDevice GraphicsDevicePointer { get; set; }
 
         public static byte[] _pallete = File.ReadAllBytes("Content/short.pal");
-        //public static string Repo = "D:/Games/Fallout 2/data/";
-        public static string Repo = "C:/!tmp/f2/data/";
+        public static string Repo = "D:/Games/Fallout 2/data/";
+        //public static string Repo = "C:/!tmp/f2/data/";
 
 
 
