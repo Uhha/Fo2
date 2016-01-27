@@ -53,6 +53,8 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FrameCounter.cs" />
+    <Compile Include="FrameRateCounter.cs" />
     <Compile Include="MapObjects\Wall.cs" />
     <Compile Include="MapObjects\Misc.cs" />
     <Compile Include="MapObjects\Scenery.cs" />
@@ -96,6 +98,7 @@
     </MonoGameContentReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\Font.spritefont" />
     <None Include="Content\TempFont.spritefont" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

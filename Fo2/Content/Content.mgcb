@@ -84,3 +84,9 @@
 /processorParam:TextureFormat=Color
 /build:lightMask.png
 
+#begin Font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:Font.spritefont
+

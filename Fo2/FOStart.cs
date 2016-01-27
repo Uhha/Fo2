@@ -8,6 +8,22 @@ using System.Linq;
 
 namespace Fo2
 {
+    class Light
+    {
+        public Vector2 Position;
+        public Vector4 Color;
+        public float Intensity;
+        public float Radius;
+
+        public Light(Vector2 Position, Vector4 Color, float Intensity, float Radius)
+        {
+            this.Position = Position;
+            this.Color = Color;
+            this.Intensity = Intensity;
+            this.Radius = Radius;
+        }
+    }
+
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
@@ -19,8 +35,12 @@ namespace Fo2
         private Hex[] _hexes;
         private KeyboardState previousState;
         private SpriteFont tempFont;
+        private FrameCounter _frameCounter = new FrameCounter();
         private Map _map;
+
         private Effect effect;
+        RenderTarget2D renderTarget;
+        List<Light> Lights = new List<Light>();
 
         public static Texture2D BlankTexture { get; private set; }
 
@@ -33,6 +53,7 @@ namespace Fo2
             graphics.PreferredBackBufferHeight = 600;
             graphics.PreferredBackBufferWidth = 800;
             Content.RootDirectory = "Content";
+            
         }
 
         /// <summary>
@@ -55,6 +76,7 @@ namespace Fo2
 
             previousState = Keyboard.GetState();
             HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
+            Components.Add(new FrameRateCounter(this));
             base.Initialize();
 
         }
@@ -70,7 +92,18 @@ namespace Fo2
             BlankTexture = new Texture2D(GraphicsDevice, 1, 1);
             BlankTexture.SetData(new Color[] { Color.White });
             HelperFuncts.blankTexture = BlankTexture;
+
             effect = Content.Load<Effect>("ambient");
+            effect.Parameters["ScreenWidth"].SetValue((float)graphics.GraphicsDevice.Viewport.Width);
+            effect.Parameters["ScreenHeight"].SetValue((float)graphics.GraphicsDevice.Viewport.Height);
+
+            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.15f, 0.18f, 0.9f, 1));
+            effect.Parameters["AmbientIntensity"].SetValue(.6f);
+
+            PresentationParameters pp = graphics.GraphicsDevice.PresentationParameters;
+            renderTarget = new RenderTarget2D(graphics.GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight, true, graphics.GraphicsDevice.DisplayMode.Format, DepthFormat.Depth24);
+            Lights.Add(new Light(new Vector2(300, 300), new Vector4(1, 1, 1, 1), 1.5f, 25f));
+
 
             _map = new Map(_hexes);
 
@@ -144,7 +177,8 @@ namespace Fo2
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Black);
+            graphics.GraphicsDevice.SetRenderTarget(renderTarget);
+            GraphicsDevice.Clear(Color.Transparent);
             //spriteBatch.Begin();
             var viewMatrix = _camera.GetViewMatrix();
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, transformMatrix: viewMatrix);
@@ -172,18 +206,47 @@ namespace Fo2
 
 
             
+            
 
+
+            spriteBatch.End();
+
+
+            graphics.GraphicsDevice.SetRenderTarget(null);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive);
+            effect.CurrentTechnique.Passes["AmbientLightPass"].Apply();
+            spriteBatch.Draw(renderTarget, Vector2.Zero, Color.White);
+            spriteBatch.End();
+
+            for (int i = 0; i < Lights.Count; i++)
+                {
+                    effect.Parameters["LightPosition"].SetValue(Lights[i].Position);
+                    effect.Parameters["LightColor"].SetValue(Lights[i].Color);
+                    effect.Parameters["LightIntensity"].SetValue(Lights[i].Intensity);
+                    effect.Parameters["LightRadius"].SetValue(Lights[i].Radius);
+
+                    spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive);
+                    effect.CurrentTechnique.Passes["PointLightPass"].Apply();
+                    spriteBatch.Draw(renderTarget, Vector2.Zero, Color.White);
+                    spriteBatch.End();
+                }
+
+
+            spriteBatch.Begin(transformMatrix: viewMatrix);
+            //coordinates
             spriteBatch.DrawString(tempFont, "screen X=" + Mouse.GetState().Position.X.ToString(), _camera.ScreenToWorld(new Vector2(700, 20)), Color.White);
             spriteBatch.DrawString(tempFont, "screen Y=" + Mouse.GetState().Position.Y.ToString(), _camera.ScreenToWorld(new Vector2(700, 40)), Color.White);
 
             spriteBatch.DrawString(tempFont, "world X=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).X, _camera.ScreenToWorld(new Vector2(700, 60)), Color.White);
             spriteBatch.DrawString(tempFont, "world Y=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).Y, _camera.ScreenToWorld(new Vector2(700, 80)), Color.White);
-            
 
-            spriteBatch.End();
 
-            spriteBatch.Begin();
-           
+            //FSP
+            var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            _frameCounter.Update(deltaTime);
+            var fps = string.Format("FPS: {0}", _frameCounter.AverageFramesPerSecond);
+            spriteBatch.DrawString(tempFont, fps, _camera.ScreenToWorld(new Vector2(700, 100)), Color.White);
+            ///
             spriteBatch.End();
 
             base.Draw(gameTime);
