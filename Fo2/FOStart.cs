@@ -8,21 +8,7 @@ using System.Linq;
 
 namespace Fo2
 {
-    class Light
-    {
-        public Vector2 Position;
-        public Vector4 Color;
-        public float Intensity;
-        public float Radius;
-
-        public Light(Vector2 Position, Vector4 Color, float Intensity, float Radius)
-        {
-            this.Position = Position;
-            this.Color = Color;
-            this.Intensity = Intensity;
-            this.Radius = Radius;
-        }
-    }
+    
 
     /// <summary>
     /// This is the main type for your game.
@@ -43,10 +29,12 @@ namespace Fo2
         List<Light> Lights = new List<Light>();
 
         public static Texture2D BlankTexture { get; private set; }
+        public MouseLight _mouseLight;
 
         public FOStart()
         {
             IsMouseVisible = true;
+            
             
             
             graphics = new GraphicsDeviceManager(this);
@@ -66,6 +54,7 @@ namespace Fo2
         {
             _camera = new Camera2D(GraphicsDevice);
             _camera.Position = new Vector2(-400,1400);
+            _mouseLight = new MouseLight(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y), new Vector4(1, 1, 1, 1));
 
             _hexes = new Hex[40000];
             for (int i = 0; i < _hexes.Length; i++)
@@ -97,12 +86,17 @@ namespace Fo2
             effect.Parameters["ScreenWidth"].SetValue((float)graphics.GraphicsDevice.Viewport.Width);
             effect.Parameters["ScreenHeight"].SetValue((float)graphics.GraphicsDevice.Viewport.Height);
 
-            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.15f, 0.18f, 0.9f, 1));
-            effect.Parameters["AmbientIntensity"].SetValue(.6f);
+            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.15f, 0.18f, 0.9f, 1f));
+            effect.Parameters["AmbientColor"].SetValue(new Vector4(0.8f,0.8f,1f,1));
+            effect.Parameters["AmbientIntensity"].SetValue(0.8f);
 
             PresentationParameters pp = graphics.GraphicsDevice.PresentationParameters;
             renderTarget = new RenderTarget2D(graphics.GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight, true, graphics.GraphicsDevice.DisplayMode.Format, DepthFormat.Depth24);
-            Lights.Add(new Light(new Vector2(300, 300), new Vector4(1, 1, 1, 1), 1.5f, 25f));
+            Lights.Add(new Light(new Vector2(-883, 1586), new Vector4(1, 0.8f, 0.4f, 1), 1.31f, 10));
+            Lights.Add(new Light(new Vector2(-515, 1489), new Vector4(1, 0.8f, 0.4f, 1), 1.5f, 10));
+            
+            //Lights.Add(new Light(new Vector2(-600, 1500), new Vector4(1, 1, 1, 1), 1.1f, 500));
+
 
 
             _map = new Map(_hexes);
@@ -127,6 +121,7 @@ namespace Fo2
         {
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+            var gt = gameTime.ElapsedGameTime.Milliseconds;
 
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             var keyboardState = Keyboard.GetState();
@@ -158,13 +153,28 @@ namespace Fo2
             if (keyboardState.IsKeyDown(Keys.Right))
                 _camera.Position += new Vector2(1250, 0) * deltaTime;
 
-
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                _mouseLight.LightUp(gt);
+            }
+            else
+            {
+                _mouseLight.LightDown(gt);
+            }
+            _mouseLight.UpdatePosition(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
 
 
             foreach (var mapObj in _map._mapObjects)
             {
-                mapObj.Update(gameTime.ElapsedGameTime.Milliseconds);
+                mapObj.Update(gt);
             }
+            foreach (var light in Lights)
+            {
+                light.Update(gt);
+            }
+
+
+
 
             previousState = keyboardState;
 
@@ -220,16 +230,29 @@ namespace Fo2
 
             for (int i = 0; i < Lights.Count; i++)
                 {
-                    effect.Parameters["LightPosition"].SetValue(Lights[i].Position);
+                    effect.Parameters["LightPosition"].SetValue(_camera.WorldToScreen(Lights[i].Position));
+                    //effect.Parameters["LightPosition"].SetValue(Lights[i].Position);
                     effect.Parameters["LightColor"].SetValue(Lights[i].Color);
                     effect.Parameters["LightIntensity"].SetValue(Lights[i].Intensity);
-                    effect.Parameters["LightRadius"].SetValue(Lights[i].Radius);
+                    effect.Parameters["LightRadius"].SetValue(_camera.Zoom*(Lights[i].Radius));
 
                     spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive);
                     effect.CurrentTechnique.Passes["PointLightPass"].Apply();
                     spriteBatch.Draw(renderTarget, Vector2.Zero, Color.White);
                     spriteBatch.End();
                 }
+
+            //LightMouse
+            effect.Parameters["LightPosition"].SetValue(_mouseLight.Position);
+            effect.Parameters["LightColor"].SetValue(_mouseLight.Color);
+            effect.Parameters["LightIntensity"].SetValue(_mouseLight.Intensity);
+            effect.Parameters["LightRadius"].SetValue(_camera.Zoom * (_mouseLight.Radius));
+
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive);
+            effect.CurrentTechnique.Passes["PointLightPass"].Apply();
+            spriteBatch.Draw(renderTarget, Vector2.Zero, Color.White);
+            spriteBatch.End();
+            //
 
 
             spriteBatch.Begin(transformMatrix: viewMatrix);

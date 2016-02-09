@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="FrameCounter.cs" />
     <Compile Include="FrameRateCounter.cs" />
+    <Compile Include="MouseLight.cs" />
+    <Compile Include="Light.cs" />
     <Compile Include="MapObjects\Wall.cs" />
     <Compile Include="MapObjects\Misc.cs" />
     <Compile Include="MapObjects\Scenery.cs" />
