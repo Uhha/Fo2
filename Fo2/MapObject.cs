@@ -10,8 +10,10 @@ namespace Fo2
     {
         public MapObjectType MapObjectType;
         public string TextureName;
+        
 
         public abstract void Update(double gameTime);
         public abstract void Draw(SpriteBatch sb);
+      
     }
 }

@@ -20,11 +20,14 @@ namespace Fo2.MapObjects
         private int _hitPoints;
         private string _repo = HelperFuncts.Repo;
 
+        public char WeaponEquipped = 'G';
+        public char CurrentAnimation = 'A';
+
 
         public Critter(int start, byte[] bytes, Hex[] hexes, string[] criNames, string[] itemsProtoNames, out int newStart)
         {
             MapObjectType = MapObjectType.Critter;
-            TextureName = criNames[bytes[start + 35]].Split(',')[0] + "GA.frm";
+            TextureName = criNames[bytes[start + 35]].Split(',')[0] + WeaponEquipped + CurrentAnimation + ".frm";
 
             int hexNumber = HelperFuncts.SumTwoBytes(bytes[start + 6], bytes[start + 7]);
             _objDirection = bytes[start + 31];

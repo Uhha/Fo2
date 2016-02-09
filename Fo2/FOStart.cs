@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Fo2.MapObjects;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended;
@@ -31,11 +32,11 @@ namespace Fo2
         public static Texture2D BlankTexture { get; private set; }
         public MouseLight _mouseLight;
 
+        private GenericMapObject _dude;
+
         public FOStart()
         {
             IsMouseVisible = true;
-            
-            
             
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 600;
@@ -100,7 +101,8 @@ namespace Fo2
 
 
             _map = new Map(_hexes);
-
+            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, _hexes, 18890);
+            _dude.Turn(3);
         }
 
         /// <summary>
@@ -174,10 +176,11 @@ namespace Fo2
             }
 
 
-
+            _dude.Update(gt);
+            if (keyboardState.IsKeyDown(Keys.Q))
+                _dude.Walk();
 
             previousState = keyboardState;
-
             base.Update(gameTime);
         }
 
@@ -199,28 +202,19 @@ namespace Fo2
                 tiles.Value.Draw(spriteBatch);
             }
 
-
             foreach (var mo in _map._mapObjects)
             {
                 mo.Draw(spriteBatch);
             }
 
-            
-
-            
+            _dude.Draw(spriteBatch);
 
             foreach (var hex in _hexes)
             {
                 hex.Draw(spriteBatch, tempFont);
             }
 
-
-            
-            
-
-
             spriteBatch.End();
-
 
             graphics.GraphicsDevice.SetRenderTarget(null);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive);
@@ -264,7 +258,7 @@ namespace Fo2
             spriteBatch.DrawString(tempFont, "world Y=" + _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y)).Y, _camera.ScreenToWorld(new Vector2(700, 80)), Color.White);
 
 
-            //FSP
+            //FPS
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             _frameCounter.Update(deltaTime);
             var fps = string.Format("FPS: {0}", _frameCounter.AverageFramesPerSecond);
