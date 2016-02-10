@@ -11,14 +11,15 @@ namespace Fo2.MapObjects
         public FRM _texture;
         string _prefix = "";
         private string _repo = HelperFuncts.Repo;
-        int _posX;
-        int _posY;
+        private double _counter = 0;
+        private Stance Stance = Stance.Standing;
+        private int _steps;
+        private int _direction;
 
-        public GenericMapObject(string name, MapObjectType objType, int posX, int posY)
+        public GenericMapObject(string name, MapObjectType objType, int HexInt)
         {
             TextureName = name;
-            _posX = posX;
-            _posY = posY;
+            HexPosition = HexInt;
             switch (objType)
             {
                 case MapObjectType.Item:
@@ -49,7 +50,7 @@ namespace Fo2.MapObjects
             }
 
             MapObjectType = objType;
-            _texture = new FRM(_repo + _prefix + TextureName + "AA.frm", _posX, _posY);
+            _texture = new FRM(_repo + _prefix + TextureName + "AA.frm", MovementHelper.HexX(HexInt), MovementHelper.HexY(HexInt));
         }
 
         public void Turn(int turn)
@@ -57,14 +58,57 @@ namespace Fo2.MapObjects
             _texture.CurrentDirection = turn;
         }
 
-        public void Walk()
+        public void Walk(int direction)
         {
-            _texture = new FRM(_repo + _prefix + TextureName + "AB.frm", _posX, _posY);
+            _direction = direction;
+            Stance = Stance.Walking;
+            _texture = new FRM(_repo + _prefix + TextureName + "AB.frm", MovementHelper.HexX(HexPosition), MovementHelper.HexY(HexPosition));
+            _steps = _texture._directions[direction]._frames.Length;
+            
         }
 
         public override void Update(double gameTime)
         {
-            _texture.Update(gameTime);
+            switch (Stance)
+            {
+                case Stance.Standing:
+                    Standing(gameTime);
+                    break;
+                case Stance.Walking:
+                    Walking(gameTime);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        
+
+        private void Standing(double gameTime)
+        {
+            _counter += gameTime;
+            if (_counter > 150)
+            {
+                _texture.Update(gameTime);
+                _counter = 0;
+            }
+        }
+
+        private void Walking(double gameTime)
+        {
+            _counter += gameTime;
+            if (_counter > 150)
+            {
+                _texture.Update(gameTime);
+                _counter = 0;
+                _steps--;
+            }
+            if (_steps == 0)
+            {
+                Stance = Stance.Standing;
+                HexPosition = MovementHelper.GetNextHex(_direction, HexPosition);
+                _texture = new FRM(_repo + _prefix + TextureName + "AA.frm", MovementHelper.HexX(HexPosition), MovementHelper.HexY(HexPosition));
+            }
         }
 
         public override void Draw(SpriteBatch sb)

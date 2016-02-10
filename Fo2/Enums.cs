@@ -32,3 +32,8 @@ enum ItemSubType
     Misc,
     Key
 }
+enum Stance
+{
+    Standing,
+    Walking
+}

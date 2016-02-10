@@ -64,9 +64,9 @@ namespace Fo2
 
         }
 
-        public static MapObject GetMapObject(string name, MapObjectType objType, Hex[] hexes, int position)
+        public static MapObject GetMapObject(string name, MapObjectType objType, int position)
         {
-            return new GenericMapObject(name, objType, (int)hexes[position]._vertexes[0].X, (int)hexes[position]._vertexes[0].Y);
+            return new GenericMapObject(name, objType, position);
         }
 
 

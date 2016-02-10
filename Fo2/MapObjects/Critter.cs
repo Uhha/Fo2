@@ -30,6 +30,8 @@ namespace Fo2.MapObjects
             TextureName = criNames[bytes[start + 35]].Split(',')[0] + WeaponEquipped + CurrentAnimation + ".frm";
 
             int hexNumber = HelperFuncts.SumTwoBytes(bytes[start + 6], bytes[start + 7]);
+            HexPosition = hexNumber;
+
             _objDirection = bytes[start + 31];
 
             string frmName = _repo + "art/critters/" + TextureName;

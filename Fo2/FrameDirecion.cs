@@ -45,12 +45,13 @@ namespace Fo2
 
         public void Update(double gameTime)
         {
-            _counter += gameTime;
-            if (_counter > 150)
-            {
-                NextIndex();
-                _counter = 0;
-            }
+            //_counter += gameTime;
+            //if (_counter > 150)
+            //{
+            //    NextIndex();
+            //    _counter = 0;
+            //}
+            NextIndex();
         }
 
         

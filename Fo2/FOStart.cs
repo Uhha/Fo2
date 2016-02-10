@@ -33,6 +33,7 @@ namespace Fo2
         public MouseLight _mouseLight;
 
         private GenericMapObject _dude;
+        private int _direction;
 
         public FOStart()
         {
@@ -63,7 +64,7 @@ namespace Fo2
                 Vector2 position = HelperFuncts.NextHexPos();
                 _hexes[i] = new Hex(position);
             }
-
+            MovementHelper.Hexes = _hexes;
             previousState = Keyboard.GetState();
             HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
             Components.Add(new FrameRateCounter(this));
@@ -101,8 +102,9 @@ namespace Fo2
 
 
             _map = new Map(_hexes);
-            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, _hexes, 18890);
-            _dude.Turn(3);
+            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, 18890);
+            _direction = 3;
+            _dude.Turn(_direction);
         }
 
         /// <summary>
@@ -175,10 +177,25 @@ namespace Fo2
                 light.Update(gt);
             }
 
+            if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousState)
+                _dude.Walk(_direction);
+
+            if (keyboardState.IsKeyDown(Keys.E) && keyboardState != previousState)
+            {
+                if(_direction == 5)
+                {
+                    _direction = 0;
+                }
+                else
+                {
+                    _direction++;
+                }
+                _dude.Turn(_direction);
+            }
+
 
             _dude.Update(gt);
-            if (keyboardState.IsKeyDown(Keys.Q))
-                _dude.Walk();
+            
 
             previousState = keyboardState;
             base.Update(gameTime);

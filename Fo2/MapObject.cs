@@ -10,6 +10,7 @@ namespace Fo2
     {
         public MapObjectType MapObjectType;
         public string TextureName;
+        public int HexPosition;
         
 
         public abstract void Update(double gameTime);

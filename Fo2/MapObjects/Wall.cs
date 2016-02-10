@@ -25,6 +25,8 @@ namespace Fo2.MapObjects
             TextureName = wallNames[HelperFuncts.SumTwoBytes(bytes[start + 34], bytes[start + 35])].Trim();
 
             int hexNumber = HelperFuncts.SumTwoBytes(bytes[start + 6], bytes[start + 7]);
+            HexPosition = hexNumber;
+
             _objDirection = bytes[start + 31];
             string frmName = _repo + "art/walls/" + TextureName;
             _texture = new FRM(frmName, (int)hexes[hexNumber]._vertexes[0].X, (int)hexes[hexNumber]._vertexes[0].Y);
