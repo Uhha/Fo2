@@ -61,9 +61,12 @@ namespace Fo2.MapObjects
         public void Walk(int direction)
         {
             _direction = direction;
+
             Stance = Stance.Walking;
             _texture = new FRM(_repo + _prefix + TextureName + "AB.frm", MovementHelper.HexX(HexPosition), MovementHelper.HexY(HexPosition));
+            _texture.CurrentDirection = direction;
             _steps = _texture._directions[direction]._frames.Length;
+            _steps = 4;
             
         }
 
@@ -108,6 +111,7 @@ namespace Fo2.MapObjects
                 Stance = Stance.Standing;
                 HexPosition = MovementHelper.GetNextHex(_direction, HexPosition);
                 _texture = new FRM(_repo + _prefix + TextureName + "AA.frm", MovementHelper.HexX(HexPosition), MovementHelper.HexY(HexPosition));
+                _texture.CurrentDirection = _direction;
             }
         }
 

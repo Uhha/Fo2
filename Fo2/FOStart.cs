@@ -177,9 +177,7 @@ namespace Fo2
                 light.Update(gt);
             }
 
-            if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousState)
-                _dude.Walk(_direction);
-
+            
             if (keyboardState.IsKeyDown(Keys.E) && keyboardState != previousState)
             {
                 if(_direction == 5)
@@ -192,6 +190,8 @@ namespace Fo2
                 }
                 _dude.Turn(_direction);
             }
+            if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousState)
+                _dude.Walk(_direction);
 
 
             _dude.Update(gt);
