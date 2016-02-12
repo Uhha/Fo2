@@ -68,6 +68,9 @@ namespace Fo2
             previousState = Keyboard.GetState();
             HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
             Components.Add(new FrameRateCounter(this));
+
+            MovementHelper.ShortestPath(202,805);
+
             base.Initialize();
 
         }

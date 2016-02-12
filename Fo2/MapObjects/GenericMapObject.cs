@@ -109,7 +109,7 @@ namespace Fo2.MapObjects
             if (_steps == 0)
             {
                 Stance = Stance.Standing;
-                HexPosition = MovementHelper.GetNextHex(_direction, HexPosition);
+                HexPosition = MovementHelper.GetAdjecentHex(_direction, HexPosition);
                 _texture = new FRM(_repo + _prefix + TextureName + "AA.frm", MovementHelper.HexX(HexPosition), MovementHelper.HexY(HexPosition));
                 _texture.CurrentDirection = _direction;
             }

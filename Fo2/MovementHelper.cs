@@ -9,10 +9,10 @@ namespace Fo2
     {
         public static Hex[] Hexes;
 
-        public static int GetNextHex(int direction, int currentHex)
+        public static int GetAdjecentHex(int direction, int currentHex)
         {
             int returnHex = -1;
-            if(currentHex % 2 == 0)
+            if(currentHex % 2 == 0 || currentHex == 0)
             {
                 switch (direction)
                 {
@@ -57,6 +57,47 @@ namespace Fo2
 
             return returnHex;
         }
+
+        public static int[] ShortestPath(int start, int end)
+        {
+            LinkedList<int> pq = new LinkedList<int>();
+            pq.AddFirst(start);
+
+            bool found = false;
+            while (found == false)
+            {
+                int node = pq.First();
+                Hexes[node]._rank = 0;
+                if (node == end) {
+                    found = true;
+                    break;
+                }
+                pq.RemoveFirst();
+
+                foreach (var n in Hexes[node]._connected)
+                {
+                    if (Hexes[n]._rank  > Hexes[node]._rank + 1)
+                    {
+                        Hexes[n]._rank = Hexes[node]._rank++;
+                        Hexes[n]._cameFrom = Hexes[node]._actualNum;
+                        pq.AddLast(Hexes[n]._actualNum);
+                    }
+                }
+            }
+            LinkedList<int> ret = new LinkedList<int>();
+            
+            var current = end;
+            while (current != start)
+            {
+                ret.AddFirst(current);
+                current = Hexes[current]._cameFrom;
+            }
+            ret.AddFirst(start);
+            return ret.ToArray<int>();
+
+        }
+
+        
 
         public static int HexX(int hexNum)
         {
