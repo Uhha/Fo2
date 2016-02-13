@@ -15,7 +15,7 @@ namespace Fo2
         public int _directionOffset;
 
         private double _counter = 0;
-        private int _anumationIndex = 0;
+        public int _anumationIndex = 0;
 
 
         public FrameDirecion(FRM parent, int numberOfFrames, int directionOffset) 

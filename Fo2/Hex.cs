@@ -50,11 +50,11 @@ namespace Fo2
 
         public void Draw(SpriteBatch spriteBatch, SpriteFont tempFont)
         {
-            HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.White, 1);
-            if (true) //17278 //17294 _actualNum == 28707
+            //HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.White, 1);
+            if (_actualNum == 805) //17278 //17294 _actualNum == 28707
             {  //x39 y86
-                spriteBatch.DrawString(tempFont, _actualNum.ToString(), new Vector2(Position.X + 3, Position.Y + 3), Color.White);
-                //HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.Red, 1);
+                //spriteBatch.DrawString(tempFont, _actualNum.ToString(), new Vector2(Position.X + 3, Position.Y + 3), Color.White);
+                HelperFuncts.DrawPolygon(spriteBatch, _vertexes, _count, Color.Red, 1);
             }
         }
 

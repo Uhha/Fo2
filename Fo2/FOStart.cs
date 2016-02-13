@@ -69,7 +69,7 @@ namespace Fo2
             HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
             Components.Add(new FrameRateCounter(this));
 
-            MovementHelper.ShortestPath(202,805);
+//            MovementHelper.ShortestPath(202,805);
 
             base.Initialize();
 
@@ -105,7 +105,7 @@ namespace Fo2
 
 
             _map = new Map(_hexes);
-            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, 18890);
+            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, 202 ); //18890
             _direction = 3;
             _dude.Turn(_direction);
         }
@@ -160,7 +160,7 @@ namespace Fo2
             if (keyboardState.IsKeyDown(Keys.Right))
                 _camera.Position += new Vector2(1250, 0) * deltaTime;
 
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+            if (Mouse.GetState().RightButton == ButtonState.Pressed)
             {
                 _mouseLight.LightUp(gt);
             }
@@ -169,6 +169,18 @@ namespace Fo2
                 _mouseLight.LightDown(gt);
             }
             _mouseLight.UpdatePosition(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
+
+            if(Mouse.GetState().LeftButton == ButtonState.Pressed)
+            {
+                var end = -1;
+                foreach (var hex in _hexes)
+                {
+                    end = MovementHelper.Inside(hex._vertexes,
+                        _camera.WorldToScreen(new Vector2(Mouse.GetState().Position.X,Mouse.GetState().Position.Y)), hex._actualNum);
+                    if (end != -1) break; 
+                }
+                _dude.Walk(MovementHelper.ShortestPath(_dude.HexPosition, end));
+            }
 
 
             foreach (var mapObj in _map._mapObjects)
@@ -194,7 +206,7 @@ namespace Fo2
                 _dude.Turn(_direction);
             }
             if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousState)
-                _dude.Walk(_direction);
+                _dude.Walk(new int[] {3,3,3,2 }); //202, 403,404,605,805
 
 
             _dude.Update(gt);
