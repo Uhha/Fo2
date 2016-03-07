@@ -77,6 +77,7 @@ namespace Fo2.MapObjects
 
         public void Walk(int[] directionsPath)
         {
+            if (directionsPath.Length == 0) return;
             _direction = directionsPath[0];
             _directionsPath = directionsPath;
             _hexesOnPath = directionsPath.Length;

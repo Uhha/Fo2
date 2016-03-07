@@ -20,7 +20,8 @@ namespace Fo2
         SpriteBatch spriteBatch;
         private Camera2D _camera;
         private Hex[] _hexes;
-        private KeyboardState previousState;
+        private KeyboardState previousKeyBoardState;
+        private MouseState previousMouseState;
         private SpriteFont tempFont;
         private FrameCounter _frameCounter = new FrameCounter();
         private Map _map;
@@ -65,7 +66,7 @@ namespace Fo2
                 _hexes[i] = new Hex(position);
             }
             MovementHelper.Hexes = _hexes;
-            previousState = Keyboard.GetState();
+            previousKeyBoardState = Keyboard.GetState();
             HelperFuncts.GraphicsDevicePointer = graphics.GraphicsDevice;
             Components.Add(new FrameRateCounter(this));
 
@@ -105,7 +106,7 @@ namespace Fo2
 
 
             _map = new Map(_hexes);
-            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, 202 ); //18890
+            _dude =(GenericMapObject) MapObjectFactory.GetMapObject("HMMAXX", MapObjectType.Critter, 18890); //
             _direction = 3;
             _dude.Turn(_direction);
         }
@@ -132,6 +133,7 @@ namespace Fo2
 
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             var keyboardState = Keyboard.GetState();
+            var mouseState = Mouse.GetState();
 
             //// rotation
             //if (keyboardState.IsKeyDown(Keys.Q))
@@ -170,13 +172,13 @@ namespace Fo2
             }
             _mouseLight.UpdatePosition(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
 
-            if(Mouse.GetState().LeftButton == ButtonState.Pressed)
+            if(Mouse.GetState().LeftButton == ButtonState.Pressed && mouseState != previousMouseState)
             {
                 var end = -1;
                 foreach (var hex in _hexes)
                 {
                     end = MovementHelper.Inside(hex._vertexes,
-                        _camera.WorldToScreen(new Vector2(Mouse.GetState().Position.X,Mouse.GetState().Position.Y)), hex._actualNum);
+                        _camera.ScreenToWorld(new Vector2(Mouse.GetState().Position.X,Mouse.GetState().Position.Y)), hex._actualNum);
                     if (end != -1) break; 
                 }
                 _dude.Walk(MovementHelper.ShortestPath(_dude.HexPosition, end));
@@ -193,7 +195,7 @@ namespace Fo2
             }
 
             
-            if (keyboardState.IsKeyDown(Keys.E) && keyboardState != previousState)
+            if (keyboardState.IsKeyDown(Keys.E) && keyboardState != previousKeyBoardState)
             {
                 if(_direction == 5)
                 {
@@ -205,14 +207,14 @@ namespace Fo2
                 }
                 _dude.Turn(_direction);
             }
-            if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousState)
+            if (keyboardState.IsKeyDown(Keys.Q) && keyboardState != previousKeyBoardState)
                 _dude.Walk(new int[] {3,3,3,2 }); //202, 403,404,605,805
 
 
             _dude.Update(gt);
-            
 
-            previousState = keyboardState;
+            previousMouseState = mouseState;
+            previousKeyBoardState = keyboardState;
             base.Update(gameTime);
         }
 

@@ -22,7 +22,7 @@ namespace Fo2.MapObjects
 
         public char WeaponEquipped = 'G';
         public char CurrentAnimation = 'A';
-
+        private double _counter;
 
         public Critter(int start, byte[] bytes, Hex[] hexes, string[] criNames, string[] itemsProtoNames, out int newStart)
         {
@@ -92,7 +92,12 @@ namespace Fo2.MapObjects
 
         public override void Update(double gameTime)
         {
-            _texture.Update(gameTime);
+            _counter += gameTime;
+            if (_counter > 150)
+            {
+                _texture.Update(gameTime);
+                _counter = 0;
+            }
         }
 
         public override void Draw(SpriteBatch sb)

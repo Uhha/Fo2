@@ -124,18 +124,20 @@ namespace Fo2
         public static int[] ShortestPath(int start, int end)
         {
             LinkedList<int> pq = new LinkedList<int>();
+            LinkedList<int> vertexesToReset = new LinkedList<int>();
             pq.AddFirst(start);
-
+            vertexesToReset.AddFirst(start);
+            Hexes[pq.First()]._rank = 0;
             bool found = false;
             while (found == false)
             {
                 int node = pq.First();
-                Hexes[node]._rank = 0;
                 if (node == end) {
                     found = true;
                     break;
                 }
                 pq.RemoveFirst();
+                
 
                 foreach (var n in Hexes[node]._connected)
                 {
@@ -151,7 +153,11 @@ namespace Fo2
                             Hexes[n]._rank = Hexes[node]._rank + 2;
                         }
                         Hexes[n]._cameFrom = Hexes[node]._actualNum;
-                        pq.AddLast(Hexes[n]._actualNum);
+                        if (!pq.Contains(Hexes[n]._actualNum))
+                        {
+                            pq.AddLast(Hexes[n]._actualNum);
+                            vertexesToReset.AddFirst(Hexes[n]._actualNum);
+                        }
                     }
                 }
             }
@@ -169,6 +175,12 @@ namespace Fo2
             for (int i = 1; i < retNodes.Count; i++)
             {
                 ret[i - 1] = MovementHelper.GetAdjecentDirection(retNodes.ElementAt(i-1), retNodes.ElementAt(i));
+            }
+
+            foreach (var item in vertexesToReset)
+            {
+                Hexes[item]._cameFrom = 0;
+                Hexes[item]._rank = Int16.MaxValue;
             }
 
             return ret;
